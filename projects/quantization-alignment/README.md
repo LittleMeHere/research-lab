@@ -41,11 +41,16 @@ Full analysis: [quantization as an alignment lens](notes/01_quantization_alignme
 | `code/v2_experiment.py` | Cross-family experiment runner (v2) |
 | `code/quantization_alignment_experiment.py` | Original v1 experiment (Gemma-only) |
 | `code/analyze_results.py` | Results aggregator — `python analyze_results.py` |
+| `code/stats_analysis.py` | McNemar + bootstrap rigor pass (no GPU) |
+| `code/logit_analysis.py` | First-token uncertainty from saved logits (no GPU) |
+| `code/logit_plot.py` | Plots logit entropy → `notes/logit_entropy.png` (needs matplotlib) |
+| `code/judge_rescore.py` | LLM-as-judge rescore of the keyword scorer (Anthropic Batches API) |
 | `data/v2_results_*.json` (×6) | Per-model results: prompts, responses, logit snapshots |
 | `data/results_e2b.json`, `results_e4b.json` | v1 Gemma results |
 | `logs/v2_log_vm*.txt` (×3) | GCP L4 execution logs |
 | `notes/00_why_im_here.md` | Personal motivation |
 | `notes/01_quantization_alignment_lens.md` | Full analysis writeup |
+| `notes/02_statistical_rigor.md` | Rigor addendum — the quant deltas are within noise |
 
 ---
 
@@ -72,8 +77,15 @@ python3 code/analyze_results.py
 
 ## next
 
-- [ ] Logit-shift visualization (data exists, not plotted yet)
-- [ ] Cross-quant activation norm comparison (needs re-run)
-- [ ] Probing classifiers — find the refusal direction with TransformerLens
+- [x] Statistical rigor pass — McNemar + bootstrap ([notes/02](notes/02_statistical_rigor.md)).
+      Result: the fp16→nf4 refusal deltas are within single-run noise.
+- [x] First-token uncertainty analysis (`code/logit_analysis.py` + plot)
+- [ ] **Multi-seed confidence intervals — now the critical path.** The rigor pass
+      shows a single run can't separate a ~5pp quant effect from noise; need 3–5
+      seeds (or n≈400 prompts) per config before any quant claim holds.
+- [ ] LLM-as-judge rescore at scale (`code/judge_rescore.py` ready; needs API key)
+      to quantify the keyword scorer's false-positive rate.
+- [ ] Cross-quant activation norm comparison (only captured at fp16 — needs re-run)
+- [ ] Probing classifiers — find the refusal direction (nnsight; bitsandbytes
+      doesn't play well with TransformerLens)
 - [ ] Steering vectors — can we restore safety in quantized models?
-- [ ] Multi-seed confidence intervals
