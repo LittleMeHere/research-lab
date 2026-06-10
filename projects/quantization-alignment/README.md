@@ -23,6 +23,16 @@ inferences on GCP L4s. Writeup and raw data below.
 
 Full analysis: [quantization as an alignment lens](notes/01_quantization_alignment_lens.md)
 
+> [!IMPORTANT]
+> **Updated after a statistical-rigor pass** ([02](notes/02_statistical_rigor.md),
+> [03](notes/03_capability_axis_and_inverted_thesis.md)). The original refusal
+> findings below (#1, #4) do **not** survive McNemar + bootstrap — they are within
+> single-run noise. With the broken capability scorer rebuilt via an LLM judge, the
+> thesis actually **inverts**: under nf4, *capability* degrades significantly
+> (Qwen3.5-4B −14pp, SmolLM2 −18pp) while refusal holds. Refusal is the robust
+> behavior; factual knowledge is the fragile one. Findings #2 and #3 (baseline gap,
+> copyright) still stand. Read the addenda for the corrected record.
+
 1. **Safety degrades under quantization — but it's model-dependent.** SmolLM2
    drops 8pp, Gemma drops 4pp, Phi-4 and Qwen3.5 are immune.
 2. **Baseline safety matters more than quantization.** The 52pp gap between
@@ -44,13 +54,17 @@ Full analysis: [quantization as an alignment lens](notes/01_quantization_alignme
 | `code/stats_analysis.py` | McNemar + bootstrap rigor pass (no GPU) |
 | `code/logit_analysis.py` | First-token uncertainty from saved logits (no GPU) |
 | `code/logit_plot.py` | Plots logit entropy → `notes/logit_entropy.png` (needs matplotlib) |
-| `code/judge_rescore.py` | LLM-as-judge rescore of the keyword scorer (Anthropic Batches API) |
+| `code/judge_rescore.py` | LLM-as-judge — rebuilds capability axis + validates refusal scorer (runs via `claude -p`) |
+| `code/capability_analysis.py` | Safety-vs-capability thesis test on judged labels (no GPU) |
 | `data/v2_results_*.json` (×6) | Per-model results: prompts, responses, logit snapshots |
+| `data/judge_capability_results.json` | LLM-judge TruthfulQA labels (rebuilt capability axis) |
+| `data/truthfulqa_gold.json` | Cached TruthfulQA gold answers (for the judge) |
 | `data/results_e2b.json`, `results_e4b.json` | v1 Gemma results |
 | `logs/v2_log_vm*.txt` (×3) | GCP L4 execution logs |
 | `notes/00_why_im_here.md` | Personal motivation |
 | `notes/01_quantization_alignment_lens.md` | Full analysis writeup |
-| `notes/02_statistical_rigor.md` | Rigor addendum — the quant deltas are within noise |
+| `notes/02_statistical_rigor.md` | Rigor addendum — the quant refusal deltas are within noise |
+| `notes/03_capability_axis_and_inverted_thesis.md` | Capability axis rebuilt — thesis inverts (cap degrades, not safety) |
 
 ---
 
