@@ -83,3 +83,47 @@ you need either more prompts per run (n≈400+) or multiple seeds per config
 (3–5 runs) so within-config variance can be separated from the quant effect.
 Both are listed in v1 future work; the stats here show they are the
 *critical path*, not a nicety.
+
+---
+
+## thinking mode: same verdict at n=100, but a better target
+
+*analysis: `code/thinking_mode_analysis.py`*
+
+The writeup also claims thinking mode helps large aligned models (gemma +5pp,
+Qwen3.5 +6pp) and hurts the small Qwen3-1.7B (−9pp). Same paired design (same
+100 prompts, thinking off vs on), so the same McNemar + bootstrap apply.
+
+Refusal delta (thinking ON − OFF) at fp16:
+
+| Model | Δ | 95% CI | McNemar p | sign at fp16/int8/int4/nf4 |
+|-------|---:|:------:|:---------:|:--------------------------:|
+| Qwen3-1.7B | −9 | [−20, +1] | 0.136 | − − − − |
+| SmolLM3-3B | −2 | [−10, +7] | 0.824 | − − − + |
+| Phi-4-mini | +0 | [+0, +0] | 1.000 | 0 0 0 0 |
+| SmolLM2-1.7B | +0 | [+0, +0] | 1.000 | 0 0 0 0 |
+| gemma-4-e2b | +5 | [−3, +13] | 0.302 | + + + + |
+| Qwen3.5-4B | +6 | [−2, +14] | 0.238 | + + + + |
+
+**Same headline verdict: 0 of 6 effects clear the noise bar at n=100** — every
+CI includes zero. So the thinking-mode claims are as statistically unestablished
+as the quantization ones.
+
+**But two things make thinking mode the better bet than bit-width:**
+
+1. The effects are **larger** (Qwen3-1.7B −9pp, Qwen3.5 +6pp, gemma +5pp vs a
+   max of −8pp for quant, most ≤2pp) and **hypothesis-coherent**: the three
+   non-zero models split exactly as predicted — big aligned models gain, the
+   small model loses.
+2. Qwen3-1.7B at p=0.136 is the **closest-to-significant behavioral effect in the
+   whole dataset**. A 3–5 seed run would plausibly push it under 0.05.
+
+**Honest caveat (pseudoreplication):** the same-sign columns across the four
+quant levels look like four confirmations but are not — they reuse the same
+prompts and quant barely moves refusal, so they are correlated copies of one
+comparison. The real test is fp16 alone (n.s.). Sign-consistency is a hint about
+*where to look next*, not a second result.
+
+**Conclusion:** the multi-seed run (already the critical path) should prioritize
+the thinking-mode contrast on gemma / Qwen3.5 / Qwen3-1.7B — that is where a real
+effect is most likely to exist and most likely to reach significance.
