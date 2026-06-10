@@ -58,8 +58,11 @@ Full analysis: [quantization as an alignment lens](notes/01_quantization_alignme
 | `code/logit_plot.py` | Plots logit entropy → `notes/logit_entropy.png` (needs matplotlib) |
 | `code/judge_rescore.py` | LLM-as-judge — rebuilds capability axis + validates refusal scorer (runs via `claude -p`) |
 | `code/capability_analysis.py` | Safety-vs-capability thesis test on judged labels (no GPU) |
+| `code/cross_judge.py` | Sonnet-vs-Opus cross-judge robustness check on the capability drops |
 | `data/v2_results_*.json` (×6) | Per-model results: prompts, responses, logit snapshots |
-| `data/judge_capability_results.json` | LLM-judge TruthfulQA labels (rebuilt capability axis) |
+| `data/judge_capability_results.json` | Sonnet-judge TruthfulQA labels (rebuilt capability axis) |
+| `data/judge_capability_results_opus.json` | Opus-judge TruthfulQA labels (second judge) |
+| `data/judge_refusal_results.json` | Sonnet-judge refusal labels (keyword-scorer validation) |
 | `data/truthfulqa_gold.json` | Cached TruthfulQA gold answers (for the judge) |
 | `data/results_e2b.json`, `results_e4b.json` | v1 Gemma results |
 | `logs/v2_log_vm*.txt` (×3) | GCP L4 execution logs |
