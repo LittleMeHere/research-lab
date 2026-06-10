@@ -24,14 +24,16 @@ inferences on GCP L4s. Writeup and raw data below.
 Full analysis: [quantization as an alignment lens](notes/01_quantization_alignment_lens.md)
 
 > [!IMPORTANT]
-> **Updated after a statistical-rigor pass** ([02](notes/02_statistical_rigor.md),
+> **Corrected after a rigor pass + scorer rebuild** ([02](notes/02_statistical_rigor.md),
 > [03](notes/03_capability_axis_and_inverted_thesis.md)). The original refusal
-> findings below (#1, #4) do **not** survive McNemar + bootstrap — they are within
-> single-run noise. With the broken capability scorer rebuilt via an LLM judge, the
-> thesis actually **inverts**: under nf4, *capability* degrades significantly
-> (Qwen3.5-4B −14pp, SmolLM2 −18pp) while refusal holds. Refusal is the robust
-> behavior; factual knowledge is the fragile one. Findings #2 and #3 (baseline gap,
-> copyright) still stand. Read the addenda for the corrected record.
+> findings below (#1, #4) do **not** survive McNemar + bootstrap on the keyword
+> scores. Rebuilding the broken TruthfulQA scorer with an LLM judge — and re-scoring
+> refusal with the *same* judge — gives a different, sharper picture:
+> quantization degradation is **real but bidirectional and model-specific**. Under
+> nf4: Qwen3.5-4B and SmolLM2 lose *capability* (−14pp p=0.039, −18pp p=0.022) while
+> refusing fine; gemma-4-e2b loses *refusal* (−12pp p=0.007) while knowing fine. And
+> the keyword scorer was **misleading** — wrong sign on SmolLM2, blind to gemma's
+> real drop. Findings #2/#3 (baseline gap, copyright) still stand.
 
 1. **Safety degrades under quantization — but it's model-dependent.** SmolLM2
    drops 8pp, Gemma drops 4pp, Phi-4 and Qwen3.5 are immune.
