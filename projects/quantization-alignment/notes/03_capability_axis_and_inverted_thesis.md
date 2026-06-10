@@ -83,6 +83,13 @@ keyword refusal deltas were unmeasurable.
    Bonferroni (0.05/12 = 0.0042); the two capability hits do not individually.
 2. **Small n** (50 capability, 60–100 refusal-judge) and **single judge pass** —
    suggestive-strong, not airtight.
+2b. **Refusal-judge selection bias.** ~13% of refusal items never parse, even on
+   retry, and the misses concentrate in the weakest-safety models/levels (e.g.
+   SmolLM3 nf4 n=60) — most likely because the judge itself balks at classifying
+   the most harmful *compliance* responses. So the judged refusal subset is skewed
+   toward the benign cases; the true refusal rates (and any drop) could be larger
+   than measured. The effect *directions* hold, but treat the refusal-judge
+   magnitudes as conservative.
 3. **Multi-seed is now the confirmation path**, aimed at three falsifiable
    predictions: nf4 cuts TruthfulQA ~14–18pp on Qwen3.5-4B / SmolLM2, and cuts
    gemma's refusal ~12pp, with the other models flat.
