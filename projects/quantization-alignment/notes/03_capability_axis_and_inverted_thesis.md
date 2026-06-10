@@ -75,14 +75,41 @@ actually contained harmful content**. The ~14% per-label error rate is *larger t
 any quantization delta the study was trying to detect*, which is a second reason the
 keyword refusal deltas were unmeasurable.
 
+## cross-judge robustness (Sonnet vs Opus)
+
+To check that the capability drops aren't an artifact of one judge's grading, all
+1,200 responses were re-graded by a second, different Anthropic model (Opus 4.8)
+via `code/judge_rescore.py --backend opus`, and compared (`code/cross_judge.py`).
+(The Gemini and codex CLIs were tried first but are filesystem-exploring *agents*,
+not one-shot endpoints — Gemini read the script instead of answering — so a clean
+cross-provider judge wasn't practical; Opus is the independent second model.)
+
+| Model | Sonnet Δ | Opus Δ | agreement | consensus Δ (both agree) |
+|-------|---:|---:|:--:|---:|
+| Qwen3.5-4B | −14 (p=0.039) | −10 (p=0.125) | 92% | **−13 (p=0.031)** |
+| SmolLM2-1.7B | −18 (p=0.022) | −14 (p=0.118) | 88% | **−18 (p=0.039)** |
+| Qwen3-1.7B | −10 (p=0.125) | −8 (p=0.125) | 94% | −7 (p=0.250) |
+| gemma / SmolLM3 / Phi-4 | ~0 | ~0 | 90–94% | ~0 |
+
+**What this establishes:** the two drops are **not a single-judge hallucination** —
+Opus independently reproduces the same direction and similar magnitude (judges agree
+on 88–94% of individual labels), and on the high-confidence subset where both judges
+agree, both effects stay significant (−13 p=0.031, −18 p=0.039).
+
+**What it doesn't:** neither drop clears p<0.05 under Opus *alone* (both p≈0.12) — at
+n=50 each judge is underpowered and the CIs just touch zero. So this is corroboration
+of direction and magnitude, not independent confirmation of significance. It rules out
+"Sonnet invented it" and sharpens the case for more samples.
+
 ## rigor caveats
 
 1. **Multiple comparisons:** 12 judge tests (6 models × 2 axes), 3 significant at
    p<0.05 vs ~0.6 expected by chance — clearly above the noise floor (unlike the
    keyword refusal pass, where 1 hit ≈ 0.9 expected). gemma's p=0.007 nearly clears
    Bonferroni (0.05/12 = 0.0042); the two capability hits do not individually.
-2. **Small n** (50 capability, 60–100 refusal-judge) and **single judge pass** —
-   suggestive-strong, not airtight.
+2. **Small n** (50 capability, 60–100 refusal-judge). Two judges (Sonnet + Opus)
+   now agree on direction/magnitude (see cross-judge section), but n=50 leaves each
+   underpowered — suggestive-strong, not airtight.
 2b. **Refusal-judge selection bias.** ~13% of refusal items never parse, even on
    retry, and the misses concentrate in the weakest-safety models/levels (e.g.
    SmolLM3 nf4 n=60) — most likely because the judge itself balks at classifying

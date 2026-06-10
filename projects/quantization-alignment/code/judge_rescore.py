@@ -45,6 +45,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 JUDGE_MODEL = "claude-sonnet-4-6"
 CLAUDE = shutil.which("claude")
+GEMINI = shutil.which("gemini")
 CHUNK = 12
 WORKERS = 4
 MAX_RESP_CHARS = 1500
@@ -62,13 +63,41 @@ TQA_URL = "https://raw.githubusercontent.com/sylinrl/TruthfulQA/main/TruthfulQA.
 # ---------------------------------------------------------------------------
 
 def claude_judge(prompt: str) -> str:
-    """Run one classification prompt through `claude -p`. Returns raw stdout."""
+    """Run one classification prompt through `claude -p` (Sonnet). Returns raw stdout."""
     r = subprocess.run(
         [CLAUDE, "-p", "--output-format", "text", "--model", JUDGE_MODEL, "--max-turns", "1"],
         input=prompt, capture_output=True, text=True,
         encoding="utf-8", errors="replace", timeout=240,
     )
     return r.stdout
+
+
+def opus_judge(prompt: str) -> str:
+    """Second judge: a different (stronger) Anthropic model via `claude -p`.
+    Used to check that the capability deltas aren't an artifact of Sonnet's own
+    per-response grading — Opus grades independently and makes different errors."""
+    r = subprocess.run(
+        [CLAUDE, "-p", "--output-format", "text", "--model", "claude-opus-4-8", "--max-turns", "1"],
+        input=prompt, capture_output=True, text=True,
+        encoding="utf-8", errors="replace", timeout=240,
+    )
+    return r.stdout
+
+
+def gemini_judge(prompt: str) -> str:
+    """Gemini CLI backend. NOTE: the Gemini CLI is an agent that loads tools and
+    explores the working directory rather than answering a one-shot prompt, so it
+    is slow (~60s/chunk) and unreliable for bulk classification. Kept for
+    reference; prefer `opus` for the independent second-judge check."""
+    r = subprocess.run(
+        [GEMINI, "-m", "gemini-2.5-flash", "-p", prompt],
+        capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=240,
+    )
+    return r.stdout
+
+
+BACKENDS = {"claude": claude_judge, "opus": opus_judge, "gemini": gemini_judge}
+NEEDS_CLAUDE = {"claude", "opus"}
 
 
 def parse_array(text: str):
@@ -87,10 +116,10 @@ def chunks(lst, n):
         yield lst[i:i + n]
 
 
-def judge_chunk(items, build_prompt, value_keys):
+def judge_chunk(items, build_prompt, value_keys, judge_fn):
     """Judge one chunk; retry once. Returns {local_id: {key: val, ...}}."""
     for _ in range(2):
-        out = parse_array(claude_judge(build_prompt(items)))
+        out = parse_array(judge_fn(build_prompt(items)))
         if out:
             verdicts = {}
             for obj in out:
@@ -101,19 +130,19 @@ def judge_chunk(items, build_prompt, value_keys):
     return {}
 
 
-def run_task(items, build_prompt, value_keys, results_file):
+def run_task(items, build_prompt, value_keys, results_file, judge_fn, backend):
     """Concurrent, resumable judging over all items. Writes results_file as gid->verdict."""
     results = {}
     if os.path.exists(results_file):
         results = json.load(open(results_file, encoding="utf-8"))
     todo = [it for it in items if it["gid"] not in results]
     print(f"  {len(items)} items, {len(results)} already done, {len(todo)} to judge "
-          f"({JUDGE_MODEL}, {WORKERS} workers, chunk {CHUNK})")
+          f"(backend={backend}, {WORKERS} workers, chunk {CHUNK})")
     batches = list(chunks(todo, CHUNK))
 
     done = 0
     with ThreadPoolExecutor(max_workers=WORKERS) as ex:
-        futs = {ex.submit(judge_chunk, b, build_prompt, value_keys): b for b in batches}
+        futs = {ex.submit(judge_chunk, b, build_prompt, value_keys, judge_fn): b for b in batches}
         for fut in as_completed(futs):
             batch = futs[fut]
             try:
@@ -303,26 +332,38 @@ def analyze_capability(items, results):
 # ---------------------------------------------------------------------------
 
 def main():
-    if not CLAUDE:
-        print("ERROR: `claude` CLI not found on PATH."); sys.exit(1)
     task = sys.argv[1] if len(sys.argv) > 1 else "capability"
+    backend = "claude"
+    if "--backend" in sys.argv:
+        backend = sys.argv[sys.argv.index("--backend") + 1]
     limit = None
     if "--limit" in sys.argv:
         limit = int(sys.argv[sys.argv.index("--limit") + 1])
+
+    if backend not in BACKENDS:
+        print(f"Unknown backend: {backend} (use: claude | opus | gemini)"); sys.exit(1)
+    judge_fn = BACKENDS[backend]
+    if (backend in NEEDS_CLAUDE and not CLAUDE) or (backend == "gemini" and not GEMINI):
+        print(f"ERROR: CLI for backend `{backend}` not found on PATH."); sys.exit(1)
+
+    # claude keeps the original filenames; other backends get a suffix
+    sfx = "" if backend == "claude" else f"_{backend}"
 
     if task == "refusal":
         items = refusal_items()
         if limit:
             items = items[:limit]
         results = run_task(items, refusal_prompt, ["verdict", "harmful"],
-                           os.path.join(DATA_DIR, "judge_refusal_results.json"))
+                           os.path.join(DATA_DIR, f"judge_refusal_results{sfx}.json"),
+                           judge_fn, backend)
         analyze_refusal(items, results)
     elif task == "capability":
         items = capability_items()
         if limit:
             items = items[:limit]
         results = run_task(items, capability_prompt, ["correct"],
-                           os.path.join(DATA_DIR, "judge_capability_results.json"))
+                           os.path.join(DATA_DIR, f"judge_capability_results{sfx}.json"),
+                           judge_fn, backend)
         analyze_capability(items, results)
     else:
         print(f"Unknown task: {task}  (use: refusal | capability)")
