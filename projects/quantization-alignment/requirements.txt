@@ -1,0 +1,6 @@
+torch>=2.0
+transformers
+bitsandbytes
+datasets
+sentencepiece
+huggingface-hub

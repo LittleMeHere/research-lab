@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (large datasets downloaded at runtime)
+*.h5
+*.hdf5
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+
+# Logs (keep committed logs in logs/, ignore temp ones)
+*.log.tmp
+
+# Jupyter
+.ipynb_checkpoints/
