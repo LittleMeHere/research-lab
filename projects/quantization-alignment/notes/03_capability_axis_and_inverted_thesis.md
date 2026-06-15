@@ -80,9 +80,13 @@ keyword refusal deltas were unmeasurable.
 To check that the capability drops aren't an artifact of one judge's grading, all
 1,200 responses were re-graded by a second, different Anthropic model (Opus 4.8)
 via `code/judge_rescore.py --backend opus`, and compared (`code/cross_judge.py`).
-(The Gemini and codex CLIs were tried first but are filesystem-exploring *agents*,
-not one-shot endpoints — Gemini read the script instead of answering — so a clean
-cross-provider judge wasn't practical; Opus is the independent second model.)
+(I first tried the Gemini and codex CLIs for a cross-provider judge. My invocations
+triggered their agentic/tool behavior — Gemini went and read `judge_rescore.py`
+instead of answering, codex hung waiting on stdin — so I pivoted to Opus for speed
+and reliability. Those CLIs likely *can* be driven one-shot with the right flags;
+this was a practicality call mid-run, not a limitation of the tools. A genuinely
+different model *family* might shift the labels, but that isn't worth chasing before
+the multi-seed run. Opus is the independent second model used here.)
 
 | Model | Sonnet Δ | Opus Δ | agreement | consensus Δ (both agree) |
 |-------|---:|---:|:--:|---:|
