@@ -36,5 +36,11 @@ Stress-testing them against my ideas and each other.
 
 ## license
 
-[MIT](LICENSE) — code is free. If you use the data or findings,
-a citation is appreciated.
+- **Code** (`projects/*/code/`) — [MIT](LICENSE).
+- **Data, logs & written content** (`projects/*/data/`, `projects/*/logs/`, `notes/`)
+  — [CC-BY-4.0](LICENSE-DATA). Reuse freely; just credit *LittleMeHere / research-lab*
+  and link back.
+
+These cover only original contributions. Third-party material keeps its own terms:
+HarmBench (prompts), TruthfulQA (Apache-2.0), and the respective model licenses for
+Gemma, Phi-4, Qwen, and SmolLM outputs — see [LICENSE-DATA](LICENSE-DATA).

@@ -1,0 +1,36 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 LittleMeHere
+
+The data files and written content in this repository — including files under
+`projects/*/data/`, `projects/*/logs/`, and `projects/*/notes/` — are licensed
+under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You are free to:
+  - Share — copy and redistribute the material in any medium or format.
+  - Adapt — remix, transform, and build upon the material for any purpose,
+    even commercially.
+
+Under the following term:
+  - Attribution — You must give appropriate credit (e.g. "LittleMeHere /
+    research-lab"), provide a link to this repository and to the license, and
+    indicate if changes were made. You may do so in any reasonable manner, but
+    not in any way that suggests the licensor endorses you or your use.
+
+Full legal text:        https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+
+-------------------------------------------------------------------------------
+ATTRIBUTION / THIRD-PARTY NOTICE
+
+This license covers only the ORIGINAL contributions of this repository:
+experimental design, code, analysis, and the selection and arrangement of
+results. It does NOT relicense third-party material contained or referenced in
+the data, which remains under its own terms, including:
+
+  - HarmBench behaviors / prompts        — see the HarmBench project license
+  - TruthfulQA questions and answers     — Apache License 2.0
+  - Model-generated outputs from Gemma,  — subject to each model provider's
+    Phi-4, Qwen, and SmolLM                usage terms / license
+
+If you use this data, please also honor the upstream licenses of those sources.
