@@ -5,8 +5,11 @@ compress a safety-tuned model from fp16 → int8 → int4 → nf4, what
 breaks first — refusal of harmful prompts, factual recall, or
 instruction following?
 
-If refusal dies before recall, that's a flag worth raising before
-someone ships a worse-aligned model.
+**Short answer, after a statistical-rigor + LLM-judge pass: not the way I expected.**
+The refusal changes turned out to be within single-run noise; it's *capability* that
+significantly degrades under nf4 (and only for some models), while one model loses
+refusal instead — real, but **bidirectional and model-specific**, not the "safety
+erodes first" story this started as. Corrected findings and numbers below.
 
 **Status:** Data collection complete. 6 models × 4 quant levels, ~6K
 inferences on GCP L4s. Writeup and raw data below.
