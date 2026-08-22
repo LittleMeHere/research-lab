@@ -9,7 +9,7 @@ which may grow into standalone repos or papers.
 
 | Project | Status | Summary |
 |---------|--------|---------|
-| [quantization-alignment](projects/quantization-alignment/) | **data complete** | Does quantization degrade safety faster than capability? 6 models × 4 quant levels, ~6K inferences. |
+| [quantization-alignment](projects/quantization-alignment/) | **exploratory analysis complete** | Six-model quantization study; follow-up confirmation design awaiting review. |
 
 ---
 

@@ -1,113 +1,83 @@
 # quantization as an alignment lens
 
-Does quantization degrade safety faster than capability? When you
-compress a safety-tuned model from fp16 → int8 → int4 → nf4, what
-breaks first — refusal of harmful prompts, factual recall, or
-instruction following?
+This project asks whether weight quantization changes refusal behavior faster than
+factual accuracy or instruction following in small, instruction-tuned language
+models.
 
-**Short answer, after a statistical-rigor + LLM-judge pass: not the way I expected.**
-The refusal changes turned out to be within single-run noise; it's *capability* that
-significantly degrades under nf4 (and only for some models), while one model loses
-refusal instead — real, but **bidirectional and model-specific**, not the "safety
-erodes first" story this started as. Corrected findings and numbers below.
+## status
 
-**Status:** Data collection complete. 6 models × 4 quant levels, ~6K
-inferences on GCP L4s. Writeup and raw data below.
+The exploratory phase is complete: six models, four quantization configurations,
+and 6,240 saved generations. The current data do not support the original general
+claim that safety degrades faster than capability. Several model-level differences
+have raw p-values below 0.05, but none remains below the significance threshold
+after accounting for the 12 comparisons. They remain exploratory targets.
+
+A draft protocol for a follow-up experiment is awaiting independent review. No
+confirmation data have been collected.
 
 > [!WARNING]
-> The `data/` directory contains raw model responses to harmful prompts
-> (from [HarmBench](https://github.com/centerforaisafety/HarmBench)).
-> Some responses include models complying with harmful requests. This
-> data is published for AI safety research purposes.
+> Some raw responses contain harmful or code-like text that security software may
+> flag. Treat response text as untrusted data: inspect it in an isolated environment
+> and do not execute it.
 
----
+## research record
 
-## key findings
+- [Current exploratory results](notes/03_capability_axis_and_inverted_thesis.md)
+- [Statistical audit of the keyword-scored refusal results](notes/02_statistical_rigor.md)
+- [Archived original writeup](notes/01_quantization_alignment_lens.md), retained to
+  show how the interpretation changed
 
-Full analysis: [quantization as an alignment lens](notes/01_quantization_alignment_lens.md)
+## data coverage
 
-> [!IMPORTANT]
-> **Corrected after a rigor pass + scorer rebuild** ([02](notes/02_statistical_rigor.md),
-> [03](notes/03_capability_axis_and_inverted_thesis.md)). The original refusal
-> findings below (#1, #4) do **not** survive McNemar + bootstrap on the keyword
-> scores. Rebuilding the broken TruthfulQA scorer with an LLM judge — and re-scoring
-> refusal with the *same* judge — gives a different, sharper picture:
-> quantization degradation is **real but bidirectional and model-specific**. Under
-> nf4: Qwen3.5-4B and SmolLM2 lose *capability* (−14pp p=0.039, −18pp p=0.022) while
-> refusing fine; gemma-4-e2b loses *refusal* (−12pp p=0.007) while knowing fine. And
-> the keyword scorer was **misleading** — wrong sign on SmolLM2, blind to gemma's
-> real drop. Findings #2/#3 (baseline gap, copyright) still stand.
+| Data | Saved responses or labels |
+|---|---:|
+| HarmBench, thinking off | 2,400 responses |
+| HarmBench, thinking on | 2,400 responses |
+| TruthfulQA | 1,200 responses |
+| Instruction following | 240 responses |
+| TruthfulQA judge A | 1,200/1,200 labels |
+| TruthfulQA judge B | 1,200/1,200 labels |
+| Refusal judge | 2,076/2,400 labels |
 
-1. **Safety degrades under quantization — but it's model-dependent.** SmolLM2
-   drops 8pp, Gemma drops 4pp, Phi-4 and Qwen3.5 are immune.
-2. **Baseline safety matters more than quantization.** The 52pp gap between
-   the safest and least safe model dwarfs the worst quantization effect (8pp).
-3. **Copyright is the universal blind spot.** Every model except Phi-4 refuses
-   copyright prompts below 20%.
-4. **Thinking mode is a double-edged sword.** Helps large aligned models
-   (+5-6pp), hurts small ones (−9pp for Qwen3-1.7B).
-
----
+`code/data_audit.py` reports completeness and provenance warnings. The current
+results note discusses the warnings that affect interpretation.
 
 ## files
 
 | Path | Contents |
-|------|----------|
-| `code/v2_experiment.py` | Cross-family experiment runner (v2) |
-| `code/quantization_alignment_experiment.py` | Original v1 experiment (Gemma-only) |
-| `code/analyze_results.py` | Results aggregator — `python analyze_results.py` |
-| `code/stats_analysis.py` | McNemar + bootstrap rigor pass (no GPU) |
-| `code/logit_analysis.py` | First-token uncertainty from saved logits (no GPU) |
-| `code/logit_plot.py` | Plots logit entropy → `notes/logit_entropy.png` (needs matplotlib) |
-| `code/judge_rescore.py` | LLM-as-judge — rebuilds capability axis + validates refusal scorer (runs via `claude -p`) |
-| `code/capability_analysis.py` | Safety-vs-capability thesis test on judged labels (no GPU) |
-| `code/cross_judge.py` | Sonnet-vs-Opus cross-judge robustness check on the capability drops |
-| `data/v2_results_*.json` (×6) | Per-model results: prompts, responses, logit snapshots |
-| `data/judge_capability_results.json` | Sonnet-judge TruthfulQA labels (rebuilt capability axis) |
-| `data/judge_capability_results_opus.json` | Opus-judge TruthfulQA labels (second judge) |
-| `data/judge_refusal_results.json` | Sonnet-judge refusal labels (keyword-scorer validation) |
-| `data/truthfulqa_gold.json` | Cached TruthfulQA gold answers (for the judge) |
-| `data/results_e2b.json`, `results_e4b.json` | v1 Gemma results |
-| `logs/v2_log_vm*.txt` (×3) | GCP L4 execution logs |
-| `notes/00_why_im_here.md` | Personal motivation |
-| `notes/01_quantization_alignment_lens.md` | Full analysis writeup |
-| `notes/02_statistical_rigor.md` | Rigor addendum — the quant refusal deltas are within noise |
-| `notes/03_capability_axis_and_inverted_thesis.md` | Capability axis rebuilt — thesis inverts (cap degrades, not safety) |
+|---|---|
+| `code/v2_experiment.py` | Six-model experiment runner |
+| `code/data_audit.py` | Saved-data and label-integrity checks |
+| `code/analyze_results.py` | Aggregate descriptive results |
+| `code/stats_analysis.py` | Paired refusal analysis |
+| `code/thinking_mode_analysis.py` | Paired thinking-mode analysis |
+| `code/judge_rescore.py` | Semantic TruthfulQA and refusal labeling |
+| `code/capability_analysis.py` | Judge-scored safety/capability comparisons |
+| `code/cross_judge.py` | Sonnet/Opus capability-label comparison |
+| `data/v2_results_*.json` | Six raw v2 result files |
+| `notes/01_quantization_alignment_lens.md` | Archived original interpretation |
+| `notes/02_statistical_rigor.md` | Keyword-refusal statistical audit |
+| `notes/03_capability_axis_and_inverted_thesis.md` | Current exploratory results |
 
----
+## reproduce the exploratory analysis
 
-## reproduce
+Run from this project directory:
 
 ```bash
-# requires: GPU with 24GB+ VRAM, CUDA, Python 3.10+
 pip install -r requirements.txt
-
-# run experiments (choose model pairs to fit your GPU)
-MODELS="google/gemma-4-e2b-it,microsoft/Phi-4-mini-instruct" python3 code/v2_experiment.py
-MODELS="Qwen/Qwen3.5-4B,Qwen/Qwen3-1.7B" python3 code/v2_experiment.py
-MODELS="HuggingFaceTB/SmolLM3-3B,HuggingFaceTB/SmolLM2-1.7B-Instruct" python3 code/v2_experiment.py
-
-# analyze
+python3 code/data_audit.py
 python3 code/analyze_results.py
+python3 code/stats_analysis.py
+python3 code/thinking_mode_analysis.py
+python3 code/capability_analysis.py
+python3 code/cross_judge.py
 ```
 
-**Hardware used:** NVIDIA L4 (24GB), GCP us-central1
-**Seed:** 42 (HarmBench), 43 (TruthfulQA)
-**Generation:** Greedy (temperature=0, do_sample=False, max_new_tokens=256)
+The original generation used NVIDIA L4 GPUs in GCP `us-central1`, greedy decoding
+(`do_sample=False`), and `max_new_tokens=256`.
 
----
+## next stage
 
-## next
-
-- [x] Statistical rigor pass — McNemar + bootstrap ([notes/02](notes/02_statistical_rigor.md)).
-      Result: the fp16→nf4 refusal deltas are within single-run noise.
-- [x] First-token uncertainty analysis (`code/logit_analysis.py` + plot)
-- [ ] **Multi-seed confidence intervals — now the critical path.** The rigor pass
-      shows a single run can't separate a ~5pp quant effect from noise; need 3–5
-      seeds (or n≈400 prompts) per config before any quant claim holds.
-- [ ] LLM-as-judge rescore at scale (`code/judge_rescore.py` ready; needs API key)
-      to quantify the keyword scorer's false-positive rate.
-- [ ] Cross-quant activation norm comparison (only captured at fp16 — needs re-run)
-- [ ] Probing classifiers — find the refusal direction (nnsight; bitsandbytes
-      doesn't play well with TransformerLens)
-- [ ] Steering vectors — can we restore safety in quantized models?
+The next experiment will use prompts that were not included in the exploratory
+data. Its protocol will specify the hypotheses, scoring rules, and statistical
+decision rule before data collection.

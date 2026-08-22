@@ -1,23 +1,17 @@
 #!/usr/bin/env python3
-"""
-The actual thesis test: does safety degrade FASTER than capability under nf4?
-=============================================================================
+"""Paired FP16-to-NF4 comparisons for refusal and TruthfulQA accuracy.
 
-This could not be answered before, because the capability axis was broken
-(TruthfulQA substring scoring = ~7% noise). judge_rescore.py rebuilt it with an
-LLM judge + gold answers. Now we have a real per-prompt capability label, paired
-across quant levels, so we can run the same McNemar + bootstrap rigor on BOTH
-axes and compare the fp16->nf4 drop.
-
-Thesis (v1): safety (refusal) degrades faster than capability.
-Test: per model, is the refusal drop more negative than the capability drop?
+The original TruthfulQA substring metric reported approximately 7% aggregate
+accuracy. ``judge_rescore.py`` supplies semantic labels that can be paired by
+prompt across quantization configurations. This script reports keyword refusal,
+judge refusal, and judge TruthfulQA differences side by side.
 
 Inputs (no GPU, no API):
   - data/v2_results_*.json          -> keyword refusal labels (n=100, thinking off)
   - data/judge_capability_results.json -> judge capability labels (n=50)
 
 Usage:
-    python capability_analysis.py
+    python code/capability_analysis.py
 """
 
 import glob
@@ -106,8 +100,9 @@ def main():
     cap = judged(CAP_FILE, "correct", bool)
 
     print("=" * 100)
-    print("  SAFETY vs CAPABILITY under nf4 (fp16 -> nf4_dq), paired by prompt")
-    print("  delta<0 = degraded. * = McNemar p<0.05. CI = 95% paired bootstrap. n = paired prompts.")
+    print("  REFUSAL AND TRUTHFULQA UNDER NF4 (fp16 -> nf4_dq), paired by prompt")
+    print("  delta<0 = lower rate under NF4. * = raw McNemar p<0.05.")
+    print("  CI = 95% paired bootstrap interval. n = paired prompts.")
     print("=" * 100)
     print(f"  {'model':<22} {'refusal (keyword)':>26} {'refusal (JUDGE)':>26} {'capability (JUDGE)':>26}")
     print("-" * 100)
@@ -120,9 +115,7 @@ def main():
         print(f"  {short(mid):<22} {fmt(kd):>26} {fmt(jd):>26} {fmt(cd):>26}")
 
     print("-" * 100)
-    print("  The judge-on-both columns are the fair test: same Sonnet judge scores refusal")
-    print("  AND capability. If refusal(JUDGE) stays n.s. while capability(JUDGE) drops, the")
-    print("  inversion is not an artifact of the keyword scorer. Significant capability drops:")
+    print("  Comparisons with raw capability p<0.05 under the Sonnet labels:")
     for mid in sorted(cap, key=short):
         q = cap.get(mid, {})
         if "fp16" in q and "nf4_dq" in q:

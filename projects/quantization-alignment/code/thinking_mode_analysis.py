@@ -1,22 +1,15 @@
 #!/usr/bin/env python3
-"""
-Statistical rigor pass on the THINKING-MODE effect.
-====================================================
+"""Paired analysis of thinking-on and thinking-off refusal labels.
 
-The writeup claims thinking mode helps large aligned models (+5-6pp for
-gemma/Qwen3.5) and hurts small ones (-9pp for Qwen3-1.7B). Those are single-run
-point estimates — exactly the kind stats_analysis.py showed were noise for the
-quantization deltas. This script applies the same treatment to thinking mode.
+Every quantization configuration received the same 100 HarmBench rows in both
+thinking modes. The FP16 comparison uses an exact McNemar test and paired bootstrap
+interval. Results across the four quantization configurations are correlated
+because they reuse prompts and related model states.
 
-The data is even better suited here: at every quant level the experiment ran the
-SAME 100 HarmBench prompts with thinking OFF and thinking ON. So we have a clean
-paired comparison (McNemar + bootstrap) at fp16, AND four independent quant
-levels to check the effect's sign for consistency.
-
-Reads existing data/, no GPU, no API.
+The script reads saved results and does not use a GPU or API.
 
 Usage:
-    python thinking_mode_analysis.py
+    python code/thinking_mode_analysis.py
 """
 
 import glob
@@ -58,10 +51,6 @@ def bootstrap_delta_ci(off: np.ndarray, on: np.ndarray) -> tuple:
     return tuple(np.percentile(deltas, [2.5, 97.5]))
 
 
-def stars(p):
-    return "***" if p < 0.001 else "**" if p < 0.01 else "*" if p < 0.05 else "ns"
-
-
 def short(mid):
     return mid.split("/")[-1]
 
@@ -71,10 +60,10 @@ def main():
     models = {json.load(open(f, encoding="utf-8"))["model_id"]: f for f in files}
 
     print("=" * 80)
-    print("  THINKING MODE RIGOR — refusal with thinking ON minus OFF (paired)")
-    print("  delta>0 = thinking raises refusal (safer). 10k bootstrap, exact McNemar.")
+    print("  THINKING-MODE REFUSAL AUDIT (thinking ON minus OFF, paired)")
+    print("  delta>0 = higher refusal with thinking. 10k bootstrap, exact McNemar.")
     print("=" * 80)
-    print(f"  {'model':<24} {'fp16 Δ':>7} {'95% CI':>13} {'p':>7} {'sig':>4}   {'sign @ 4 quant levels':>22}")
+    print(f"  {'model':<24} {'fp16 Δ':>7} {'95% CI':>13} {'p':>7}   {'sign @ 4 quant levels':>22}")
     print("-" * 80)
 
     summary = []
@@ -84,13 +73,13 @@ def main():
         if "fp16" not in ql or ON_KEY not in ql["fp16"]:
             continue
 
-        # primary: clean paired test at fp16
+        # Paired comparison at FP16.
         off0, on0 = vec(ql["fp16"], OFF_KEY), vec(ql["fp16"], ON_KEY)
         d0 = (on0.mean() - off0.mean()) * 100
         lo, hi = bootstrap_delta_ci(off0, on0)
         mc = mcnemar_exact(off0, on0)
 
-        # robustness: sign of the effect at each quant level
+        # Direction of the observed difference at each quantization configuration.
         signs = []
         for q in QUANT_ORDER:
             if q in ql and ON_KEY in ql[q]:
@@ -100,26 +89,22 @@ def main():
                 signs.append("?")
         crosses0 = lo <= 0 <= hi
 
-        print(f"  {short(mid):<24} {d0:>+6.0f} [{lo:>+5.0f},{hi:>+5.0f}] {mc['p']:>7.3f} {stars(mc['p']):>4}   {' '.join(signs):>22}")
+        print(f"  {short(mid):<24} {d0:>+6.0f} [{lo:>+5.0f},{hi:>+5.0f}] {mc['p']:>7.3f}   {' '.join(signs):>22}")
         summary.append({"model": short(mid), "d0": d0, "lo": lo, "hi": hi,
                         "p": mc["p"], "signs": signs, "crosses0": crosses0})
 
     print("-" * 80)
-    real = [s for s in summary if not s["crosses0"]]
-    print(f"  {len(real)}/{len(summary)} thinking-mode effects are distinguishable from noise at fp16 (CI excludes 0).")
-    for s in real:
+    excludes_zero = [s for s in summary if not s["crosses0"]]
+    print(f"  FP16 intervals excluding zero: {len(excludes_zero)}/{len(summary)}")
+    for s in excludes_zero:
         print(f"    {s['model']}: {s['d0']:+.0f}pp  CI[{s['lo']:+.0f},{s['hi']:+.0f}]  p={s['p']:.3f}")
 
-    # sign consistency note — with the honest caveat
+    # Dependence across quantization configurations.
     print()
-    print("  Caveat: the 4 quant levels reuse the SAME 100 prompts, and quantization")
-    print("  barely changes refusal (see stats_analysis.py), so the four columns are")
-    print("  correlated copies, NOT four independent confirmations. Pooling them would")
-    print("  be pseudoreplication. The honest bar is the fp16 test alone (all n.s.).")
-    print("  What sign-consistency DOES tell us: the thinking effects are larger than")
-    print("  the quant effects and point in hypothesis-coherent directions (big aligned")
-    print("  models +, the small Qwen3-1.7B -), so thinking mode — not bit-width — is")
-    print("  the better target for the multi-seed run that could push it to significance.")
+    print("  The four direction columns are not independent replications: they reuse")
+    print("  the same prompts and related model states. Do not pool them as separate")
+    print("  observations. These labels use the keyword heuristic; semantic rescoring")
+    print("  is required before selecting a thinking-mode confirmation target.")
     print("=" * 80)
 
 

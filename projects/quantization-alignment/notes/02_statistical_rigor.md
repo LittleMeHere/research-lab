@@ -1,129 +1,76 @@
-# statistical rigor addendum
+# statistical audit of the keyword-scored refusal results
 
-*methods addendum to [01_quantization_alignment_lens.md](01_quantization_alignment_lens.md)*
-*analysis: `code/stats_analysis.py` — runs on existing data, no GPU*
+*Scope: paired statistical analysis of the refusal and thinking-mode claims in the
+archived original writeup. Analysis: `code/stats_analysis.py` and
+`code/thinking_mode_analysis.py`.*
 
----
+## data and methods
 
-## why this exists
+The original writeup compared refusal percentages from one run of 100 HarmBench
+rows per model and quantization configuration. Every configuration received the
+same prompts, so the analysis is paired by prompt.
 
-The v1 writeup reports refusal deltas (e.g. "SmolLM2 −8pp under nf4") as
-point estimates from a **single run of 100 prompts**. Its own limitations
-section flags this: "the ±2-4pp variations could be within noise." This
-addendum tests that directly, using two methods that exploit the paired
-design (the same 100 prompts were run at every quant level).
+- **Exact McNemar test:** compares the number of prompts that changed from refusal
+  to compliance with the number that changed from compliance to refusal.
+- **Paired bootstrap interval:** resamples prompts 10,000 times and reports a 95%
+  interval for the percentage-point difference.
 
-- **McNemar's exact test** — looks only at prompts that *flipped* between
-  two quant levels. Compares "refused→complied" flips (safety lost) against
-  "complied→refused" flips (safety gained). Balanced flips = noise.
-- **Paired bootstrap 95% CI** — resamples the 100 prompts 10,000× (seed 42)
-  to put an error bar on each delta. A CI that crosses 0 = indistinguishable
-  from noise.
+An interval containing zero does not identify the direction of the difference at
+the stated confidence level. It does not establish that the underlying difference
+is exactly zero.
 
----
+## NF4 refusal comparison
 
-## headline result: the quantization deltas are noise
+The table compares FP16 with NF4 double quantization in non-thinking mode. Refusal
+is classified by the original keyword heuristic.
 
-fp16 → nf4_dq (the thesis's strongest claim), non-thinking mode:
+| Model | FP16 | NF4 | Difference | 95% interval | McNemar p |
+|---|---:|---:|---:|:---:|---:|
+| SmolLM2-1.7B | 33% | 25% | −8pp | [−18, +1] | 0.152 |
+| Gemma-4-e2b | 74% | 70% | −4pp | [−11, +3] | 0.388 |
+| SmolLM3-3B | 36% | 35% | −1pp | [−9, +6] | 1.000 |
+| Qwen3.5-4B | 84% | 84% | 0pp | [−3, +3] | 1.000 |
+| Qwen3-1.7B | 52% | 53% | +1pp | [−7, +9] | 1.000 |
+| Phi-4-mini | 88% | 90% | +2pp | [−3, +7] | 0.688 |
 
-| Model | fp16 | nf4 | Δ | 95% CI | McNemar p | verdict |
-|-------|-----:|----:|---:|:------:|:---------:|---------|
-| SmolLM2-1.7B | 33% | 25% | −8 | [−18, +1] | 0.152 | noise (CI crosses 0) |
-| gemma-4-e2b | 74% | 70% | −4 | [−11, +3] | 0.388 | noise |
-| SmolLM3-3B | 36% | 35% | −1 | [−9, +6] | 1.000 | noise |
-| Qwen3.5-4B | 84% | 84% | +0 | [−3, +3] | 1.000 | noise |
-| Qwen3-1.7B | 52% | 53% | +1 | [−7, +9] | 1.000 | noise |
-| Phi-4-mini | 88% | 90% | +2 | [−3, +7] | 0.688 | noise |
-
-**0 of 6** fp16→nf4 refusal changes are statistically distinguishable from
-single-run noise. The two cases the v1 writeup counted as thesis support
-(SmolLM2 −8pp "strong support", Gemma −4pp "moderate support") both have
-confidence intervals that include zero and non-significant McNemar p-values.
+All six intervals contain zero. The SmolLM2 and Gemma comparisons therefore do not
+support the original writeup's claims of −8pp and −4pp safety degradation under
+this metric and sample.
 
 ## multiple comparisons
 
-Across all 18 tests (3 quant levels × 6 models), exactly **1** reaches
-p<0.05: SmolLM2 fp16→**int8** at **+12pp** (p=0.008) — note the sign:
-quantization *raised* refusal here, opposite to the thesis. But:
+The exploratory analysis contains 18 FP16-to-quantized refusal comparisons: six
+models and three quantized configurations. One raw p-value is below 0.05:
+SmolLM2 FP16-to-INT8 at +12pp (`p=0.008`). Its direction is higher refusal under
+INT8, and it does not pass the Bonferroni threshold of `0.05 / 18 = 0.0028`.
 
-- Pure noise across 18 tests is expected to produce ~0.9 hits at p<0.05.
-  We observed 1. The hit rate matches the false-positive rate.
-- It does **not** survive Bonferroni correction (threshold p<0.0028).
+Under a global null, 18 tests at an unadjusted 0.05 threshold produce 0.9 such
+results in expectation. The observed count is one. The analysis therefore does
+not identify a keyword-scored refusal difference that passes a family-wise error
+threshold.
 
-So even the one "significant" result is consistent with chance.
+## thinking-mode comparison
 
----
+The original writeup also compared thinking on with thinking off at FP16. The same
+100 prompts were used in both modes.
 
-## what this means for the project
+| Model | Difference | 95% interval | McNemar p | Direction across FP16/INT8/FP4/NF4 |
+|---|---:|:---:|---:|:---:|
+| Qwen3-1.7B | −9pp | [−20, +1] | 0.136 | − − − − |
+| SmolLM3-3B | −2pp | [−10, +7] | 0.824 | − − − + |
+| Phi-4-mini | 0pp | [0, 0] | 1.000 | 0 0 0 0 |
+| SmolLM2-1.7B | 0pp | [0, 0] | 1.000 | 0 0 0 0 |
+| Gemma-4-e2b | +5pp | [−3, +13] | 0.302 | + + + + |
+| Qwen3.5-4B | +6pp | [−2, +14] | 0.238 | + + + + |
 
-1. **The thesis as originally stated is not supported.** "Quantization
-   degrades safety faster than capability" — at n=100, single run, the
-   refusal effect of quantization is not measurable above noise for any
-   model tested. This is a clean negative result, and the v1 limitations
-   section predicted it.
+All six FP16 intervals contain zero. The direction patterns across quantization
+configurations are not independent replications because they reuse the same prompts
+and closely related model states.
 
-2. **The real signals in the dataset are the ones that aren't about
-   quantization at all,** and they are large:
-   - the **52pp baseline gap** between safest (Phi-4 88%) and least safe
-     (SmolLM3 36%) latest-gen models
-   - the **copyright blind spot** (every family but Phi-4 below 20%),
-     which replicates across all 6 models — exactly the kind of
-     cross-model consistency that noise does not produce.
+## conclusion
 
-3. **The reframed contribution** is stronger and more honest:
-   *single-run quantization deltas are within noise; the dominant axes of
-   safety variation are baseline tuning and harm category, not bit-width.*
-   The "quantization as a stress test" framing survives only if multi-seed
-   runs (next) reveal an effect the single run couldn't.
-
-## to upgrade from "noise" to a real measurement
-
-The bottleneck is statistical power, not GPU. To detect a true ~5pp effect
-you need either more prompts per run (n≈400+) or multiple seeds per config
-(3–5 runs) so within-config variance can be separated from the quant effect.
-Both are listed in v1 future work; the stats here show they are the
-*critical path*, not a nicety.
-
----
-
-## thinking mode: same verdict at n=100, but a better target
-
-*analysis: `code/thinking_mode_analysis.py`*
-
-The writeup also claims thinking mode helps large aligned models (gemma +5pp,
-Qwen3.5 +6pp) and hurts the small Qwen3-1.7B (−9pp). Same paired design (same
-100 prompts, thinking off vs on), so the same McNemar + bootstrap apply.
-
-Refusal delta (thinking ON − OFF) at fp16:
-
-| Model | Δ | 95% CI | McNemar p | sign at fp16/int8/int4/nf4 |
-|-------|---:|:------:|:---------:|:--------------------------:|
-| Qwen3-1.7B | −9 | [−20, +1] | 0.136 | − − − − |
-| SmolLM3-3B | −2 | [−10, +7] | 0.824 | − − − + |
-| Phi-4-mini | +0 | [+0, +0] | 1.000 | 0 0 0 0 |
-| SmolLM2-1.7B | +0 | [+0, +0] | 1.000 | 0 0 0 0 |
-| gemma-4-e2b | +5 | [−3, +13] | 0.302 | + + + + |
-| Qwen3.5-4B | +6 | [−2, +14] | 0.238 | + + + + |
-
-**Same headline verdict: 0 of 6 effects clear the noise bar at n=100** — every
-CI includes zero. So the thinking-mode claims are as statistically unestablished
-as the quantization ones.
-
-**But two things make thinking mode the better bet than bit-width:**
-
-1. The effects are **larger** (Qwen3-1.7B −9pp, Qwen3.5 +6pp, gemma +5pp vs a
-   max of −8pp for quant, most ≤2pp) and **hypothesis-coherent**: the three
-   non-zero models split exactly as predicted — big aligned models gain, the
-   small model loses.
-2. Qwen3-1.7B at p=0.136 is the **closest-to-significant behavioral effect in the
-   whole dataset**. A 3–5 seed run would plausibly push it under 0.05.
-
-**Honest caveat (pseudoreplication):** the same-sign columns across the four
-quant levels look like four confirmations but are not — they reuse the same
-prompts and quant barely moves refusal, so they are correlated copies of one
-comparison. The real test is fp16 alone (n.s.). Sign-consistency is a hint about
-*where to look next*, not a second result.
-
-**Conclusion:** the multi-seed run (already the critical path) should prioritize
-the thinking-mode contrast on gemma / Qwen3.5 / Qwen3-1.7B — that is where a real
-effect is most likely to exist and most likely to reach significance.
+The keyword-scored refusal data do not support the original claims about either
+quantization or thinking mode. This conclusion is limited to the keyword metric and
+the exploratory sample. The semantic rescoring and its remaining limitations are
+reported in
+[`03_capability_axis_and_inverted_thesis.md`](03_capability_axis_and_inverted_thesis.md).

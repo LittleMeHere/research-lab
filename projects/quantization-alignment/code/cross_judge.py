@@ -1,24 +1,14 @@
 #!/usr/bin/env python3
-"""
-Cross-judge robustness check on the capability finding.
-=======================================================
+"""Compare Sonnet and Opus labels for FP16-to-NF4 TruthfulQA differences.
 
-The capability drops (Qwen3.5-4B -14pp, SmolLM2 -18pp under nf4) were graded by a
-single Sonnet judge. The concern: did *Sonnet's* per-response grading invent the
-delta? This re-grades with a second, different Anthropic model (Opus 4.8) and asks:
-
-  - do the two judges agree per response?
-  - does each judge independently reproduce the fp16->nf4 capability drop?
-  - on the responses where BOTH judges agree (high-confidence labels), does the
-    drop survive?
-
-If Opus and the both-agree consensus both show the drop, it is in the data, not in
-one judge's quirks.
+The script reports per-response agreement, each judge's paired difference, and a
+descriptive difference on the subset where both judges agree. Because that subset
+is selected using agreement, it is not an independent replication.
 
 Reads judge_capability_results.json (Sonnet) + judge_capability_results_opus.json.
 
 Usage:
-    python cross_judge.py
+    python code/cross_judge.py
 """
 
 import json
@@ -51,7 +41,7 @@ def agreement(s, o):
 
 
 def consensus_delta(s, o):
-    """fp16->nf4 delta using only responses BOTH judges agree on (label = agreed value)."""
+    """FP16-to-NF4 difference on responses for which both judges give the same label."""
     def agreed(q):
         if q not in s or q not in o:
             return {}
@@ -65,8 +55,8 @@ def main():
     son, opu = cells(SON_FILE), cells(OPUS_FILE)
 
     print("=" * 92)
-    print("  CROSS-JUDGE CHECK — capability under nf4 (fp16 -> nf4_dq)")
-    print("  Sonnet Δ | Opus Δ | judge agreement | consensus Δ (both judges agree on the label)")
+    print("  SONNET/OPUS COMPARISON — TruthfulQA under NF4 (fp16 -> nf4_dq)")
+    print("  Sonnet Δ | Opus Δ | label agreement | both-agree subset Δ")
     print("=" * 92)
     print(f"  {'model':<22} {'Sonnet Δ':>20} {'Opus Δ':>20} {'agree':>7} {'consensus Δ':>20}")
     print("-" * 92)
@@ -83,8 +73,8 @@ def main():
         print(f"  {C.short(mid):<22} {C.fmt(sd):>20} {C.fmt(od):>20} {agtxt:>7} {C.fmt(cd):>20}")
 
     print("-" * 92)
-    print("  A drop that is significant under Sonnet AND reproduced under Opus AND survives")
-    print("  on the both-agree subset is a property of the data, not of one judge.")
+    print("  Sonnet and Opus are different models from the same provider.")
+    print("  The both-agree subset is selected on agreement and is not an independent replication.")
     print("=" * 92)
 
 

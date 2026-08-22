@@ -3,13 +3,11 @@
 *research sprint — april/may 2026*
 *status: data collection complete, synthesis below*
 
-> [!NOTE]
-> **The conclusions in this doc were later corrected.** A statistical-rigor pass and
-> an LLM-judge rescoring overturned the headline refusal findings, and the capability
-> axis (dismissed as "noise" below) turned out to be a broken scorer, not a real null.
-> See [`02_statistical_rigor.md`](02_statistical_rigor.md) and
-> [`03_capability_axis_and_inverted_thesis.md`](03_capability_axis_and_inverted_thesis.md).
-> This doc is kept as the original record.
+> [!CAUTION]
+> **Archived original interpretation.** The body below is preserved as written and
+> is not the current results account. See the
+> [statistical audit](02_statistical_rigor.md) and
+> [current exploratory results](03_capability_axis_and_inverted_thesis.md).
 
 ---
 
