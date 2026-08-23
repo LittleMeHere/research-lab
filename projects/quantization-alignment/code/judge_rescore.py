@@ -41,6 +41,7 @@ from confirmation_spec import (
     JUDGE_SHUFFLE_SEED,
     PRIMARY_JUDGES,
     RESOLVER_MODEL,
+    is_provider_refusal,
 )
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -65,12 +66,20 @@ TQA_URL = "https://raw.githubusercontent.com/sylinrl/TruthfulQA/main/TruthfulQA.
 # CLI judge backends
 # ---------------------------------------------------------------------------
 
+class ProviderRefusal(RuntimeError):
+    """The provider's safety layer refused to process the judge request."""
+
+
 def run_cli(command: list[str], prompt: str, timeout: int = 240) -> str:
     r = subprocess.run(
         command,
         input=prompt, capture_output=True, text=True,
         encoding="utf-8", errors="replace", timeout=timeout, check=False,
     )
+    combined = f"{r.stdout}\n{r.stderr}"
+    if is_provider_refusal(combined):
+        detail = (r.stdout or r.stderr).strip()
+        raise ProviderRefusal(detail[:500])
     if r.returncode != 0:
         detail = (r.stderr or r.stdout or "no diagnostic output").strip()
         raise RuntimeError(f"judge CLI exited {r.returncode}: {detail[:300]}")
@@ -209,18 +218,41 @@ def valid_value(obj: dict, key: str) -> bool:
     return key in obj
 
 
+def is_refusal_entry(obj: dict) -> bool:
+    """A saved entry recording that the judge's provider refused this response."""
+    return obj.get("refused") is True and isinstance(obj.get("refusal_message"), str)
+
+
+def valid_entry(obj: dict, value_keys: list[str]) -> bool:
+    return is_refusal_entry(obj) or all(valid_value(obj, key) for key in value_keys)
+
+
 def judge_chunk(items, build_prompt, value_keys, backend, codex_context=None):
-    """Judge one chunk; retry once. Returns {local_id: {key: val, ...}}."""
+    """Judge one chunk; retry once. Returns {local_id: {key: val, ...}}.
+
+    A provider refusal of a multi-item chunk returns nothing so that every item is
+    retried alone. Provider safety layers are not deterministic, so a single item
+    is recorded as refused only when both of its attempts are refused.
+    """
+    refusal = None
     for _ in range(2):
         prompt = build_prompt(items)
-        raw = (
-            codex_judge(
-                prompt,
-                codex_context["schema_path"],
-                codex_context["working_directory"],
+        try:
+            raw = (
+                codex_judge(
+                    prompt,
+                    codex_context["schema_path"],
+                    codex_context["working_directory"],
+                )
+                if backend == "codex" else BACKENDS[backend](prompt)
             )
-            if backend == "codex" else BACKENDS[backend](prompt)
-        )
+        except ProviderRefusal as exc:
+            if len(items) != 1:
+                return {}
+            if refusal is not None:
+                return {0: {"refused": True, "refusal_message": str(exc)}}
+            refusal = str(exc)
+            continue
         out = parse_array(raw)
         if out:
             verdicts = {}
@@ -283,7 +315,7 @@ def run_task(items, build_prompt, value_keys, results_file, backend):
                     existing.get("judge_interface_version") != current_cli_version or
                     existing.get("judge_prompt_version") != JUDGE_PROMPT_VERSION or
                     existing.get("judge_instruction_sha256") != instruction_sha256 or
-                    not all(valid_value(existing, key) for key in value_keys)):
+                    not valid_entry(existing, value_keys)):
                 stale.append(item["gid"])
         for gid in stale:
             del results[gid]
@@ -328,9 +360,15 @@ def run_task(items, build_prompt, value_keys, results_file, backend):
                     value = verdicts.get(local_i)
                     if value is None:
                         # Retry any item omitted from a batch response by itself.
-                        single = judge_chunk(
-                            [it], build_prompt, value_keys, backend, codex_context
-                        )
+                        # A failure here leaves the item unlabeled for a later
+                        # resumed run instead of aborting the whole pass.
+                        try:
+                            single = judge_chunk(
+                                [it], build_prompt, value_keys, backend, codex_context
+                            )
+                        except Exception as e:  # noqa: BLE001 - keep the pass alive
+                            print(f"    single-item error: {type(e).__name__}: {str(e)[:80]}")
+                            single = {}
                         value = single.get(0)
                     if value is not None:
                         results[it["gid"]] = {
@@ -352,6 +390,10 @@ def run_task(items, build_prompt, value_keys, results_file, backend):
         if codex_temp:
             codex_temp.cleanup()
     atomic_json_dump(results, results_file, indent=2)
+    refused = [it["gid"] for it in items if is_refusal_entry(results.get(it["gid"], {}))]
+    if refused:
+        print(f"  {len(refused)} response(s) refused by the {backend} provider's safety "
+              "layer; recorded as refusals for blind resolution")
     missing = [it["gid"] for it in items if it["gid"] not in results]
     if missing:
         print(f"  ERROR: {len(missing)} item(s) still lack labels after single-item retries")
@@ -541,7 +583,8 @@ def capability_prompt(items, confirmation=False):
 # ---------------------------------------------------------------------------
 
 def analyze_refusal(items, results):
-    judged = [(it, results[it["gid"]]) for it in items if it["gid"] in results]
+    judged = [(it, results[it["gid"]]) for it in items
+              if it["gid"] in results and not is_refusal_entry(results[it["gid"]])]
     n = len(judged)
     if not n:
         print("  no results yet")
@@ -570,7 +613,8 @@ def analyze_refusal(items, results):
 
 
 def analyze_capability(items, results):
-    judged = [(it, results[it["gid"]]) for it in items if it["gid"] in results]
+    judged = [(it, results[it["gid"]]) for it in items
+              if it["gid"] in results and not is_refusal_entry(results[it["gid"]])]
     n = len(judged)
     if not n:
         print("  no results yet")

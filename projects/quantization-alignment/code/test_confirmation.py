@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 """Unit checks for confirmation constants, hashes, and statistics."""
 
+import json
+import os
+import tempfile
 import unittest
 
 import adjudicate_labels
 import confirmation_analysis as analysis
 import confirmation_spec as spec
+import judge_rescore as judge
 
 
 class ConfirmationTests(unittest.TestCase):
@@ -89,6 +93,106 @@ class ConfirmationTests(unittest.TestCase):
     def test_primary_judges_are_distinct(self):
         self.assertEqual(set(spec.PRIMARY_JUDGES), {"claude", "codex"})
         self.assertEqual(len(set(spec.PRIMARY_JUDGES.values())), 2)
+
+    def test_protocol_version_is_v2(self):
+        self.assertEqual(spec.PROTOCOL_VERSION, "confirmation-v2")
+        self.assertEqual(spec.RESOLUTION_POLICY, "model-then-human")
+        self.assertIn("code/resolve_blind_packet.py", spec.PROTOCOL_FILES)
+
+    def test_provider_refusal_signatures(self):
+        self.assertTrue(spec.is_provider_refusal(
+            "API Error: Sonnet 5's safeguards flagged this message. Details: `[cyber]`"
+        ))
+        self.assertTrue(spec.is_provider_refusal(
+            "API Error: Opus 5 can't help with this. Start a new session to continue."
+        ))
+        self.assertFalse(spec.is_provider_refusal("Error: Reached max turns (1)"))
+        self.assertFalse(spec.is_provider_refusal('{"labels":[{"id":0,"correct":true}]}'))
+        self.assertFalse(spec.is_provider_refusal(""))
+
+    def test_refusal_entries_are_valid_saved_entries_not_labels(self):
+        refused = {"refused": True, "refusal_message": "safeguards flagged this message"}
+        self.assertTrue(judge.is_refusal_entry(refused))
+        self.assertTrue(judge.valid_entry(refused, ["harmful", "verdict"]))
+        self.assertFalse(judge.valid_value(refused, "harmful"))
+        self.assertFalse(judge.is_refusal_entry({"refused": True}))
+        self.assertFalse(judge.is_refusal_entry({"harmful": False}))
+        self.assertTrue(judge.valid_entry({"harmful": False, "verdict": "REFUSE"},
+                                          ["harmful", "verdict"]))
+
+    def _resolution_file(self, body: dict) -> str:
+        handle = tempfile.NamedTemporaryFile(
+            "w", suffix=".json", delete=False, encoding="utf-8"
+        )
+        json.dump(body, handle)
+        handle.close()
+        self.addCleanup(os.unlink, handle.name)
+        return handle.name
+
+    def test_resolution_policy_model_then_human(self):
+        model = {"kind": "model", "name_or_model": spec.RESOLVER_MODEL,
+                 "backend": "claude-cli", "interface_version": "x", "completed_utc": "t"}
+        human = {"kind": "human", "name_or_model": "A. Resolver",
+                 "backend": "manual", "interface_version": "n/a", "completed_utc": "t"}
+        base = {"packet_sha256": "p", "resolution_policy": spec.RESOLUTION_POLICY}
+        expected = {"item-a", "item-b"}
+        good = dict(base, resolvers={"model": model, "human": human}, items=[
+            {"id": "item-a", "resolution": True, "resolver": "model"},
+            {"id": "item-b", "resolution": False, "resolver": "human",
+             "model_refusal": "Opus 5's safeguards flagged this message"},
+        ])
+        resolutions, provenance, _ = adjudicate_labels.load_resolutions(
+            self._resolution_file(good), expected, "p"
+        )
+        self.assertEqual(resolutions, {"item-a": True, "item-b": False})
+        self.assertEqual(provenance["item-b"]["kind"], "human")
+        self.assertIn("model_refusal", provenance["item-b"])
+        self.assertNotIn("model_refusal", provenance["item-a"])
+
+        human_only = dict(base, resolvers={"human": human}, items=[
+            {"id": "item-a", "resolution": True, "resolver": "human"},
+            {"id": "item-b", "resolution": False, "resolver": "human"},
+        ])
+        adjudicate_labels.load_resolutions(self._resolution_file(human_only), expected, "p")
+
+        unjustified_human = dict(good)
+        unjustified_human["items"] = [
+            {"id": "item-a", "resolution": True, "resolver": "model"},
+            {"id": "item-b", "resolution": False, "resolver": "human"},
+        ]
+        with self.assertRaises(RuntimeError):
+            adjudicate_labels.load_resolutions(
+                self._resolution_file(unjustified_human), expected, "p"
+            )
+        wrong_model = dict(good, resolvers={"model": dict(model, name_or_model="other"),
+                                            "human": human})
+        with self.assertRaises(RuntimeError):
+            adjudicate_labels.load_resolutions(self._resolution_file(wrong_model), expected, "p")
+        partial = dict(good, items=good["items"][:1])
+        with self.assertRaises(RuntimeError):
+            adjudicate_labels.load_resolutions(self._resolution_file(partial), expected, "p")
+        unresolved = dict(good, items=[
+            good["items"][0],
+            {"id": "item-b", "resolution": None, "resolver": None, "model_refusal": "x"},
+        ])
+        with self.assertRaises(RuntimeError):
+            adjudicate_labels.load_resolutions(self._resolution_file(unresolved), expected, "p")
+
+    def test_comparison_can_exclude_refused_pairs(self):
+        expected = {("harmful", "m", "fp16"): {0, 1, 2, 3}, ("harmful", "m", "nf4_dq"): {0, 1, 2, 3}}
+        source = {("m", "fp16"): {0: 0, 1: 0, 2: 0, 3: 1}, ("m", "nf4_dq"): {0: 1, 1: 1, 2: 0, 3: 1}}
+        test = {"id": "H3", "model": "m", "axis": "harmful", "base": "fp16",
+                "other": "nf4_dq", "direction": 1}
+        full = analysis.comparison(test, source, expected, True)
+        self.assertEqual((full["n"], full["excluded_pairs"], full["gained"]), (4, 0, 2))
+        reduced = analysis.comparison(
+            test, source, expected, False, exclude={("m", "nf4_dq"): {0}}
+        )
+        self.assertEqual((reduced["n"], reduced["excluded_pairs"], reduced["gained"]), (3, 1, 1))
+        incomplete = {("m", "fp16"): {0: 0, 1: 0, 2: 0}, ("m", "nf4_dq"): source[("m", "nf4_dq")]}
+        with self.assertRaises(RuntimeError):
+            analysis.comparison(test, incomplete, expected, True)
+        analysis.comparison(test, incomplete, expected, False, exclude={("m", "fp16"): {3}})
 
 
 if __name__ == "__main__":

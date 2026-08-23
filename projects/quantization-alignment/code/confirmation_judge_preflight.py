@@ -120,6 +120,14 @@ def verify(results_dir: str, environment_lock_path: str, output_path: str) -> No
         a, b, resolved = load(a_path), load(b_path), load(resolved_path)
         if set(a) != expected or set(b) != expected or set(resolved) != expected:
             raise RuntimeError(f"{task}: judge or adjudicated labels are incomplete")
+        refusals = {}
+        for name, labels in (("claude", a), ("codex", b)):
+            refused = sorted(gid for gid, row in labels.items() if judge.is_refusal_entry(row))
+            labeled = [gid for gid, row in labels.items()
+                       if not judge.is_refusal_entry(row) and judge.valid_value(row, value_key)]
+            if len(labeled) + len(refused) != len(expected):
+                raise RuntimeError(f"{task}: {name} has entries that are neither labels nor refusals")
+            refusals[name] = refused
         pairs = {
             (next(iter(labels.values()))["judge_backend"],
              next(iter(labels.values()))["judge_model"])
@@ -140,14 +148,30 @@ def verify(results_dir: str, environment_lock_path: str, output_path: str) -> No
                         "two-judge-agreement", "blind-resolution",
                     } or
                     (row.get("resolution_method") == "blind-resolution" and
-                     not row.get("resolution_provenance"))):
+                     not row.get("resolution_provenance")) or
+                    (bool(row.get("judge_refusals")) and
+                     row.get("resolution_method") != "blind-resolution")):
                 raise RuntimeError(f"{task}: invalid adjudicated provenance for {gid}")
-        agreement = sum(a[gid][value_key] == b[gid][value_key] for gid in expected)
+        both_labeled = [gid for gid in expected
+                        if not judge.is_refusal_entry(a[gid]) and not judge.is_refusal_entry(b[gid])]
+        agreement = sum(a[gid][value_key] == b[gid][value_key] for gid in both_labeled)
         report[task] = {
             "responses": len(expected),
-            "judge_a_coverage": len(a) / len(expected),
-            "judge_b_coverage": len(b) / len(expected),
-            "agreement_fraction": agreement / len(expected),
+            "judge_a_label_coverage": (len(expected) - len(refusals["claude"])) / len(expected),
+            "judge_b_label_coverage": (len(expected) - len(refusals["codex"])) / len(expected),
+            "judge_a_refusals": len(refusals["claude"]),
+            "judge_b_refusals": len(refusals["codex"]),
+            "refused_by_both": len(set(refusals["claude"]) & set(refusals["codex"])),
+            "agreement_fraction_among_both_labeled": (
+                agreement / len(both_labeled) if both_labeled else None
+            ),
+            "blind_resolutions": sum(
+                row.get("resolution_method") == "blind-resolution" for row in resolved.values()
+            ),
+            "human_resolutions": sum(
+                (row.get("resolution_provenance") or {}).get("kind") == "human"
+                for row in resolved.values()
+            ),
             "resolved_coverage": len(resolved) / len(expected),
         }
         for path in (a_path, b_path, resolved_path):

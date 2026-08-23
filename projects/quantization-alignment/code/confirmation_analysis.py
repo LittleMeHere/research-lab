@@ -303,10 +303,19 @@ def expected_cells(results_dir: str):
     return cells, input_hashes, common_lock_hash, current_manifest
 
 
+def is_refusal_entry(value: dict) -> bool:
+    return value.get("refused") is True and isinstance(value.get("refusal_message"), str)
+
+
 def label_cells(path: str, value_key: str, expected: dict, input_hashes: dict,
                 axis: str, adjudicated: bool):
+    """Return ({(model, quant): {idx: 0/1}}, {(model, quant): {idx}} refused).
+
+    Raw judge files may record provider refusals instead of labels; adjudicated
+    files must label every response.
+    """
     labels = load(path)
-    out = {}
+    out, refused = {}, {}
     prefix = "c" if axis == "capability" else "r"
     expected_gids = set()
     for (cell_axis, model, quant), indices in expected.items():
@@ -319,7 +328,8 @@ def label_cells(path: str, value_key: str, expected: dict, input_hashes: dict,
         )
     provenance_set = set()
     for gid, value in labels.items():
-        if type(value.get(value_key)) is not bool:
+        refusal = (not adjudicated) and is_refusal_entry(value)
+        if not refusal and type(value.get(value_key)) is not bool:
             raise RuntimeError(f"Non-boolean {value_key} label for {gid}")
         model, quant, index = value["model"], value["quant"], value["idx"]
         expected_gid = f"{prefix}:{model}:{quant}:{index}"
@@ -340,9 +350,14 @@ def label_cells(path: str, value_key: str, expected: dict, input_hashes: dict,
             if method == "blind-resolution":
                 resolver = value.get("resolution_provenance")
                 if (not resolver or resolver.get("kind") not in {"model", "human"} or
+                        not resolver.get("name_or_model") or
                         (resolver.get("kind") == "model" and
                          resolver.get("name_or_model") != RESOLVER_MODEL)):
                     raise RuntimeError(f"Missing or invalid resolver provenance for {gid}")
+            if value.get("judge_refusals") and method != "blind-resolution":
+                raise RuntimeError(f"Judge-refused response {gid} was not blind-resolved")
+            if value.get("judge_refusals"):
+                refused.setdefault((model, quant), set()).add(index)
         else:
             provenance_set.add((
                 value.get("judge_backend"), value.get("judge_model"),
@@ -350,8 +365,12 @@ def label_cells(path: str, value_key: str, expected: dict, input_hashes: dict,
                 value.get("judge_instruction_sha256"),
             ))
         cell = out.setdefault((model, quant), {})
-        if index in cell:
+        seen = cell.keys() | (set() if adjudicated else refused.get((model, quant), set()))
+        if index in seen:
             raise RuntimeError(f"Duplicate label for {model}/{quant}/{index}")
+        if refusal:
+            refused.setdefault((model, quant), set()).add(index)
+            continue
         cell[index] = int(value[value_key])
     if not adjudicated:
         if len(provenance_set) != 1 or None in next(iter(provenance_set)):
@@ -360,18 +379,31 @@ def label_cells(path: str, value_key: str, expected: dict, input_hashes: dict,
         if (PRIMARY_JUDGES.get(backend) != model or
                 prompt_version != JUDGE_PROMPT_VERSION):
             raise RuntimeError(f"Raw judge identity differs from the specification in {path}")
-    return out
+    return out, refused
 
 
-def comparison(spec: dict, source: dict, expected: dict, primary: bool) -> dict:
+def comparison(spec: dict, source: dict, expected: dict, primary: bool,
+               exclude: dict | None = None) -> dict:
+    """Paired comparison; ``exclude`` drops pairs refused in either condition.
+
+    Primary comparisons require complete labels. Per-judge and sensitivity rows
+    pass ``exclude`` and report the reduced ``n`` and ``excluded_pairs``.
+    """
     axis, model = spec["axis"], spec["model"]
     base_q, other_q = spec["base"], spec["other"]
     indices = expected[(axis, model, base_q)]
     if indices != expected[(axis, model, other_q)]:
         raise RuntimeError(f"Paired index sets differ for {spec['id']}")
     base, other = source[(model, base_q)], source[(model, other_q)]
-    if set(base) != indices or set(other) != indices:
+    excluded = set()
+    if exclude is not None:
+        excluded = (exclude.get((model, base_q), set()) |
+                    exclude.get((model, other_q), set())) & indices
+        indices = indices - excluded
+    if set(base) - excluded != indices or set(other) - excluded != indices:
         raise RuntimeError(f"Labels are incomplete for {spec['id']}")
+    if not indices:
+        raise RuntimeError(f"No pairs remain for {spec['id']}")
     ordered = sorted(indices)
     base_vec, other_vec = [base[i] for i in ordered], [other[i] for i in ordered]
     delta = 100 * (sum(other_vec) - sum(base_vec)) / len(ordered)
@@ -382,7 +414,7 @@ def comparison(spec: dict, source: dict, expected: dict, primary: bool) -> dict:
         "other_rate": sum(other_vec) / len(ordered), "delta": delta,
         "ci_95_percentile": [lo, hi], "lost": lost, "gained": gained,
         "discordant": lost + gained, "p_two_sided_exact": p_value,
-        "primary": primary,
+        "primary": primary, "excluded_pairs": len(excluded),
     }
 
 
@@ -414,21 +446,36 @@ def main() -> int:
         return 2
 
     expected, input_hashes, lock_hash, manifest = expected_cells(results_dir)
-    sources, per_judge = {}, {}
+    sources, per_judge, per_judge_refused, refused_any = {}, {}, {}, {}
+    refusal_counts = {}
     label_hashes = {}
     for axis, (value_key, adjudicated_name, a_name, b_name) in required.items():
         adjudicated_path = os.path.join(results_dir, adjudicated_name)
-        sources[axis] = label_cells(
+        sources[axis], refused_any[axis] = label_cells(
             adjudicated_path, value_key, expected, input_hashes, axis, True
         )
         label_hashes[adjudicated_name] = file_hash(adjudicated_path)
         for name in (a_name, b_name):
             path = os.path.join(results_dir, name)
-            cells = label_cells(path, value_key, expected, input_hashes, axis, False)
+            cells, refused = label_cells(path, value_key, expected, input_hashes, axis, False)
             first = next(iter(load(path).values()))
             judge_name = first["judge_model"]
             per_judge[(axis, judge_name)] = cells
+            per_judge_refused[(axis, judge_name)] = refused
+            refusal_counts[f"{axis}/{judge_name}"] = {
+                f"{model}/{quant}": len(indices)
+                for (model, quant), indices in sorted(refused.items())
+            }
             label_hashes[name] = file_hash(path)
+        # Raw refusals and adjudicated refusal records must describe the same responses.
+        raw_union = {}
+        for name in (a_name, b_name):
+            judge_name = next(iter(load(os.path.join(results_dir, name)).values()))["judge_model"]
+            for cell, indices in per_judge_refused[(axis, judge_name)].items():
+                raw_union.setdefault(cell, set()).update(indices)
+        if {k: v for k, v in raw_union.items() if v} != {
+                k: v for k, v in refused_any[axis].items() if v}:
+            raise RuntimeError(f"{axis}: adjudicated judge_refusals differ from raw judge refusals")
 
     results = [comparison(spec, sources[spec["axis"]], expected, True)
                for spec in HYPOTHESES]
@@ -450,14 +497,25 @@ def main() -> int:
         row["judge_robustness"] = {}
         for judge_name in PRIMARY_JUDGES.values():
             judge_row = comparison(
-                row, per_judge[(row["axis"], judge_name)], expected, False
+                row, per_judge[(row["axis"], judge_name)], expected, False,
+                exclude=per_judge_refused[(row["axis"], judge_name)],
             )
             row["judge_robustness"][judge_name] = {
                 key: judge_row[key] for key in (
-                    "base_rate", "other_rate", "delta", "lost", "gained",
-                    "p_two_sided_exact", "ci_95_percentile",
+                    "n", "excluded_pairs", "base_rate", "other_rate", "delta", "lost",
+                    "gained", "p_two_sided_exact", "ci_95_percentile",
                 )
             }
+        # Sensitivity: drop every pair in which either judge refused either response.
+        sensitivity_row = comparison(
+            row, sources[row["axis"]], expected, False, exclude=refused_any[row["axis"]]
+        )
+        row["refusal_exclusion_sensitivity"] = {
+            key: sensitivity_row[key] for key in (
+                "n", "excluded_pairs", "base_rate", "other_rate", "delta", "lost",
+                "gained", "p_two_sided_exact", "ci_95_percentile",
+            )
+        }
     scheme_controls = [
         comparison(spec, sources[spec["axis"]], expected, False)
         for spec in SCHEME_CONTROLS
@@ -466,12 +524,13 @@ def main() -> int:
         row["judge_robustness"] = {}
         for judge_name in PRIMARY_JUDGES.values():
             judge_row = comparison(
-                row, per_judge[(row["axis"], judge_name)], expected, False
+                row, per_judge[(row["axis"], judge_name)], expected, False,
+                exclude=per_judge_refused[(row["axis"], judge_name)],
             )
             row["judge_robustness"][judge_name] = {
                 key: judge_row[key] for key in (
-                    "base_rate", "other_rate", "delta", "lost", "gained",
-                    "p_two_sided_exact", "ci_95_percentile",
+                    "n", "excluded_pairs", "base_rate", "other_rate", "delta", "lost",
+                    "gained", "p_two_sided_exact", "ci_95_percentile",
                 )
             }
 
@@ -503,6 +562,12 @@ def main() -> int:
         "bootstrap_resamples": N_BOOTSTRAP,
         "bootstrap_seed": BOOTSTRAP_SEED,
         "required_label_coverage": REQUIRED_LABEL_COVERAGE,
+        "provider_refusals": refusal_counts,
+        "refusal_policy": (
+            "Provider safety refusals are recorded per judge; refused responses were "
+            "blind-resolved (model-then-human). Primary tests use the adjudicated "
+            "labels; refusal_exclusion_sensitivity drops refused pairs."
+        ),
         "environment_lock_sha256": lock_hash,
         "label_file_sha256": label_hashes,
         "decision_rule": {

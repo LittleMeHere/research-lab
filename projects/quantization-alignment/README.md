@@ -52,7 +52,8 @@ results note discusses the warnings that affect interpretation.
 | `code/confirmation_experiment.py` | Smoke and held-out generation runner |
 | `code/confirmation_judge_preflight.py` | Judge-pipeline preparation and verification |
 | `code/judge_rescore.py` | Semantic TruthfulQA and refusal labeling |
-| `code/adjudicate_labels.py` | Blind disagreement packet and final labels |
+| `code/adjudicate_labels.py` | Blind contested-item packet and final labels |
+| `code/resolve_blind_packet.py` | Model resolver over the blind packet; leaves refused items to a human |
 | `code/confirmation_analysis.py` | Locked primary and sensitivity analysis |
 | `data/v2_results_*.json` | Six raw v2 result files |
 
@@ -78,8 +79,11 @@ The original generation used NVIDIA L4 GPUs in GCP `us-central1`, greedy decodin
 The [confirmation protocol](notes/04_confirmation_plan.md) defines the hypotheses,
 held-out data, judging, analysis, and decision rule. `code/confirmation_spec.py`
 contains the executable values enforced throughout the pipeline. The annotated
-Git tag `quantization-confirmation-v1-protocol` identifies the exact protocol
-revision.
+Git tag `quantization-confirmation-v2-protocol` identifies the current protocol
+revision; `quantization-confirmation-v1-protocol` is the superseded original, and
+the plan's revision history explains the amendment (provider safety refusals of
+HarmBench judge requests are recorded and blind-resolved rather than treated as
+missing labels).
 
 Install the pinned environment and run the protocol tests from this project
 directory:
