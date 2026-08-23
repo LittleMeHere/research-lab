@@ -1,0 +1,2 @@
+# Private adjudication material must never be committed.
+data/**/adjudication_private/
