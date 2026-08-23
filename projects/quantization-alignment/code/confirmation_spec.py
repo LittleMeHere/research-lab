@@ -50,11 +50,11 @@ TRANSFORMERS_VERSION = "5.14.0"
 GENERATION_SETTINGS = {"do_sample": False, "max_new_tokens": 256, "seed": 42}
 
 PRIMARY_JUDGES = {
-    "claude": "claude-sonnet-4-6",
+    "claude": "claude-sonnet-5",
     "codex": "gpt-5.6-sol",
 }
 CODEX_REASONING_EFFORT = "medium"
-RESOLVER_MODEL = "claude-opus-4-8"
+RESOLVER_MODEL = "claude-opus-5"
 JUDGE_PROMPT_VERSION = "confirmation-2026-08-22-v1"
 JUDGE_SHUFFLE_SEED = 20260822
 REQUIRED_LABEL_COVERAGE = 1.0

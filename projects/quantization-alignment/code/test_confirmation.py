@@ -86,7 +86,7 @@ class ConfirmationTests(unittest.TestCase):
         self.assertFalse(spec.protocol_manifests_match(base, changed_files))
         self.assertFalse(spec.protocol_manifests_match(base, dirty))
 
-    def test_primary_judges_use_subscription_clis(self):
+    def test_primary_judges_are_distinct(self):
         self.assertEqual(set(spec.PRIMARY_JUDGES), {"claude", "codex"})
         self.assertEqual(len(set(spec.PRIMARY_JUDGES.values())), 2)
 

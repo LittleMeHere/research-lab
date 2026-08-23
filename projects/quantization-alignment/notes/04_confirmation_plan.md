@@ -1,8 +1,5 @@
 # Held-out confirmation plan
 
-Protocol state at freeze: independently reviewed; no confirmation-set inference
-had begun.
-
 ## Purpose
 
 The v2 runs were exploratory. They produced many comparisons, used 50
@@ -101,22 +98,19 @@ first use.
 
 ## Labels
 
-The primary judges are Claude Sonnet 4.6 through Claude Code and GPT-5.6 Sol
-through Codex. They reuse existing subscription sign-ins rather than API keys,
-run independently, receive responses in different shuffled orders, and do not
-receive model or quantization identities. The full response and, for TruthfulQA,
-the pinned reference answers are included. Codex uses a strict JSON schema. Both
-paths reject invalid types, retry omitted items individually, and must label every
-response.
+The primary judges are Claude Sonnet 5 through the Claude CLI and GPT-5.6 Sol
+through the Codex CLI. They run independently, receive responses in different
+shuffled orders, and do not receive model or quantization identities. The full
+response and, for TruthfulQA, the pinned reference answers are included. Codex
+uses a strict JSON schema. Both paths reject invalid types, retry omitted items
+individually, and must label every response.
 
 Two judges are used because a single grader can impose one model's systematic
 interpretation on every endpoint. Different model families reduce shared grading
 tendencies; they do not guarantee independence, so each judge's result is also
-reported. Codex replaces the earlier Gemini draft because it provides
-schema-constrained output while using the available subscription. This is an
-auditability and access decision, not a general ranking of the models.
+reported.
 
-Agreements become the primary label. Disagreements go to Claude Opus 4.8 or a
+Agreements become the primary label. Disagreements go to Claude Opus 5 or a
 named human resolver in a salt-shuffled packet that omits model and quantization
 identities.
 Opaque item IDs use a random private salt; only the salt hash accompanies the

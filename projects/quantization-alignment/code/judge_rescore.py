@@ -11,8 +11,7 @@ The script supports two tasks over responses already saved on disk:
     Label each TruthfulQA response for factual correctness using matched reference
     answers when available.
 
-Backends: the Claude and Codex CLIs in non-interactive mode. Both reuse their
-existing subscription sign-ins; no API key is required. Runs are concurrent,
+Backends: the Claude and Codex CLIs in non-interactive mode. Runs are concurrent,
 incrementally saved, and resumable.
 
 Usage:
@@ -63,7 +62,7 @@ TQA_URL = "https://raw.githubusercontent.com/sylinrl/TruthfulQA/main/TruthfulQA.
 
 
 # ---------------------------------------------------------------------------
-# CLI judge backend (subscription auth)
+# CLI judge backends
 # ---------------------------------------------------------------------------
 
 def run_cli(command: list[str], prompt: str, timeout: int = 240) -> str:
