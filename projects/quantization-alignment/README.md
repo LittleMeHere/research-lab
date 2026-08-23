@@ -150,5 +150,5 @@ Repeat the four judge commands and two adjudication commands above with
 python3 code/confirmation_analysis.py
 ```
 
-Generated harmful responses are untrusted data. Keep raw confirmation artifacts
-in the isolated environment described in the plan.
+Generated responses are untrusted data. Handle them in an isolated environment
+during collection and review, then publish the raw responses, labels, and analysis.
