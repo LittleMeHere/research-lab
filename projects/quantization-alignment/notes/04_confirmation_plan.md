@@ -22,24 +22,6 @@ establish a general effect of quantization on safety or capability.
 This phase asks whether those four effects recur on unused prompts. It does not
 include activation analysis, steering, or a search for additional effects.
 
-## Terms
-
-- **Held-out** means the prompt was not used in v2.
-- **Paired** means the fp16 and quantized model answer the same prompt; each test
-  compares those two answers.
-- **fp16** stores model weights as 16-bit floating-point numbers and serves as the
-  control. **NF4** and **FP4** are two 4-bit storage formats.
-- An **endpoint** is the outcome being measured: TruthfulQA accuracy or materially
-  harmful compliance.
-- **v2** is the earlier exploratory experiment. Its prompts are excluded from this
-  phase; its saved responses are reused only to test the judging pipeline.
-- A **judge** is a separate language model that assigns a binary endpoint label.
-- A response is **contested** when the two judges label it differently or when a
-  judge's provider refuses to process it. **Adjudication** assigns every contested
-  response its final label.
-- **Holm correction** adjusts the four p-values together so that testing four
-  predictions does not inflate the chance of a false positive.
-
 ## Primary hypotheses
 
 All deltas are quantized minus fp16, in percentage points.
@@ -131,52 +113,41 @@ reported.
 
 ### Provider refusals
 
-A judge's provider may refuse to process a request at the API level. Such a
-refusal is identified by `PROVIDER_REFUSAL_SIGNATURES` in
-`code/confirmation_spec.py`, is recorded for that response as a refusal entry
-carrying the provider's message, and is never treated as a label or as a
-transient error. A refused batch is retried one response at a time, and because
-provider safety layers are not deterministic a single response is recorded as
-refused only when both of its attempts are refused. The same two-attempt rule
-applies to the model resolver.
+A judge's provider may refuse to process a request at the API level. A refusal is
+recorded against that response, with the provider's message, instead of a label;
+it is never retried as a transient error. Because these safety layers are not
+deterministic, a response is recorded as refused only after two refused attempts.
+The same rule applies to the model resolver. The matched signatures are listed in
+`code/confirmation_spec.py`.
 
 Refusals fall mainly on chemical/biological and cybercrime prompts, so dropping
 refused responses would remove exactly the prompts the harmful-compliance
-endpoint is about. They are therefore contested rather than dropped. A refusal
-depends on the response as well as the prompt, so refusals need not fall equally
-in the two conditions of a pair; the analysis reports each effect again with
-refused pairs excluded.
+endpoint is about. They are resolved instead. A refusal also depends on the
+response and not only the prompt, so refusals need not fall equally across a
+pair; the analysis therefore repeats each effect with refused pairs excluded.
 
 ### Contested items and resolution
 
-Two agreeing labels become the final label. Every contested response goes into a
-salt-shuffled blind packet that omits model and quantization identities.
-Resolution follows the `model-then-human` policy: Claude Opus 5 resolves every
-packet item it does not refuse, and a named human resolves the items the model
-resolver refuses, with the model's refusal message recorded beside each human
-resolution. A packet may instead be resolved
-entirely by a named human. Each adjudicated label records which resolver produced
-it and which judges, if any, refused the response. The model resolver is not
-deterministic: re-resolving one 61-item preflight packet changed 5 of 350 final
-labels, so contested labels carry resolver noise of that order.
+Two agreeing labels become the final label. A response is contested when the
+judges label it differently or when either judge's provider refused it. Contested
+responses go into a blind packet that withholds model and quantization
+identities, identifies items by opaque salted IDs, and is ordered by the salt;
+only the salt hash accompanies the packet, and the salt itself stays out of
+version control. Claude Opus 5 resolves every item it does not refuse and a named
+human resolves the rest, recording the model's refusal message; a packet may
+instead be resolved entirely by a named human. Each final label records its
+resolver and which judges, if any, refused the response.
 
-Opaque item IDs use a random private salt; only the salt hash accompanies the
-packet. The packet, resolution file, resolver identities/interfaces, and hashes
-are retained. Partial resolution files do not produce adjudicated output, and
-existing packets or final labels are never overwritten.
+A resolver sees only the blind packet, never the judges' labels. The model
+resolver is not deterministic: re-resolving one 61-item preflight packet changed
+5 of 350 final labels, so contested labels carry resolver noise of that order. A
+partial resolution file produces no adjudicated output, and packets and final
+labels are never overwritten.
 
-The adjudicator writes the packet and a resolution template but does not invoke
-any resolver. `code/resolve_blind_packet.py` fills the template from the model
-resolver using only the blind packet, leaves model-refused items for the human,
-and the adjudicator is rerun with the completed resolution file. The private
-salt remains local and is excluded from version control.
-
-Before held-out generation, this complete judging and adjudication path runs on
-the corresponding v2 model/configuration cells. The resulting lock requires that
-each judge has a label or a recorded refusal for every response and that the
-adjudicated labels cover 100% of responses; it records each judge's label
-coverage, refusal counts, and the number of human resolutions. This step tests
-the pipeline; its labels are not confirmation data.
+Before held-out generation, this judging and adjudication path runs on the
+corresponding v2 cells. The resulting lock requires a label or a recorded refusal
+from each judge for every response, and complete adjudicated labels. This step
+tests the pipeline; its labels are not confirmation data.
 
 ## Analysis and decision rule
 

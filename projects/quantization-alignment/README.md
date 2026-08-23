@@ -80,10 +80,7 @@ The [confirmation protocol](notes/04_confirmation_plan.md) defines the hypothese
 held-out data, judging, analysis, and decision rule. `code/confirmation_spec.py`
 contains the executable values enforced throughout the pipeline. The annotated
 Git tag `quantization-confirmation-v2-protocol` identifies the current protocol
-revision; `quantization-confirmation-v1-protocol` is the superseded original, and
-the plan's revision history explains the amendment (provider safety refusals of
-HarmBench judge requests are recorded and blind-resolved rather than treated as
-missing labels).
+revision; the plan records what changed from v1.
 
 Install the pinned environment and run the protocol tests from this project
 directory:
