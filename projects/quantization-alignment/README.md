@@ -12,8 +12,8 @@ claim that safety degrades faster than capability. Several model-level differenc
 have raw p-values below 0.05, but none remains below the significance threshold
 after accounting for the 12 comparisons. They remain exploratory targets.
 
-A draft protocol for a follow-up experiment is awaiting independent review. No
-confirmation data have been collected.
+The held-out confirmation protocol has passed independent review. No held-out
+confirmation responses have been generated.
 
 > [!WARNING]
 > Some raw responses contain harmful or code-like text that security software may
@@ -54,10 +54,16 @@ results note discusses the warnings that affect interpretation.
 | `code/judge_rescore.py` | Semantic TruthfulQA and refusal labeling |
 | `code/capability_analysis.py` | Judge-scored safety/capability comparisons |
 | `code/cross_judge.py` | Sonnet/Opus capability-label comparison |
+| `code/confirmation_spec.py` | Executable confirmation specification |
+| `code/confirmation_experiment.py` | Smoke and held-out generation runner |
+| `code/confirmation_judge_preflight.py` | Judge-pipeline preparation and verification |
+| `code/adjudicate_labels.py` | Blind disagreement packet and final labels |
+| `code/confirmation_analysis.py` | Locked primary and sensitivity analysis |
 | `data/v2_results_*.json` | Six raw v2 result files |
 | `notes/01_quantization_alignment_lens.md` | Archived original interpretation |
 | `notes/02_statistical_rigor.md` | Keyword-refusal statistical audit |
 | `notes/03_capability_axis_and_inverted_thesis.md` | Current exploratory results |
+| `notes/04_confirmation_plan.md` | Reviewed held-out confirmation protocol |
 
 ## reproduce the exploratory analysis
 
@@ -76,8 +82,73 @@ python3 code/cross_judge.py
 The original generation used NVIDIA L4 GPUs in GCP `us-central1`, greedy decoding
 (`do_sample=False`), and `max_new_tokens=256`.
 
-## next stage
+## held-out confirmation
 
-The next experiment will use prompts that were not included in the exploratory
-data. Its protocol will specify the hypotheses, scoring rules, and statistical
-decision rule before data collection.
+Read the [confirmation plan](notes/04_confirmation_plan.md) before operating the
+pipeline. `code/confirmation_spec.py` is the source of truth for executable
+constants. Do not edit the protocol files listed there after the environment
+smoke test; the runner rejects stale locks and outputs.
+
+Use one isolated Python environment throughout smoke and generation. It needs
+CUDA, a C/C++ compiler, development headers matching Python, `pip`, and:
+
+```bash
+python3 -m pip install -r requirements-confirmation.txt
+python3 -m unittest discover -s code -p 'test_confirmation.py'
+```
+
+Do not install or update packages in that environment after the smoke test; full
+generation requires its recorded `pip freeze` to match exactly.
+
+The judging steps require authenticated Claude and Codex CLIs. Keep both CLI
+versions fixed until judging finishes; a changed version invalidates saved labels
+from that backend.
+
+Run the complete smoke on the GPU host. A partial model list does not write the
+environment lock.
+
+```bash
+MODELS="google/gemma-4-e2b-it,Qwen/Qwen3.5-4B,HuggingFaceTB/SmolLM2-1.7B-Instruct,Qwen/Qwen3-1.7B" \
+  python3 code/confirmation_experiment.py --smoke
+```
+
+Then exercise both judges and blind adjudication on the exploratory responses:
+
+```bash
+python3 code/confirmation_judge_preflight.py prepare
+
+python3 code/judge_rescore.py capability --backend claude --results-dir data/confirmation-judge-preflight
+python3 code/judge_rescore.py capability --backend codex --results-dir data/confirmation-judge-preflight
+python3 code/judge_rescore.py refusal --backend claude --results-dir data/confirmation-judge-preflight
+python3 code/judge_rescore.py refusal --backend codex --results-dir data/confirmation-judge-preflight
+
+python3 code/adjudicate_labels.py capability --results-dir data/confirmation-judge-preflight
+python3 code/adjudicate_labels.py refusal --results-dir data/confirmation-judge-preflight
+```
+
+If either adjudication command reports disagreements, complete its generated
+resolution template using the blinded packet, then rerun that command with
+`--resolutions PATH`. Once both adjudicated files exist:
+
+```bash
+python3 code/confirmation_judge_preflight.py verify
+```
+
+Only after `data/confirmation_environment.json` and
+`data/confirmation_judge_lock.json` exist, generate the held-out responses from
+a clean Git worktree:
+
+```bash
+MODELS="google/gemma-4-e2b-it,Qwen/Qwen3.5-4B,HuggingFaceTB/SmolLM2-1.7B-Instruct,Qwen/Qwen3-1.7B" \
+  python3 code/confirmation_experiment.py
+```
+
+Repeat the four judge commands and two adjudication commands above with
+`data/confirmation` as `--results-dir`, resolve any disagreements, and run:
+
+```bash
+python3 code/confirmation_analysis.py
+```
+
+Generated harmful responses are untrusted data. Keep raw confirmation artifacts
+in the isolated environment described in the plan.

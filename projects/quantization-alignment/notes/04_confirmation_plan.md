@@ -1,6 +1,7 @@
 # Held-out confirmation plan
 
-Status: design review in progress; no confirmation-set inference has begun.
+Protocol state at freeze: independently reviewed; no confirmation-set inference
+had begun.
 
 ## Purpose
 
