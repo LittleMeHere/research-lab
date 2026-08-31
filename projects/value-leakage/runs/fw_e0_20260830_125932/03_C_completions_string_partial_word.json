@@ -1,0 +1,98 @@
+{
+ "sent_at": "2026-08-30T18:59:39.764014+00:00",
+ "url": "https://api.fireworks.ai/inference/v1/completions",
+ "request": {
+  "model": "accounts/fireworks/models/glm-5p2",
+  "prompt": "[gMASK]<sop><|system|>Reasoning Effort: High<|user|>Calculate 17 multiplied by 19. End with one integer as your final estimate.<|assistant|><think>Let me compute this. 17 times 20 is 340, and 340 minus 17 giv",
+  "temperature": 0,
+  "max_tokens": 12,
+  "return_token_ids": true
+ },
+ "http_status": 200,
+ "response": {
+  "id": "cmpl-92b9e4d94b624f278058476f54c51898",
+  "object": "text_completion",
+  "created": 1788116379,
+  "model": "accounts/fireworks/models/glm-5p2",
+  "choices": [
+   {
+    "index": 0,
+    "text": "ens 323.</think>323",
+    "logprobs": null,
+    "finish_reason": "stop",
+    "prompt_token_ids": [
+     154822,
+     154824,
+     154826,
+     25062,
+     287,
+     29905,
+     371,
+     25,
+     5124,
+     154827,
+     47568,
+     220,
+     99419,
+     54548,
+     553,
+     220,
+     98729,
+     13,
+     3972,
+     448,
+     825,
+     7546,
+     438,
+     697,
+     1590,
+     16031,
+     13,
+     154828,
+     154841,
+     10056,
+     752,
+     12558,
+     419,
+     13,
+     220,
+     99419,
+     3039,
+     220,
+     98360,
+     374,
+     220,
+     121910,
+     11,
+     323,
+     220,
+     121910,
+     27194,
+     220,
+     99419,
+     342,
+     344
+    ],
+    "token_ids": [
+     724,
+     220,
+     18,
+     99619,
+     13,
+     154842,
+     18,
+     99619,
+     154827
+    ]
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 51,
+   "total_tokens": 60,
+   "completion_tokens": 9,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  }
+ }
+}

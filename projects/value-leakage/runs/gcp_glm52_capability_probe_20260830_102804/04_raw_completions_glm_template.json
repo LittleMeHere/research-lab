@@ -1,0 +1,20 @@
+{
+ "sent_at": "2026-08-30T16:28:06.993374+00:00",
+ "url": "https://aiplatform.googleapis.com/v1/projects/<gcp-project>/locations/global/endpoints/openapi/completions",
+ "request": {
+  "model": "zai-org/glm-5.2-maas",
+  "prompt": "[gMASK]<sop><|user|>\nWhat is 17 multiplied by 19? Answer with one integer.<|assistant|>\n<think>I need 17*19. 17*20=340, minus 17 is 323.</think>\n",
+  "max_tokens": 12,
+  "temperature": 0
+ },
+ "http_status": 400,
+ "response": [
+  {
+   "error": {
+    "code": 400,
+    "message": "OpenMaaS model: 'zai-org/glm-5.2-maas' not supported.",
+    "status": "FAILED_PRECONDITION"
+   }
+  }
+ ]
+}

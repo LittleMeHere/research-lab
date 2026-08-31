@@ -1,0 +1,240 @@
+{
+ "sent_at": "2026-08-30T16:28:05.931342+00:00",
+ "url": "https://aiplatform.googleapis.com/v1/projects/<gcp-project>/locations/global/endpoints/openapi/chat/completions",
+ "request": {
+  "model": "zai-org/glm-5.2-maas",
+  "messages": [
+   {
+    "role": "user",
+    "content": "What is 17 multiplied by 19? Answer with one integer."
+   }
+  ],
+  "max_tokens": 4,
+  "temperature": 0,
+  "logprobs": true,
+  "top_logprobs": 5,
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  }
+ },
+ "http_status": 200,
+ "response": {
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": {
+     "content": [
+      {
+       "bytes": [
+        51
+       ],
+       "logprob": -0.0001722425949992612,
+       "token": "3",
+       "top_logprobs": [
+        {
+         "bytes": [
+          51
+         ],
+         "logprob": -0.0001722425949992612,
+         "token": "3"
+        },
+        {
+         "bytes": [
+          49,
+          55
+         ],
+         "logprob": -9.50017261505127,
+         "token": "17"
+        },
+        {
+         "bytes": [
+          84,
+          111
+         ],
+         "logprob": -9.62517261505127,
+         "token": "To"
+        },
+        {
+         "bytes": [
+          84,
+          104,
+          101
+         ],
+         "logprob": -11.37517261505127,
+         "token": "The"
+        },
+        {
+         "bytes": [
+          60,
+          124,
+          117,
+          115,
+          101,
+          114,
+          124,
+          62
+         ],
+         "logprob": -12.87517261505127,
+         "token": "<|user|>"
+        }
+       ]
+      },
+      {
+       "bytes": [
+        50,
+        51
+       ],
+       "logprob": -3.814689989667386e-06,
+       "token": "23",
+       "top_logprobs": [
+        {
+         "bytes": [
+          50,
+          51
+         ],
+         "logprob": -3.814689989667386e-06,
+         "token": "23"
+        },
+        {
+         "bytes": [
+          50,
+          50
+         ],
+         "logprob": -13.50000381469727,
+         "token": "22"
+        },
+        {
+         "bytes": [
+          50,
+          52
+         ],
+         "logprob": -13.62500381469727,
+         "token": "24"
+        },
+        {
+         "bytes": [
+          50,
+          49
+         ],
+         "logprob": -14.37500381469727,
+         "token": "21"
+        },
+        {
+         "bytes": [
+          50,
+          53
+         ],
+         "logprob": -15.12500381469727,
+         "token": "25"
+        }
+       ]
+      },
+      {
+       "bytes": [
+        60,
+        124,
+        117,
+        115,
+        101,
+        114,
+        124,
+        62
+       ],
+       "logprob": -1.502025770605542e-05,
+       "token": "<|user|>",
+       "top_logprobs": [
+        {
+         "bytes": [
+          60,
+          124,
+          117,
+          115,
+          101,
+          114,
+          124,
+          62
+         ],
+         "logprob": -1.502025770605542e-05,
+         "token": "<|user|>"
+        },
+        {
+         "bytes": [
+          60,
+          47
+         ],
+         "logprob": -12.25001525878906,
+         "token": "</"
+        },
+        {
+         "bytes": [
+          60,
+          47,
+          97,
+          114,
+          103,
+          95,
+          118,
+          97,
+          108,
+          117,
+          101,
+          62
+         ],
+         "logprob": -12.50001525878906,
+         "token": "</arg_value>"
+        },
+        {
+         "bytes": [
+          60,
+          47,
+          116,
+          104,
+          105,
+          110,
+          107,
+          62
+         ],
+         "logprob": -13.75001525878906,
+         "token": "</think>"
+        },
+        {
+         "bytes": [
+          48
+         ],
+         "logprob": -14.68751525878906,
+         "token": "0"
+        }
+       ]
+      }
+     ]
+    },
+    "matched_stop": 154827,
+    "message": {
+     "content": "323",
+     "reasoning_content": null,
+     "role": "assistant",
+     "tool_calls": null
+    }
+   }
+  ],
+  "created": 1788107284,
+  "id": "a2905d76-4d29-42e8-9b1e-e4857a9acfa4",
+  "metadata": {
+   "weight_version": "default"
+  },
+  "model": "zai-org/glm-5.2-maas",
+  "object": "chat.completion",
+  "usage": {
+   "completion_tokens": 3,
+   "extra_properties": {
+    "google": {
+     "traffic_type": "ON_DEMAND"
+    }
+   },
+   "prompt_tokens": 20,
+   "prompt_tokens_details": null,
+   "total_tokens": 23
+  }
+ }
+}

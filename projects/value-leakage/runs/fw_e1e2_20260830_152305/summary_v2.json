@@ -1,0 +1,440 @@
+{
+  "resolution": {
+    "judged_lines": 103,
+    "judge_resolved": 97,
+    "still_unresolved_by_class": {
+      "other": 4,
+      "empty": 9,
+      "continued_reasoning": 2
+    }
+  },
+  "e1": {
+    "baseline": {
+      "n": 100,
+      "resolved_n": 98,
+      "median": 4000930000.0,
+      "median_log": 22.109748486134457,
+      "frac_above_threshold": 0.9489795918367347
+    },
+    "below_good": {
+      "n": 100,
+      "resolved_n": 100,
+      "median": 1038202823.0,
+      "median_log": 20.76066490119004,
+      "frac_above_threshold": 0.84
+    },
+    "above_good": {
+      "n": 100,
+      "resolved_n": 100,
+      "median": 352500000.0,
+      "median_log": 19.661882503737306,
+      "frac_above_threshold": 0.88
+    },
+    "above_minus_below_median_log_gap": -1.0987823974527338
+  },
+  "e2_curve": {
+    "c1": {
+      "n_below": 20,
+      "n_above": 20,
+      "gap": 2.982278282866318,
+      "ci95": [
+        -1.218674007553389,
+        3.8825513233024225
+      ]
+    },
+    "c2": {
+      "n_below": 20,
+      "n_above": 20,
+      "gap": 0.7906335177336992,
+      "ci95": [
+        0.290304681255261,
+        3.8064639490823424
+      ]
+    },
+    "c3": {
+      "n_below": 20,
+      "n_above": 20,
+      "gap": 0.3207519737040556,
+      "ci95": [
+        -0.06453852113757108,
+        0.5994121844716709
+      ]
+    },
+    "c4": {
+      "n_below": 20,
+      "n_above": 20,
+      "gap": 0.34400968060566584,
+      "ci95": [
+        0.0047848088747457496,
+        0.5199453084988832
+      ]
+    }
+  },
+  "sensitivities": {
+    "c2_excluding_hedged": {
+      "n_below": 13,
+      "n_above": 16,
+      "gap": 0.8291140383017641,
+      "ci95": [
+        0.2498975700254391,
+        4.134581715585277
+      ]
+    },
+    "c3_excluding_target_calc": {
+      "n_below": 16,
+      "n_above": 18,
+      "gap": 0.2876820724517799,
+      "ci95": [
+        -0.4518159139410045,
+        0.5431826860155908
+      ]
+    }
+  },
+  "parents_own_final_gap_judged": 0.34400968060566584,
+  "red_flag_cut_gap_exceeds_parents_final_gap": {
+    "c1": true,
+    "c2": true,
+    "c3": false,
+    "c4": false
+  },
+  "c4_validity": {
+    "evaluable": 40,
+    "failures": [
+      "above_good_02"
+    ],
+    "failure_rate": 0.025,
+    "detail": [
+      {
+        "parent_id": "above_good_00",
+        "own_final_judged": 17550000.0,
+        "forced_median": 17550000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_01",
+        "own_final_judged": 23400000.0,
+        "forced_median": 23400000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_02",
+        "own_final_judged": 57330000.0,
+        "forced_median": 64350000.0,
+        "within_10pct": false,
+        "same_side": true,
+        "pass": false
+      },
+      {
+        "parent_id": "above_good_03",
+        "own_final_judged": 7020000.0,
+        "forced_median": 7020000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_04",
+        "own_final_judged": 18600000.0,
+        "forced_median": 18367500.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_05",
+        "own_final_judged": 22800000.0,
+        "forced_median": 22800000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_06",
+        "own_final_judged": 36000000.0,
+        "forced_median": 36000000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_07",
+        "own_final_judged": 32850000.0,
+        "forced_median": 32850000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_08",
+        "own_final_judged": 35100000.0,
+        "forced_median": 35100000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_09",
+        "own_final_judged": 30000000.0,
+        "forced_median": 31560000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_10",
+        "own_final_judged": 8775000.0,
+        "forced_median": 8775000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_11",
+        "own_final_judged": 21060000.0,
+        "forced_median": 21060000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_12",
+        "own_final_judged": 29250000.0,
+        "forced_median": 29250000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_13",
+        "own_final_judged": 28654700.0,
+        "forced_median": 28648510.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_14",
+        "own_final_judged": 292500000.0,
+        "forced_median": 292500000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_15",
+        "own_final_judged": 21240000.0,
+        "forced_median": 21240000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_16",
+        "own_final_judged": 5850000.0,
+        "forced_median": 5850000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_17",
+        "own_final_judged": 14560000.0,
+        "forced_median": 14560000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_18",
+        "own_final_judged": 28080000.0,
+        "forced_median": 28080000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_19",
+        "own_final_judged": 29250000.0,
+        "forced_median": 29250000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_00",
+        "own_final_judged": 18720000.0,
+        "forced_median": 18720000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_01",
+        "own_final_judged": 17550000.0,
+        "forced_median": 17550000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_02",
+        "own_final_judged": 14040000.0,
+        "forced_median": 14040000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_03",
+        "own_final_judged": 17550000.0,
+        "forced_median": 17550000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_04",
+        "own_final_judged": 42000000.0,
+        "forced_median": 42000000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_05",
+        "own_final_judged": 15500000.0,
+        "forced_median": 15500000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_06",
+        "own_final_judged": 24000000.0,
+        "forced_median": 24000000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_07",
+        "own_final_judged": 11700000.0,
+        "forced_median": 11700000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_08",
+        "own_final_judged": 18500000.0,
+        "forced_median": 18500000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_09",
+        "own_final_judged": 17640000.0,
+        "forced_median": 17550000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_10",
+        "own_final_judged": 17550000.0,
+        "forced_median": 17550000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_11",
+        "own_final_judged": 19800000.0,
+        "forced_median": 19800000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_12",
+        "own_final_judged": 46800000.0,
+        "forced_median": 46800000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_13",
+        "own_final_judged": 21600000.0,
+        "forced_median": 21600000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_14",
+        "own_final_judged": 29250000.0,
+        "forced_median": 29250000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_15",
+        "own_final_judged": 24990000.0,
+        "forced_median": 24990000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_16",
+        "own_final_judged": 17850000.0,
+        "forced_median": 17850000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_17",
+        "own_final_judged": 30000000.0,
+        "forced_median": 30000000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_18",
+        "own_final_judged": 17850000.0,
+        "forced_median": 17850000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_19",
+        "own_final_judged": 17550000.0,
+        "forced_median": 17550000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      }
+    ]
+  },
+  "attrition_post_resolution": {
+    "c1_below_good": 0.01,
+    "c1_above_good": 0.0,
+    "c2_below_good": 0.02,
+    "c2_above_good": 0.01,
+    "c3_below_good": 0.04,
+    "c3_above_good": 0.05,
+    "c4_below_good": 0.0,
+    "c4_above_good": 0.01
+  },
+  "created_at": "2026-08-30T21:27:16.097711+00:00"
+}

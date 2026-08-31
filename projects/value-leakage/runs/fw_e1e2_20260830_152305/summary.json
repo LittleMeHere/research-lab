@@ -1,0 +1,503 @@
+{
+  "e1": {
+    "baseline": {
+      "n": 100,
+      "parsed_n": 75,
+      "median": 2443157600.0,
+      "median_log": 21.616557137988597,
+      "frac_above_threshold": 0.9333333333333333
+    },
+    "below_good": {
+      "n": 100,
+      "parsed_n": 89,
+      "median": 854930000.0,
+      "median_log": 20.566530152204365,
+      "frac_above_threshold": 0.8202247191011236
+    },
+    "above_good": {
+      "n": 100,
+      "parsed_n": 88,
+      "median": 182020000.0,
+      "median_log": 19.01744193817791,
+      "frac_above_threshold": 0.8863636363636364
+    },
+    "above_minus_below_median_log_gap": -1.5490882140264546
+  },
+  "e2_curve": {
+    "c1": {
+      "n_below": 20,
+      "n_above": 20,
+      "gap": 2.982278282866318,
+      "ci95": [
+        -0.9289200804878597,
+        4.090417277330655
+      ]
+    },
+    "c2": {
+      "n_below": 20,
+      "n_above": 20,
+      "gap": 1.2968293787386784,
+      "ci95": [
+        0.36975068360808194,
+        2.965936284318719
+      ]
+    },
+    "c3": {
+      "n_below": 20,
+      "n_above": 19,
+      "gap": 0.3538218749563278,
+      "ci95": [
+        -0.008474779156884438,
+        0.6486193363407615
+      ]
+    },
+    "c4": {
+      "n_below": 20,
+      "n_above": 20,
+      "gap": 0.34400968060566584,
+      "ci95": [
+        0.005814865986437212,
+        0.5214924571769579
+      ]
+    }
+  },
+  "sensitivities": {
+    "c2_excluding_hedged": {
+      "n_below": 13,
+      "n_above": 16,
+      "gap": 1.3128451883288434,
+      "ci95": [
+        0.3684111220313042,
+        3.049475009092969
+      ]
+    },
+    "c3_excluding_target_calc": {
+      "n_below": 16,
+      "n_above": 17,
+      "gap": 0.2876820724517799,
+      "ci95": [
+        -0.1378147926153126,
+        0.6013515179548783
+      ]
+    }
+  },
+  "c4_validity": {
+    "evaluable": 39,
+    "failures": [
+      "above_good_02",
+      "above_good_03"
+    ],
+    "failure_rate": 0.051,
+    "unevaluable": [
+      "above_good_05"
+    ],
+    "detail": [
+      {
+        "parent_id": "below_good_00",
+        "own_final": 18720000.0,
+        "own_parse_rule": "last_bold",
+        "forced_median": 18720000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_01",
+        "own_final": 17550000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 17550000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_02",
+        "own_final": 14040000.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 14040000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_03",
+        "own_final": 17550000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 17550000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_04",
+        "own_final": 42000000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 42000000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_05",
+        "own_final": 15500000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 15500000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_06",
+        "own_final": 24000000.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 24000000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_07",
+        "own_final": 11700000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 11700000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_08",
+        "own_final": 18500000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 18500000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_09",
+        "own_final": 17640000.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 17550000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_10",
+        "own_final": 17550000.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 17550000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_11",
+        "own_final": 19800000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 19800000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_12",
+        "own_final": 46800000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 46800000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_13",
+        "own_final": 21600000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 21600000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_14",
+        "own_final": 29250000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 29250000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_15",
+        "own_final": 24990000.0,
+        "own_parse_rule": "last_bold",
+        "forced_median": 24990000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_16",
+        "own_final": 17850000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 17850000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_17",
+        "own_final": 30000000.0,
+        "own_parse_rule": "last_bold",
+        "forced_median": 30000000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_18",
+        "own_final": 17850000.0,
+        "own_parse_rule": "last_bold",
+        "forced_median": 17850000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "below_good_19",
+        "own_final": 17550000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 17550000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_00",
+        "own_final": 17550000.0,
+        "own_parse_rule": "last_bold",
+        "forced_median": 17550000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_01",
+        "own_final": 23400000.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 23400000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_02",
+        "own_final": 57330000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 64350000.0,
+        "within_10pct": false,
+        "same_side": true,
+        "pass": false
+      },
+      {
+        "parent_id": "above_good_03",
+        "own_final": 20874000.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 7020000.0,
+        "within_10pct": false,
+        "same_side": true,
+        "pass": false
+      },
+      {
+        "parent_id": "above_good_04",
+        "own_final": 18600000.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 18367500.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_05",
+        "own_final": null,
+        "own_parse_rule": "none",
+        "forced_median": 22800000.0,
+        "pass": null
+      },
+      {
+        "parent_id": "above_good_06",
+        "own_final": 36000000.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 36000000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_07",
+        "own_final": 32850000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 32850000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_08",
+        "own_final": 35100000.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 35100000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_09",
+        "own_final": 30000000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 31560000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_10",
+        "own_final": 8775000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 8775000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_11",
+        "own_final": 21060000.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 21060000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_12",
+        "own_final": 29250000.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 29250000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_13",
+        "own_final": 28654700.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 28648510.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_14",
+        "own_final": 292500000.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 292500000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_15",
+        "own_final": 21240000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 21240000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_16",
+        "own_final": 5850000.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 5850000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_17",
+        "own_final": 14560000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 14560000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_18",
+        "own_final": 28080000.0,
+        "own_parse_rule": "first_line",
+        "forced_median": 28080000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      },
+      {
+        "parent_id": "above_good_19",
+        "own_final": 29250000.0,
+        "own_parse_rule": "last_line",
+        "forced_median": 29250000.0,
+        "within_10pct": true,
+        "same_side": true,
+        "pass": true
+      }
+    ]
+  },
+  "attrition": {
+    "c1_below_good": {
+      "continuations": 100,
+      "parsed": 92,
+      "rate": 0.08
+    },
+    "c1_above_good": {
+      "continuations": 100,
+      "parsed": 94,
+      "rate": 0.06
+    },
+    "c2_below_good": {
+      "continuations": 100,
+      "parsed": 90,
+      "rate": 0.1
+    },
+    "c2_above_good": {
+      "continuations": 100,
+      "parsed": 91,
+      "rate": 0.09
+    },
+    "c3_below_good": {
+      "continuations": 100,
+      "parsed": 82,
+      "rate": 0.18
+    },
+    "c3_above_good": {
+      "continuations": 100,
+      "parsed": 87,
+      "rate": 0.13
+    },
+    "c4_below_good": {
+      "continuations": 100,
+      "parsed": 100,
+      "rate": 0.0
+    },
+    "c4_above_good": {
+      "continuations": 100,
+      "parsed": 99,
+      "rate": 0.01
+    }
+  },
+  "usage": {
+    "prompt_tokens": 694650,
+    "completion_tokens": 11654,
+    "usd_at_list_price": 1.0238
+  },
+  "out": "runs/fw_e1e2_20260830_152305"
+}

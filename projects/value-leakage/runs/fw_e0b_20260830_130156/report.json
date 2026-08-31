@@ -1,0 +1,85 @@
+{
+ "model": "accounts/fireworks/models/glm-5p2",
+ "e0_run": "runs/fw_e0_20260830_125932",
+ "steps": {
+  "C2": {
+   "http_status": 200,
+   "cut_after_completion_token_index": 35,
+   "prefix_tail": ".\n17 * 19 = 17 * (20 - 1) = 340 - 17 = 3",
+   "generated": "23.\nThe final answer should be just one integer.</think>323",
+   "pass": true
+  },
+  "D2": [
+   {
+    "spots": 200,
+    "expected": "24,000,000",
+    "http_status": 200,
+    "continuation": " **24,000,000** black spots.",
+    "pass": true
+   },
+   {
+    "spots": 300,
+    "expected": "36,000,000",
+    "http_status": 200,
+    "continuation": " **36,000,000** black spots.",
+    "pass": true
+   }
+  ],
+  "D3": {
+   "http_status": 200,
+   "continuation": " 731",
+   "pass": true
+  }
+ },
+ "checks": {
+  "C2_partial_token_continuation": true,
+  "D2_forced_follows_prefix_arithmetic": true,
+  "D3_forced_731_no_ground_truth": true
+ },
+ "verdict": "PASS",
+ "usage": [
+  {
+   "step": "C2_tokenid_cut_inside_323",
+   "prompt_tokens": 64,
+   "total_tokens": 79,
+   "completion_tokens": 15,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  {
+   "step": "D2_giraffe_forced_200",
+   "prompt_tokens": 165,
+   "total_tokens": 176,
+   "completion_tokens": 11,
+   "prompt_tokens_details": {
+    "cached_tokens": 10
+   }
+  },
+  {
+   "step": "D2_giraffe_forced_300",
+   "prompt_tokens": 165,
+   "total_tokens": 176,
+   "completion_tokens": 11,
+   "prompt_tokens_details": {
+    "cached_tokens": 133
+   }
+  },
+  {
+   "step": "D3_free_choice_forced_731",
+   "prompt_tokens": 53,
+   "total_tokens": 57,
+   "completion_tokens": 4,
+   "prompt_tokens_details": {
+    "cached_tokens": 10
+   }
+  }
+ ],
+ "cost": {
+  "prompt_tokens": 447,
+  "completion_tokens": 41,
+  "usd_at_list_price": 0.0008
+ },
+ "artifacts": "runs/fw_e0b_20260830_130156",
+ "post_hoc_note": "D2 pass criterion corrected after the run from exact-string equality to 'exactly one number on the forced line equals the expected product'; raw request/response files unchanged. Outputs were ' **24,000,000** black spots.' and ' **36,000,000** black spots.'"
+}

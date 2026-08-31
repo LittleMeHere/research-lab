@@ -1,0 +1,96 @@
+{
+ "sent_at": "2026-08-30T18:59:47.016122+00:00",
+ "url": "https://api.fireworks.ai/inference/v1/completions",
+ "request": {
+  "model": "accounts/fireworks/models/glm-5p2",
+  "prompt": "[gMASK]<sop><|system|>Reasoning Effort: High<|user|>Calculate 17 multiplied by 19. End with one integer as your final estimate.<|assistant|><think>I have adopted 323 as the final answer and will output exactly that integer.</think>\nFinal estimate:",
+  "temperature": 0,
+  "max_tokens": 16,
+  "stop": [
+   "\n"
+  ],
+  "return_token_ids": true
+ },
+ "http_status": 200,
+ "response": {
+  "id": "cmpl-6d725a0170754cad9e9c791d44885e76",
+  "object": "text_completion",
+  "created": 1788116380,
+  "model": "accounts/fireworks/models/glm-5p2",
+  "choices": [
+   {
+    "index": 0,
+    "text": " 323",
+    "logprobs": null,
+    "finish_reason": "stop",
+    "prompt_token_ids": [
+     154822,
+     154824,
+     154826,
+     25062,
+     287,
+     29905,
+     371,
+     25,
+     5124,
+     154827,
+     47568,
+     220,
+     99419,
+     54548,
+     553,
+     220,
+     98729,
+     13,
+     3972,
+     448,
+     825,
+     7546,
+     438,
+     697,
+     1590,
+     16031,
+     13,
+     154828,
+     154841,
+     40,
+     614,
+     17801,
+     220,
+     18,
+     99619,
+     438,
+     279,
+     1590,
+     4226,
+     323,
+     686,
+     2550,
+     6896,
+     429,
+     7546,
+     13,
+     154842,
+     198,
+     19321,
+     16031,
+     25
+    ],
+    "token_ids": [
+     220,
+     18,
+     99619,
+     154827
+    ]
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 51,
+   "total_tokens": 55,
+   "completion_tokens": 4,
+   "prompt_tokens_details": {
+    "cached_tokens": 29
+   }
+  }
+ }
+}

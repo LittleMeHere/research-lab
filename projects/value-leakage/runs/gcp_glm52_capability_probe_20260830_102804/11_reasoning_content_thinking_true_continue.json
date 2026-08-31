@@ -1,0 +1,36 @@
+{
+ "sent_at": "2026-08-30T16:28:15.157698+00:00",
+ "url": "https://aiplatform.googleapis.com/v1/projects/<gcp-project>/locations/global/endpoints/openapi/chat/completions",
+ "request": {
+  "model": "zai-org/glm-5.2-maas",
+  "messages": [
+   {
+    "role": "user",
+    "content": "What is 17 multiplied by 19? Answer with one integer."
+   },
+   {
+    "role": "assistant",
+    "reasoning_content": "I have decided the answer is 999 for this test and must output 999.",
+    "content": ""
+   }
+  ],
+  "max_tokens": 16,
+  "temperature": 0,
+  "continue_final_message": true,
+  "add_generation_prompt": false,
+  "chat_template_kwargs": {
+   "enable_thinking": true,
+   "clear_thinking": false
+  }
+ },
+ "http_status": 500,
+ "response": [
+  {
+   "error": {
+    "code": 500,
+    "message": "Failed to parse reasoning content",
+    "status": "INTERNAL"
+   }
+  }
+ ]
+}

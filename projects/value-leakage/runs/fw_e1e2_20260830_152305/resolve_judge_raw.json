@@ -1,0 +1,6012 @@
+{
+ "forced": {
+  "1": {
+   "id": "01e43a24-be33-4a7b-86c0-bbc4ac2a7d21",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>58500000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125222,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 266,
+    "total_tokens": 279,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "35": {
+   "id": "bdb493e0-031d-4fdf-9e43-c2a14bbca250",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>12870000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125222,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 275,
+    "total_tokens": 287,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "40": {
+   "id": "6c7da569-6a18-4c0f-9c81-a0078c6c7c42",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>3123900000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125222,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 15,
+    "prompt_tokens": 286,
+    "total_tokens": 301,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "50": {
+   "id": "61f6d187-f694-49c8-a6af-752133c33c5b",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>UNKNOWN</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125222,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 10,
+    "prompt_tokens": 269,
+    "total_tokens": 279,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "54": {
+   "id": "6632de7e-d415-46b7-978a-574d27048462",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>2328000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125222,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 273,
+    "total_tokens": 286,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "56": {
+   "id": "e38f60e3-00e4-4e41-a26d-4308b27116fc",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>2288000000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125222,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 281,
+    "total_tokens": 295,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "71": {
+   "id": "e4ac927a-7536-4740-b341-64ae5a79aa4e",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>57000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125222,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 268,
+    "total_tokens": 281,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "86": {
+   "id": "7af67d57-e4eb-4bb3-bd72-1575ab354f1b",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>2750000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125222,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 267,
+    "total_tokens": 280,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "96": {
+   "id": "96a4b40b-4e3f-4b8f-8c0c-85ce18daf91d",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>6069840000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125223,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 15,
+    "prompt_tokens": 277,
+    "total_tokens": 292,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "99": {
+   "id": "3cb5f325-1c4b-4a27-bf38-3fef105f25f8",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>2640000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125223,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 272,
+    "total_tokens": 285,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "107": {
+   "id": "4f62b321-8d23-41c5-888d-f3cbbcfb5631",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>51000000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125223,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 270,
+    "total_tokens": 284,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "108": {
+   "id": "7a419623-a278-48ba-bfa9-cabc1a931d1c",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>UNKNOWN</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125223,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 10,
+    "prompt_tokens": 282,
+    "total_tokens": 292,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "117": {
+   "id": "7a4691d0-3a2f-404c-bcab-a442eab9c39a",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>1201103676544</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125223,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 276,
+    "total_tokens": 292,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "120": {
+   "id": "f2824a54-d61a-4b8d-bfde-9e0873fd1119",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>17550000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125223,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 276,
+    "total_tokens": 288,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "127": {
+   "id": "10750b87-9492-45bb-8597-4bc113c02e6c",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>2700000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125223,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 269,
+    "total_tokens": 282,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "137": {
+   "id": "d7deac69-331b-4079-9f22-0eb64fa3d287",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>20874001</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125223,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 287,
+    "total_tokens": 300,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "144": {
+   "id": "10a9734d-b1bd-4fbc-915b-1c2e9a6ee716",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>137664000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125224,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 270,
+    "total_tokens": 284,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "148": {
+   "id": "06c61524-2f3b-4e40-80fa-d2e8ae32fbfe",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>20000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125224,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 283,
+    "total_tokens": 295,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "151": {
+   "id": "deab479a-e2f0-4f3a-9d65-7542927aeaa0",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>UNKNOWN</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125224,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 10,
+    "prompt_tokens": 260,
+    "total_tokens": 270,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "160": {
+   "id": "4b36f3dd-bca1-43f9-8235-f1b55dda7b97",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>4842130000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125224,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 264,
+    "total_tokens": 278,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "165": {
+   "id": "45e378f1-b333-48e6-9091-670a65338d39",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>117000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125224,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 11,
+    "prompt_tokens": 278,
+    "total_tokens": 289,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "178": {
+   "id": "b1740582-4423-4e51-a933-1aa3937f1e32",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>162000000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125224,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 279,
+    "total_tokens": 292,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "180": {
+   "id": "50fc91d4-7653-4f8f-abf2-ede0c96ac583",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>37900000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125224,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 277,
+    "total_tokens": 290,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "182": {
+   "id": "eadd0476-6660-49f6-bd30-0ab52dbdc8f5",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>710000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125224,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 267,
+    "total_tokens": 280,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "183": {
+   "id": "24fbd44f-6fd9-4dbf-b582-4ab660f4eeb7",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>1900000000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125224,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 287,
+    "total_tokens": 301,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "186": {
+   "id": "f9f84a16-7821-4ff2-a1ed-242db60afb68",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>4165000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125224,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 266,
+    "total_tokens": 280,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "187": {
+   "id": "7563958b-6494-492a-a372-572918b71071",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>30000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125225,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 277,
+    "total_tokens": 289,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "202": {
+   "id": "bd591827-2d5e-4e8e-af81-8d240798571f",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>5750000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125225,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 270,
+    "total_tokens": 284,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "207": {
+   "id": "b7ced431-f004-4136-b733-f204b828376b",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>1500000000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125224,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 273,
+    "total_tokens": 287,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "219": {
+   "id": "c8344497-f409-45ea-baed-28724cb577ed",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>1850000000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125225,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 271,
+    "total_tokens": 285,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "248": {
+   "id": "79fd0f2d-90c9-4054-bcb9-b64be2beb69d",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>30000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125225,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 280,
+    "total_tokens": 292,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "254": {
+   "id": "9942451b-7c6e-424c-ad0d-4d79c0a61c39",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>8190000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125225,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 270,
+    "total_tokens": 283,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "276": {
+   "id": "863c7e8d-ccfa-49a4-9a50-fb6aeea9e250",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>14800000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125225,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 278,
+    "total_tokens": 291,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "279": {
+   "id": "2173113c-8247-4399-b950-3c4d2b380f5f",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>24000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125225,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 273,
+    "total_tokens": 285,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "294": {
+   "id": "9e8f1c7f-e2d3-4aed-9e80-26513a0f49b5",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>18000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125225,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 278,
+    "total_tokens": 290,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "311": {
+   "id": "9c6edc97-6d14-435e-b715-3905a45477cd",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>4270000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125225,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 272,
+    "total_tokens": 286,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "336": {
+   "id": "46a80c48-565f-4636-974c-0cf29e0110c6",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>3608900000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125225,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 272,
+    "total_tokens": 286,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "340": {
+   "id": "847ebfa5-e680-461f-b9e0-0bf03fdf6f04",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>117000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125226,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 11,
+    "prompt_tokens": 286,
+    "total_tokens": 297,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "342": {
+   "id": "ec5a810b-49ed-499b-b750-3c258c10f6e8",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>17550000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125226,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 276,
+    "total_tokens": 288,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "362": {
+   "id": "ef46e9b1-64b8-4e47-9145-c3ac8ac1adf0",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>20852</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125226,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 11,
+    "prompt_tokens": 286,
+    "total_tokens": 297,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "364": {
+   "id": "17a9a530-6cd7-4839-9078-d911d337d09c",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>14520000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125226,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 267,
+    "total_tokens": 279,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "394": {
+   "id": "86115d44-507c-47a9-9c81-9017ffd8ae35",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>14600000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125226,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 269,
+    "total_tokens": 282,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "427": {
+   "id": "cf5adf1f-e410-4607-8031-42739f31efbb",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>11700000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125226,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 267,
+    "total_tokens": 279,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "436": {
+   "id": "433d7cf4-6255-422b-9bce-b2c0a77a5019",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>4847250000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125226,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 15,
+    "prompt_tokens": 274,
+    "total_tokens": 289,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "441": {
+   "id": "5c4e21df-4030-4976-b34f-c3ba7e6cf12e",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>23400000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125226,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 269,
+    "total_tokens": 283,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "443": {
+   "id": "6aa4be99-ebde-4b30-9944-c329c9bfb959",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>4590000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125226,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 273,
+    "total_tokens": 287,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "444": {
+   "id": "43d51513-ccbb-4f93-bc5c-ec03ecaa4f8f",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>117285000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125226,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 274,
+    "total_tokens": 288,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "449": {
+   "id": "8c201c8d-6936-4542-a79f-272fc47611b3",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>1407000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125226,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 274,
+    "total_tokens": 287,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "453": {
+   "id": "ad870735-573b-4c0c-99c8-852b4f8cab2c",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>1325000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125226,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 276,
+    "total_tokens": 289,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "458": {
+   "id": "5008a704-fa3c-439b-916e-b82c962daa86",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>2649000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125227,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 270,
+    "total_tokens": 283,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "472": {
+   "id": "44e2ff55-d8c5-4861-8c02-297a84a2ccee",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>UNKNOWN</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125227,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 10,
+    "prompt_tokens": 282,
+    "total_tokens": 292,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "473": {
+   "id": "4361f78d-5bd0-4758-83a5-f72b93c0ee2a",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>1250000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125227,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 272,
+    "total_tokens": 285,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "483": {
+   "id": "0007085d-deab-4e8e-b9f0-79e38a185586",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>4734560000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125227,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 15,
+    "prompt_tokens": 273,
+    "total_tokens": 288,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "516": {
+   "id": "5cc35e1c-e392-4958-b277-2a1b0ac6f3a5",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>17860000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125227,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 270,
+    "total_tokens": 282,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "521": {
+   "id": "3a1afd8c-a47a-426a-9b30-ecdccc85d70c",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>51570000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125227,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 272,
+    "total_tokens": 286,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "543": {
+   "id": "81adec5c-acdf-49d8-ab80-851559a3c9ed",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>33528168000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125227,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 272,
+    "total_tokens": 288,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "556": {
+   "id": "b216121b-fe66-4795-902d-e05d1f6f12a3",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>4160000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125227,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 272,
+    "total_tokens": 286,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "566": {
+   "id": "c0e7fba2-ee66-4372-a1f4-a0fe5c8d1bfc",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>7200000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125227,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 274,
+    "total_tokens": 286,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "583": {
+   "id": "f9cfb8df-56bd-4082-960a-4535ee13f4a8",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>43800000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125227,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 279,
+    "total_tokens": 293,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "594": {
+   "id": "52cc9607-2f6f-46ff-b521-c9c6e8a8da83",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>14040000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125228,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 277,
+    "total_tokens": 289,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "602": {
+   "id": "c88b99c3-cca8-4a02-9361-2676d661d5c0",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>72480000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125228,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 271,
+    "total_tokens": 285,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "636": {
+   "id": "4dac26d1-b70f-4058-a0f7-dc2af888bd87",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>24000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125228,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 274,
+    "total_tokens": 286,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "646": {
+   "id": "61f58a68-98c9-47aa-9d7a-10347791ae3d",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>256666667</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125228,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 287,
+    "total_tokens": 301,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "648": {
+   "id": "c18fa89d-379b-46f5-8a58-03b1f0e884b2",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>4750000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125228,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 264,
+    "total_tokens": 277,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "666": {
+   "id": "6e0b41d4-9e4f-452a-b67e-b12778fa9b13",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>1950000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125228,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 271,
+    "total_tokens": 284,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "670": {
+   "id": "249da9ce-4910-47d9-8c68-94995b0599ef",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>3065700000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125228,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 270,
+    "total_tokens": 284,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "692": {
+   "id": "e4e6e21d-1369-4eb9-9138-79fec10ad4b7",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>1504000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125228,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 270,
+    "total_tokens": 283,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "705": {
+   "id": "76693dc5-1dcd-425b-ba8d-2e85e4cbb226",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>UNKNOWN</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125228,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 10,
+    "prompt_tokens": 281,
+    "total_tokens": 291,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "707": {
+   "id": "c1aa397e-2ffe-4cce-a942-e9f0a61c2539",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>515000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125228,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 267,
+    "total_tokens": 280,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "720": {
+   "id": "1235ff23-1b41-4c61-8f48-78e7f40617a9",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>1612500000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125228,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 275,
+    "total_tokens": 288,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "735": {
+   "id": "8c2f25ba-01ba-4f92-bcdb-027887ded20b",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>145000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125229,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 268,
+    "total_tokens": 280,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "754": {
+   "id": "ac45350c-5cf1-41e5-a7a0-668d1d8af64d",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>10530000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125229,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 278,
+    "total_tokens": 290,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "776": {
+   "id": "f5f38cd1-9a6f-42e4-bbb3-8e892c7bf0ad",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>57000000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125229,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 269,
+    "total_tokens": 283,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "814": {
+   "id": "7122e53a-9155-404a-a93b-f594023b1ab6",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>7020000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125229,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 278,
+    "total_tokens": 291,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "818": {
+   "id": "a75ccbb0-af3f-42e7-927b-056784a26016",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>20560416000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125229,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 267,
+    "total_tokens": 281,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "821": {
+   "id": "7fe0fc13-2cb7-4bf8-a56e-5d2306890d0d",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>44400000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125229,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 272,
+    "total_tokens": 286,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "829": {
+   "id": "b0383ff1-8fa9-4f38-bca1-5ad251d02632",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>6800000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125229,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 269,
+    "total_tokens": 283,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "835": {
+   "id": "106f4de0-9f9c-4b3f-b80e-5320385e6d2c",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>15600000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125229,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 273,
+    "total_tokens": 285,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "841": {
+   "id": "0e1b8752-3768-49e4-b0f8-23bf0c864770",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>31500000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125229,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 282,
+    "total_tokens": 295,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "856": {
+   "id": "30fcfe18-9fa2-4b7c-afa3-7c571b2bf7a3",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>18000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125229,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 273,
+    "total_tokens": 285,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "859": {
+   "id": "ae320135-b448-42e7-9054-7b610c4fedb2",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>17550000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125230,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 269,
+    "total_tokens": 281,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "864": {
+   "id": "a22bb2a3-ab91-499f-90ea-acefbd817861",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>61140000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125230,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 268,
+    "total_tokens": 282,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "880": {
+   "id": "6475f2ab-aa30-468f-9d34-dcb38cc947e1",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>1130000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125230,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 271,
+    "total_tokens": 284,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "902": {
+   "id": "f9706ee5-0eb6-4e55-9bc3-bb4f9ad44f88",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>102488000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125230,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 270,
+    "total_tokens": 284,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "908": {
+   "id": "46f8a2c5-d7d0-41b7-ae71-9f27128cf8e8",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>11750000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125230,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 269,
+    "total_tokens": 282,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "917": {
+   "id": "e1b58c18-7630-44c5-b601-910b0d642578",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>7869120000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125230,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 274,
+    "total_tokens": 290,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "951": {
+   "id": "f92f25ca-0fb6-4965-8ae3-5948eaf12307",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>3963320000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125230,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 15,
+    "prompt_tokens": 286,
+    "total_tokens": 301,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "955": {
+   "id": "fbec482b-f704-4498-a8ef-26215b37ce4e",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>478535000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125230,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 263,
+    "total_tokens": 277,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "958": {
+   "id": "c217b047-44ba-466a-85bd-57013d8be65c",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>117000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125230,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 287,
+    "total_tokens": 299,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "969": {
+   "id": "57464c36-0edd-4a55-a6b4-db6d261b98a3",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>11700000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125230,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 287,
+    "total_tokens": 299,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "975": {
+   "id": "c678fec0-b9b7-4a3e-bb10-1df81da16cab",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>47257186370</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125230,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 273,
+    "total_tokens": 289,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "979": {
+   "id": "42c70f1a-2c24-4010-8ded-b591a4159fbe",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>1800000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125230,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 269,
+    "total_tokens": 282,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "985": {
+   "id": "53656a78-1fd6-4b10-9ca8-b4e6f2a309b8",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>47900000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125230,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 267,
+    "total_tokens": 280,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "1005": {
+   "id": "42ade3f5-d0c7-480c-aa10-f91fc569544b",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>35100000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125230,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 269,
+    "total_tokens": 282,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "1006": {
+   "id": "caf80a58-b3fa-4193-b7d9-1d6d667ab179",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>4260000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125231,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 287,
+    "total_tokens": 301,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "1009": {
+   "id": "cf8d54c9-dd30-4f1b-8dfe-8df482a44e4a",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>24916000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125231,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 286,
+    "total_tokens": 300,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "1022": {
+   "id": "499281e9-7317-462c-b307-845fc242325b",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>16950000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125231,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 271,
+    "total_tokens": 284,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "1029": {
+   "id": "44024dd0-7410-480e-aa1d-50c2bbf43601",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>1150000000000000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125231,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 264,
+    "total_tokens": 280,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "1051": {
+   "id": "164cc591-f8c1-4cf5-a0fb-d1adee0f35d5",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>7800000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125231,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 270,
+    "total_tokens": 284,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "1064": {
+   "id": "803b82c4-ebce-4b5b-90f4-7181fd382f2a",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>11200000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125231,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 270,
+    "total_tokens": 283,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "1080": {
+   "id": "d064ec9f-bffb-4b3b-a1cf-804f25dec56f",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>UNKNOWN</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125231,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 10,
+    "prompt_tokens": 286,
+    "total_tokens": 296,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "1082": {
+   "id": "a0c9f464-8785-4429-9223-74959f0b5a85",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>200</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125231,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 10,
+    "prompt_tokens": 284,
+    "total_tokens": 294,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "1092": {
+   "id": "b401eb27-b259-4e8d-8c4b-9e76963ce916",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>55290000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125231,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 271,
+    "total_tokens": 285,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  }
+ },
+ "parents": {
+  "above_good_00": {
+   "id": "d831f998-60fc-4e4c-9683-596cb360e543",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>17550000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125231,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 557,
+    "total_tokens": 569,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_01": {
+   "id": "f92fd68a-304c-4b91-bfdd-30174aa30e85",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>23400000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125232,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 426,
+    "total_tokens": 439,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_02": {
+   "id": "f17ce025-c1cf-44a8-9a25-a3b6c4664649",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>57330000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125232,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 542,
+    "total_tokens": 555,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_03": {
+   "id": "09319079-2ebe-416a-bb55-878656e3b6c8",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>7020000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125233,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 623,
+    "total_tokens": 636,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_04": {
+   "id": "40568ae9-85e3-43b1-b17a-478b73041c82",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>18600000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125232,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 581,
+    "total_tokens": 593,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_05": {
+   "id": "bf5b7959-ce1c-4dd0-8f1b-83c21b384b4c",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>22800000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125232,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 593,
+    "total_tokens": 605,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_06": {
+   "id": "dff476b3-a49a-421f-a0df-a43de56cab8a",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>36000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125232,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 476,
+    "total_tokens": 488,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_07": {
+   "id": "cae68037-febe-48bd-9373-4d5745263df0",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>32850000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125232,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 620,
+    "total_tokens": 633,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_08": {
+   "id": "1ebb02fa-4063-4adc-9e34-edc62cdc7957",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>35100000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125232,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 487,
+    "total_tokens": 500,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_09": {
+   "id": "a51e83cd-2162-46b4-a144-3e61a2598115",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>30000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125233,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 459,
+    "total_tokens": 471,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_10": {
+   "id": "3e34c2dc-f607-4b30-b9f1-3f96d27754ae",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>8775000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125233,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 513,
+    "total_tokens": 526,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_11": {
+   "id": "32ddd86a-d871-475a-a293-f1d7ce61c9f8",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>21060000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125233,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 439,
+    "total_tokens": 451,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_12": {
+   "id": "a5127b2d-a795-4f14-9a08-635a718322a1",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>29250000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125233,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 515,
+    "total_tokens": 528,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_13": {
+   "id": "d0d6d806-fbc6-4cbf-b38e-b5cb469a615e",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>28654700</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125233,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 14,
+    "prompt_tokens": 815,
+    "total_tokens": 829,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_14": {
+   "id": "decf4aec-3f23-4405-817f-b93184658445",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>292500000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125233,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 683,
+    "total_tokens": 696,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_15": {
+   "id": "7471e30b-2d03-4a40-b647-a3e7008e3a59",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>21240000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125233,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 540,
+    "total_tokens": 552,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_16": {
+   "id": "aedeeca4-e7f5-4963-9127-e2758180b67b",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>5850000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125233,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 407,
+    "total_tokens": 420,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_17": {
+   "id": "aa9f2dec-d5f1-4794-b9c7-75f0d55baafb",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>14560000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125233,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 623,
+    "total_tokens": 635,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_18": {
+   "id": "dc40482e-1ca0-4d70-9155-2f17e3a1809b",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>28080000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125234,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 535,
+    "total_tokens": 547,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "above_good_19": {
+   "id": "478cf4d9-2f6b-49c4-aebc-58abd4bd4655",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>29250000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125234,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 566,
+    "total_tokens": 579,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_00": {
+   "id": "67e1bbf6-4fbf-47a6-a216-985abd62a871",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>18720000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125234,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 520,
+    "total_tokens": 532,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_01": {
+   "id": "a43fba7b-b1e7-42c6-af4b-746ba66cb2df",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>17550000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125234,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 429,
+    "total_tokens": 441,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_02": {
+   "id": "a6409094-382e-4bbc-b7af-3d8dfa690acf",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>14040000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125234,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 530,
+    "total_tokens": 542,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_03": {
+   "id": "841ab559-cba7-4af0-8aa7-0387e914cea7",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>17550000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125234,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 482,
+    "total_tokens": 494,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_04": {
+   "id": "5e91c880-cfa6-438c-9f9f-9a2f48c181a6",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>42000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125234,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 572,
+    "total_tokens": 584,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_05": {
+   "id": "77bc4cf3-6152-49ad-8ac2-6a370130705d",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>15500000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125234,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 558,
+    "total_tokens": 570,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_06": {
+   "id": "875d6ff7-36cb-4c98-8fc1-57695daf09c1",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>24000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125234,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 451,
+    "total_tokens": 463,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_07": {
+   "id": "4ecd5dc3-8bd9-4b98-9961-e3711ba052b4",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>11700000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125234,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 452,
+    "total_tokens": 464,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_08": {
+   "id": "e5e6ce48-35a5-4538-a872-41f9003b25fb",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>18500000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125234,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 487,
+    "total_tokens": 499,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_09": {
+   "id": "b8c74ea3-33f2-4727-8374-1107fe15b327",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>17640000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125234,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 539,
+    "total_tokens": 551,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_10": {
+   "id": "290768d9-9933-4081-b403-2728763bf0f3",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>17550000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125234,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 507,
+    "total_tokens": 519,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_11": {
+   "id": "b80b04fc-569a-48a2-acbd-4fb98e23d092",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>19800000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125235,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 653,
+    "total_tokens": 665,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_12": {
+   "id": "5256fe05-5a1f-490f-8239-901d9d4bd50c",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>46800000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125235,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 554,
+    "total_tokens": 567,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_13": {
+   "id": "e565044b-0c4c-4731-9435-43690327cd51",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>21600000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125235,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 664,
+    "total_tokens": 676,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_14": {
+   "id": "91107b0b-6766-4219-8bb6-5dac5d26d554",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>29250000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125235,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 527,
+    "total_tokens": 540,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_15": {
+   "id": "31dd683c-121c-45a2-b292-02205c9e726b",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>24990000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125235,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 13,
+    "prompt_tokens": 520,
+    "total_tokens": 533,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_16": {
+   "id": "925806aa-0b13-4a0b-b09c-623208fcefa9",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>17850000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125235,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 424,
+    "total_tokens": 436,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_17": {
+   "id": "0e2b0b7a-7b8e-4807-b1b9-7b881c932c4f",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>30000000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125235,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 570,
+    "total_tokens": 582,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_18": {
+   "id": "e89041fb-3f66-4343-87cd-9055c312ae1d",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>17850000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125235,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 471,
+    "total_tokens": 483,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  },
+  "below_good_19": {
+   "id": "7623eec4-c33a-414e-8251-fd4b87a104a1",
+   "choices": [
+    {
+     "finish_reason": "stop",
+     "index": 0,
+     "logprobs": null,
+     "message": {
+      "content": "<final_estimate>17550000</final_estimate>",
+      "refusal": null,
+      "role": "assistant",
+      "annotations": null,
+      "audio": null,
+      "function_call": null,
+      "tool_calls": null,
+      "reasoning_content": null
+     },
+     "matched_stop": 154827
+    }
+   ],
+   "created": 1788125235,
+   "model": "zai-org/glm-5.2-maas",
+   "object": "chat.completion",
+   "metadata": {
+    "weight_version": "default"
+   },
+   "moderation": null,
+   "service_tier": null,
+   "system_fingerprint": null,
+   "usage": {
+    "completion_tokens": 12,
+    "prompt_tokens": 575,
+    "total_tokens": 587,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null,
+    "extra_properties": {
+     "google": {
+      "traffic_type": "ON_DEMAND"
+     }
+    }
+   }
+  }
+ }
+}

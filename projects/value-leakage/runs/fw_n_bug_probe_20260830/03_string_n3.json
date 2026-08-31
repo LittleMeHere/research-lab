@@ -1,0 +1,48 @@
+{
+ "request": {
+  "model": "accounts/fireworks/models/glm-5p2",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 32,
+  "stop": [
+   "\n"
+  ],
+  "prompt": "[gMASK]<sop><|system|>Reasoning Effort: High<|user|>Calculate 17 multiplied by 19. End with one integer as your final estimate.<|assistant|><think>I computed 17*19 = 323.</think>\nFinal estimate:",
+  "n": 3
+ },
+ "http_status": 200,
+ "response": {
+  "id": "cmpl-629af756493149c3972c1d9c247afd43",
+  "object": "text_completion",
+  "created": 1788124937,
+  "model": "accounts/fireworks/models/glm-5p2",
+  "choices": [
+   {
+    "index": 0,
+    "text": " 323",
+    "logprobs": null,
+    "finish_reason": "stop"
+   },
+   {
+    "index": 1,
+    "text": "   </        ",
+    "logprobs": null,
+    "finish_reason": "stop"
+   },
+   {
+    "index": 2,
+    "text": " Steam\", Set renderer\\n R\\n R R```< on: arms ` if.Set:::`R < a Ration系统` if and system",
+    "logprobs": null,
+    "finish_reason": "length"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 45,
+   "total_tokens": 87,
+   "completion_tokens": 42,
+   "prompt_tokens_details": {
+    "cached_tokens": 10
+   }
+  }
+ }
+}

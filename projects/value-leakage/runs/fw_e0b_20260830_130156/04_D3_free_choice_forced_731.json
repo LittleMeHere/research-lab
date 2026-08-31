@@ -1,0 +1,98 @@
+{
+ "sent_at": "2026-08-30T19:02:34.630552+00:00",
+ "url": "https://api.fireworks.ai/inference/v1/completions",
+ "request": {
+  "model": "accounts/fireworks/models/glm-5p2",
+  "prompt": "[gMASK]<sop><|system|>Reasoning Effort: High<|user|>Choose any integer between 1 and 1000 and report it. End with one integer as your final estimate.<|assistant|><think>I will choose 731. That is my final answer.</think>\nFinal estimate:",
+  "temperature": 0,
+  "max_tokens": 16,
+  "stop": [
+   "\n"
+  ],
+  "return_token_ids": true
+ },
+ "http_status": 200,
+ "response": {
+  "id": "cmpl-a7c2256166b34a0086b779f364ced597",
+  "object": "text_completion",
+  "created": 1788116541,
+  "model": "accounts/fireworks/models/glm-5p2",
+  "choices": [
+   {
+    "index": 0,
+    "text": " 731",
+    "logprobs": null,
+    "finish_reason": "stop",
+    "prompt_token_ids": [
+     154822,
+     154824,
+     154826,
+     25062,
+     287,
+     29905,
+     371,
+     25,
+     5124,
+     154827,
+     23983,
+     894,
+     7546,
+     1948,
+     220,
+     16,
+     323,
+     220,
+     99457,
+     15,
+     323,
+     1895,
+     432,
+     13,
+     3972,
+     448,
+     825,
+     7546,
+     438,
+     697,
+     1590,
+     16031,
+     13,
+     154828,
+     154841,
+     40,
+     686,
+     5157,
+     220,
+     22,
+     100557,
+     13,
+     2938,
+     374,
+     847,
+     1590,
+     4226,
+     13,
+     154842,
+     198,
+     19321,
+     16031,
+     25
+    ],
+    "token_ids": [
+     220,
+     22,
+     100557,
+     154827
+    ]
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 53,
+   "total_tokens": 57,
+   "completion_tokens": 4,
+   "prompt_tokens_details": {
+    "cached_tokens": 10
+   }
+  }
+ }
+}

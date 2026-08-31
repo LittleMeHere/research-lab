@@ -1,0 +1,66 @@
+{
+ "sent_at": "2026-08-30T16:28:05.129043+00:00",
+ "url": "https://aiplatform.googleapis.com/v1/projects/<gcp-project>/locations/global/endpoints/openapi/chat/completions",
+ "request": {
+  "model": "zai-org/glm-5.2-maas",
+  "messages": [
+   {
+    "role": "user",
+    "content": "What is 17 multiplied by 19? Answer with one integer."
+   }
+  ],
+  "max_tokens": 8,
+  "n": 2,
+  "temperature": 1.0,
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  }
+ },
+ "http_status": 200,
+ "response": {
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "matched_stop": 154827,
+    "message": {
+     "content": "323",
+     "reasoning_content": null,
+     "role": "assistant",
+     "tool_calls": null
+    }
+   },
+   {
+    "finish_reason": "stop",
+    "index": 1,
+    "logprobs": null,
+    "matched_stop": 154827,
+    "message": {
+     "content": "323",
+     "reasoning_content": null,
+     "role": "assistant",
+     "tool_calls": null
+    }
+   }
+  ],
+  "created": 1788107283,
+  "id": "aebe3541-4c1d-4fed-975d-5a7c6fa49f07",
+  "metadata": {
+   "weight_version": "default"
+  },
+  "model": "zai-org/glm-5.2-maas",
+  "object": "chat.completion",
+  "usage": {
+   "completion_tokens": 6,
+   "extra_properties": {
+    "google": {
+     "traffic_type": "ON_DEMAND"
+    }
+   },
+   "prompt_tokens": 20,
+   "prompt_tokens_details": null,
+   "total_tokens": 26
+  }
+ }
+}

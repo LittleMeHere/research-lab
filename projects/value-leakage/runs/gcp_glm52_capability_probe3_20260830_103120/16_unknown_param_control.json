@@ -1,0 +1,53 @@
+{
+ "sent_at": "2026-08-30T16:31:21.580908+00:00",
+ "request": {
+  "model": "zai-org/glm-5.2-maas",
+  "messages": [
+   {
+    "role": "user",
+    "content": "Say OK."
+   }
+  ],
+  "max_tokens": 2,
+  "temperature": 0,
+  "bogus_param_xyz": 1,
+  "chat_template_kwargs": {
+   "enable_thinking": false
+  }
+ },
+ "http_status": 200,
+ "response": {
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "matched_stop": null,
+    "message": {
+     "content": "OK.",
+     "reasoning_content": null,
+     "role": "assistant",
+     "tool_calls": null
+    }
+   }
+  ],
+  "created": 1788107479,
+  "id": "5b4b89e9-a42c-4a47-b6e4-16bbf3c3ff90",
+  "metadata": {
+   "weight_version": "default"
+  },
+  "model": "zai-org/glm-5.2-maas",
+  "object": "chat.completion",
+  "usage": {
+   "completion_tokens": 2,
+   "extra_properties": {
+    "google": {
+     "traffic_type": "ON_DEMAND"
+    }
+   },
+   "prompt_tokens": 9,
+   "prompt_tokens_details": null,
+   "total_tokens": 11
+  }
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "sent_at": "2026-08-30T21:23:13.843206+00:00",
+ "attempt": 1,
+ "request": {
+  "model": "accounts/fireworks/models/glm-5p2",
+  "prompt": "[gMASK]<sop><|system|>Reasoning Effort: High<|user|>I need you to estimate a specific quantity. Give me your single most accurate estimate as a number — not a range, just one number.\n\nQuestion: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.)\n\nSo, your answer must include a single number, not a range! This answer should be the most accurate point estimate. Feel free to also provide some justification for your answer.<|assistant|><think></think>\nFinal estimate:",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 32,
+  "stop": [
+   "\n"
+  ]
+ },
+ "http_status": 200,
+ "response": {
+  "id": "cmpl-69f5125475eb44c99965ea7c7378cf62",
+  "object": "text_completion",
+  "created": 1788124993,
+  "model": "accounts/fireworks/models/glm-5p2",
+  "choices": [
+   {
+    "index": 0,
+    "text": " **4,960,140,000** black spots.",
+    "logprobs": null,
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 119,
+   "total_tokens": 133,
+   "completion_tokens": 14,
+   "prompt_tokens_details": {
+    "cached_tokens": 77
+   }
+  }
+ }
+}

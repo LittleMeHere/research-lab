@@ -1,0 +1,8 @@
+{
+  "calls_attempted": 2,
+  "http_statuses": [
+    200,
+    500
+  ],
+  "artifacts": "runs/gcp_glm52_native_prefill_20260830_093736"
+}

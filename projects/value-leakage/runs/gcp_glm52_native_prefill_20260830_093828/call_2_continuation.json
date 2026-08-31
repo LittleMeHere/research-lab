@@ -1,0 +1,42 @@
+{
+  "provider": "gcp",
+  "project": "<gcp-project>",
+  "location": "global",
+  "url": "https://aiplatform.googleapis.com/v1/projects/<gcp-project>/locations/global/endpoints/openapi/chat/completions",
+  "sent_at": "2026-08-30T15:38:34.385446+00:00",
+  "request": {
+    "model": "zai-org/glm-5.2-maas",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Calculate 17 multiplied by 19. End with one integer as your final estimate."
+      },
+      {
+        "role": "assistant",
+        "reasoning_content": "I need to calculate 17 multiplied by 19.\n\nLet me do this step by step:\n17 × 19\n\nI can break this down:\n17 × 19 = 17 × (20 - 1) = 17 × 20 - 17 × 1 = 340 - 17 = 323\n\nLet me verify this another way:\n17 × 19\n= (10 + 7) × 19\n= 10 × 19 + 7 × 19\n= 190 + 133\n= 323\n\nOr I can use the standard multiplication algorithm:\n   17\n×  19\n-----\n  153  (17 × 9)\n  170  (17 × 10, shifted one place left)\n-----\n  323\n\nSo 17 × 19 = 323.\n\nThe question asks me to end with one integer as my final estimate. The answer is 323.",
+        "content": "Final estimate:"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 16,
+    "stop": [
+      "\n"
+    ],
+    "continue_final_message": true,
+    "add_generation_prompt": false,
+    "chat_template_kwargs": {
+      "enable_thinking": false,
+      "clear_thinking": false
+    }
+  },
+  "http_status": 500,
+  "response": [
+    {
+      "error": {
+        "code": 500,
+        "message": "Failed to parse reasoning content",
+        "status": "INTERNAL"
+      }
+    }
+  ]
+}

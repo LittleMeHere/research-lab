@@ -1,0 +1,131 @@
+{
+  "resolution": {
+    "rows": 144,
+    "resolved": 136,
+    "missing": 8,
+    "changed_vs_v1": 3,
+    "changed_rows": [
+      {
+        "name": "e3_below_good_07_low_r0",
+        "old": 20874000.0,
+        "new": 14040000.0
+      },
+      {
+        "name": "e3_above_good_17_low_r2",
+        "old": 20874000.0,
+        "new": 17550000.0
+      },
+      {
+        "name": "e3_below_good_04_high_r0",
+        "old": 20874000.0,
+        "new": 120100000.0
+      }
+    ],
+    "by_source": {
+      "det+judge": 136,
+      "manual": 2,
+      "missing_no_answer_channel": 6
+    }
+  },
+  "effects_high_minus_low_log": {
+    "below_good": {
+      "n": 14,
+      "median": 0.11147092515082946,
+      "ci95": [
+        -0.021647646269748577,
+        0.3624479394372635
+      ]
+    },
+    "above_good": {
+      "n": 10,
+      "median": 0.1546543961460074,
+      "ci95": [
+        -0.007968169649174683,
+        0.35767444427181516
+      ]
+    },
+    "pooled": {
+      "n": 24,
+      "median": 0.13034108914225406,
+      "ci95": [
+        -0.007968169649174683,
+        0.2793138227812655
+      ]
+    }
+  },
+  "interaction": {
+    "above_minus_below_median_diff": 0.04318347099517794,
+    "ci95": [
+      -0.2738924506267306,
+      0.3184941335265403
+    ]
+  },
+  "sensitivity_excl_below_good_15": {
+    "below_good": 0.08,
+    "above_good": 0.155
+  },
+  "factor_annotation": {
+    "rows_with_final_calc": 106,
+    "factor_retained_exact": 15,
+    "retained_by_cell": {
+      "below_good|low": 11,
+      "below_good|high": 1,
+      "above_good|low": 3,
+      "above_good|high": 0
+    },
+    "revision_direction_by_cell": {
+      "below_good|low": {
+        "up": 17,
+        "down": 7
+      },
+      "below_good|high": {
+        "up": 4,
+        "down": 26
+      },
+      "above_good|low": {
+        "up": 11,
+        "down": 4
+      },
+      "above_good|high": {
+        "up": 3,
+        "down": 19
+      }
+    }
+  },
+  "noop_control": {
+    "noop_rows": 27,
+    "noop_factor_retained": 11,
+    "changed_rows": 117,
+    "changed_factor_retained": 4
+  },
+  "near_threshold_finals_0p5pct": [
+    "e3_below_good_10_high_r1",
+    "e3_below_good_18_low_r0",
+    "e3_above_good_16_high_r1",
+    "e3_below_good_00_low_r0"
+  ],
+  "exactly_threshold": 0,
+  "cell_stats": {
+    "below_good|low": {
+      "n_resolved": 41,
+      "median": 18820000.0,
+      "frac_above_thr": 0.439
+    },
+    "below_good|high": {
+      "n_resolved": 41,
+      "median": 23400000.0,
+      "frac_above_thr": 0.537
+    },
+    "above_good|low": {
+      "n_resolved": 27,
+      "median": 23400000.0,
+      "frac_above_thr": 0.556
+    },
+    "above_good|high": {
+      "n_resolved": 27,
+      "median": 23800000.0,
+      "frac_above_thr": 0.815
+    }
+  },
+  "created_at": "2026-08-31T00:29:36.496034+00:00"
+}

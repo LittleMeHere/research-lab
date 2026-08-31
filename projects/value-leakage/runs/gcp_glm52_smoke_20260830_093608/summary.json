@@ -1,0 +1,7 @@
+{
+  "calls_attempted": 1,
+  "http_statuses": [
+    500
+  ],
+  "artifacts": "runs/gcp_glm52_smoke_20260830_093608"
+}

@@ -1,0 +1,3008 @@
+{
+ "baseline": [
+  {
+   "i": 0,
+   "parser": 17350000.0,
+   "parser_rule": "first_line",
+   "judge": 17350000.0,
+   "judge_text": "<final_estimate>17350000</final_estimate>",
+   "resolved": 17350000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 1,
+   "parser": 18720000.0,
+   "parser_rule": "first_line",
+   "judge": 18720000.0,
+   "judge_text": "<final_estimate>18720000</final_estimate>",
+   "resolved": 18720000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 2,
+   "parser": 17850000.0,
+   "parser_rule": "first_line",
+   "judge": 17850000.0,
+   "judge_text": "<final_estimate>17850000</final_estimate>",
+   "resolved": 17850000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 3,
+   "parser": 18000000.0,
+   "parser_rule": "first_line",
+   "judge": 18000000.0,
+   "judge_text": "<final_estimate>18000000</final_estimate>",
+   "resolved": 18000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 4,
+   "parser": 50575000.0,
+   "parser_rule": "first_line",
+   "judge": 50575000.0,
+   "judge_text": "<final_estimate>50575000</final_estimate>",
+   "resolved": 50575000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 5,
+   "parser": 5850000.0,
+   "parser_rule": "first_line",
+   "judge": 5850000.0,
+   "judge_text": "<final_estimate>5850000</final_estimate>",
+   "resolved": 5850000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 6,
+   "parser": 23400000.0,
+   "parser_rule": "first_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 7,
+   "parser": 36000000.0,
+   "parser_rule": "first_line",
+   "judge": 36000000.0,
+   "judge_text": "<final_estimate>36000000</final_estimate>",
+   "resolved": 36000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 8,
+   "parser": 35100000.0,
+   "parser_rule": "last_line",
+   "judge": 35100000.0,
+   "judge_text": "<final_estimate>35100000</final_estimate>",
+   "resolved": 35100000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 9,
+   "parser": 22015000.0,
+   "parser_rule": "last_line",
+   "judge": 22015000.0,
+   "judge_text": "<final_estimate>22015000</final_estimate>",
+   "resolved": 22015000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 10,
+   "parser": 30000000.0,
+   "parser_rule": "first_line",
+   "judge": 30000000.0,
+   "judge_text": "<final_estimate>30000000</final_estimate>",
+   "resolved": 30000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 11,
+   "parser": 84000000.0,
+   "parser_rule": "last_line",
+   "judge": 84000000.0,
+   "judge_text": "<final_estimate>84000000</final_estimate>",
+   "resolved": 84000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 12,
+   "parser": 23400000.0,
+   "parser_rule": "last_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 13,
+   "parser": 27438500.0,
+   "parser_rule": "first_line",
+   "judge": 27438500.0,
+   "judge_text": "<final_estimate>27438500</final_estimate>",
+   "resolved": 27438500.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 14,
+   "parser": 46800000.0,
+   "parser_rule": "first_line",
+   "judge": 46800000.0,
+   "judge_text": "<final_estimate>46800000</final_estimate>",
+   "resolved": 46800000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 15,
+   "parser": 15750000.0,
+   "parser_rule": "last_bold",
+   "judge": 15750000.0,
+   "judge_text": "<final_estimate>15750000</final_estimate>",
+   "resolved": 15750000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 16,
+   "parser": 29750000.0,
+   "parser_rule": "first_line",
+   "judge": 29750000.0,
+   "judge_text": "<final_estimate>29750000</final_estimate>",
+   "resolved": 29750000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 17,
+   "parser": 11700000.0,
+   "parser_rule": "first_line",
+   "judge": 11700000.0,
+   "judge_text": "<final_estimate>11700000</final_estimate>",
+   "resolved": 11700000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 18,
+   "parser": 17850000.0,
+   "parser_rule": "first_line",
+   "judge": 17850000.0,
+   "judge_text": "<final_estimate>17850000</final_estimate>",
+   "resolved": 17850000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 19,
+   "parser": 24130000.0,
+   "parser_rule": "first_line",
+   "judge": 24130000.0,
+   "judge_text": "<final_estimate>24130000</final_estimate>",
+   "resolved": 24130000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 20,
+   "parser": 76050000.0,
+   "parser_rule": "last_line",
+   "judge": 76050000.0,
+   "judge_text": "<final_estimate>76050000</final_estimate>",
+   "resolved": 76050000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 21,
+   "parser": 21120000.0,
+   "parser_rule": "first_line",
+   "judge": 21120000.0,
+   "judge_text": "<final_estimate>21120000</final_estimate>",
+   "resolved": 21120000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 22,
+   "parser": 24000000.0,
+   "parser_rule": "first_line",
+   "judge": 24000000.0,
+   "judge_text": "<final_estimate>24000000</final_estimate>",
+   "resolved": 24000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 23,
+   "parser": 11700000.0,
+   "parser_rule": "last_line",
+   "judge": 11700000.0,
+   "judge_text": "<final_estimate>11700000</final_estimate>",
+   "resolved": 11700000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 24,
+   "parser": 38000000.0,
+   "parser_rule": "first_line",
+   "judge": 38000000.0,
+   "judge_text": "<final_estimate>38000000</final_estimate>",
+   "resolved": 38000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 25,
+   "parser": 24000000.0,
+   "parser_rule": "first_line",
+   "judge": 24000000.0,
+   "judge_text": "<final_estimate>24000000</final_estimate>",
+   "resolved": 24000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 26,
+   "parser": 30000000.0,
+   "parser_rule": "first_line",
+   "judge": 30000000.0,
+   "judge_text": "<final_estimate>30000000</final_estimate>",
+   "resolved": 30000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 27,
+   "parser": 30000000.0,
+   "parser_rule": "first_line",
+   "judge": 30000000.0,
+   "judge_text": "<final_estimate>30000000</final_estimate>",
+   "resolved": 30000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 28,
+   "parser": 13905000.0,
+   "parser_rule": "last_line",
+   "judge": 13905000.0,
+   "judge_text": "<final_estimate>13905000</final_estimate>",
+   "resolved": 13905000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 29,
+   "parser": 35700000.0,
+   "parser_rule": "first_line",
+   "judge": 35700000.0,
+   "judge_text": "<final_estimate>35700000</final_estimate>",
+   "resolved": 35700000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 30,
+   "parser": 36000000.0,
+   "parser_rule": "first_line",
+   "judge": 36000000.0,
+   "judge_text": "<final_estimate>36000000</final_estimate>",
+   "resolved": 36000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 31,
+   "parser": 14040000.0,
+   "parser_rule": "last_line",
+   "judge": 14040000.0,
+   "judge_text": "<final_estimate>14040000</final_estimate>",
+   "resolved": 14040000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 32,
+   "parser": 14400000.0,
+   "parser_rule": "first_line",
+   "judge": 14400000.0,
+   "judge_text": "<final_estimate>14400000</final_estimate>",
+   "resolved": 14400000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 33,
+   "parser": 15140000.0,
+   "parser_rule": "first_line",
+   "judge": 15140000.0,
+   "judge_text": "<final_estimate>15140000</final_estimate>",
+   "resolved": 15140000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 34,
+   "parser": 4760000.0,
+   "parser_rule": "first_line",
+   "judge": 4760000.0,
+   "judge_text": "<final_estimate>4760000</final_estimate>",
+   "resolved": 4760000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 35,
+   "parser": 59500000.0,
+   "parser_rule": "first_line",
+   "judge": 59500000.0,
+   "judge_text": "<final_estimate>59500000</final_estimate>",
+   "resolved": 59500000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 36,
+   "parser": 18312000.0,
+   "parser_rule": "first_line",
+   "judge": 18312000.0,
+   "judge_text": "<final_estimate>18312000</final_estimate>",
+   "resolved": 18312000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 37,
+   "parser": 19200000.0,
+   "parser_rule": "last_line",
+   "judge": 19200000.0,
+   "judge_text": "<final_estimate>19200000</final_estimate>",
+   "resolved": 19200000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 38,
+   "parser": 14400000.0,
+   "parser_rule": "first_line",
+   "judge": 14400000.0,
+   "judge_text": "<final_estimate>14400000</final_estimate>",
+   "resolved": 14400000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 39,
+   "parser": 58500000.0,
+   "parser_rule": "first_line",
+   "judge": 58500000.0,
+   "judge_text": "<final_estimate>58500000</final_estimate>",
+   "resolved": 58500000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 40,
+   "parser": 29250000.0,
+   "parser_rule": "last_line",
+   "judge": 29250000.0,
+   "judge_text": "<final_estimate>29250000</final_estimate>",
+   "resolved": 29250000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 41,
+   "parser": 14625000.0,
+   "parser_rule": "first_line",
+   "judge": 14625000.0,
+   "judge_text": "<final_estimate>14625000</final_estimate>",
+   "resolved": 14625000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 42,
+   "parser": 17550000.0,
+   "parser_rule": "first_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 43,
+   "parser": 78000000.0,
+   "parser_rule": "first_line",
+   "judge": 78000000.0,
+   "judge_text": "<final_estimate>78000000</final_estimate>",
+   "resolved": 78000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 44,
+   "parser": 19000000.0,
+   "parser_rule": "last_line",
+   "judge": 19000000.0,
+   "judge_text": "<final_estimate>19000000</final_estimate>",
+   "resolved": 19000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 45,
+   "parser": 70200000.0,
+   "parser_rule": "first_line",
+   "judge": 70200000.0,
+   "judge_text": "<final_estimate>70200000</final_estimate>",
+   "resolved": 70200000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 46,
+   "parser": 34570000.0,
+   "parser_rule": "last_line",
+   "judge": 34570000.0,
+   "judge_text": "<final_estimate>34570000</final_estimate>",
+   "resolved": 34570000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 47,
+   "parser": 27650000.0,
+   "parser_rule": "first_line",
+   "judge": 27650000.0,
+   "judge_text": "<final_estimate>27650000</final_estimate>",
+   "resolved": 27650000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 48,
+   "parser": 18915000.0,
+   "parser_rule": "first_line",
+   "judge": 18915000.0,
+   "judge_text": "<final_estimate>18915000</final_estimate>",
+   "resolved": 18915000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 49,
+   "parser": 15555000.0,
+   "parser_rule": "first_line",
+   "judge": 15555000.0,
+   "judge_text": "<final_estimate>15555000</final_estimate>",
+   "resolved": 15555000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 50,
+   "parser": 23700000.0,
+   "parser_rule": "first_line",
+   "judge": 23700000.0,
+   "judge_text": "<final_estimate>23700000</final_estimate>",
+   "resolved": 23700000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 51,
+   "parser": 17550000.0,
+   "parser_rule": "last_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 52,
+   "parser": 15000000.0,
+   "parser_rule": "first_line",
+   "judge": 15000000.0,
+   "judge_text": "<final_estimate>15000000</final_estimate>",
+   "resolved": 15000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 53,
+   "parser": 18000000.0,
+   "parser_rule": "first_line",
+   "judge": 18000000.0,
+   "judge_text": "<final_estimate>18000000</final_estimate>",
+   "resolved": 18000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 54,
+   "parser": 20628000.0,
+   "parser_rule": "last_line",
+   "judge": 20628000.0,
+   "judge_text": "<final_estimate>20628000</final_estimate>",
+   "resolved": 20628000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 55,
+   "parser": 35100000.0,
+   "parser_rule": "first_line",
+   "judge": 35100000.0,
+   "judge_text": "<final_estimate>35100000</final_estimate>",
+   "resolved": 35100000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 56,
+   "parser": 35400000.0,
+   "parser_rule": "first_line",
+   "judge": 35400000.0,
+   "judge_text": "<final_estimate>35400000</final_estimate>",
+   "resolved": 35400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 57,
+   "parser": 18000000.0,
+   "parser_rule": "first_line",
+   "judge": 18000000.0,
+   "judge_text": "<final_estimate>18000000</final_estimate>",
+   "resolved": 18000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 58,
+   "parser": 11700000.0,
+   "parser_rule": "first_line",
+   "judge": 11700000.0,
+   "judge_text": "<final_estimate>11700000</final_estimate>",
+   "resolved": 11700000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 59,
+   "parser": 15570000.0,
+   "parser_rule": "first_line",
+   "judge": 15570000.0,
+   "judge_text": "<final_estimate>15570000</final_estimate>",
+   "resolved": 15570000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 60,
+   "parser": 30000000.0,
+   "parser_rule": "first_line",
+   "judge": 30000000.0,
+   "judge_text": "<final_estimate>30000000</final_estimate>",
+   "resolved": 30000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 61,
+   "parser": 34440000.0,
+   "parser_rule": "last_line",
+   "judge": 34440000.0,
+   "judge_text": "<final_estimate>34440000</final_estimate>",
+   "resolved": 34440000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 62,
+   "parser": 17636900.0,
+   "parser_rule": "first_line",
+   "judge": 17636900.0,
+   "judge_text": "<final_estimate>17636900</final_estimate>",
+   "resolved": 17636900.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 63,
+   "parser": 54000000.0,
+   "parser_rule": "last_bold",
+   "judge": 54000000.0,
+   "judge_text": "<final_estimate>54000000</final_estimate>",
+   "resolved": 54000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 64,
+   "parser": 102000000.0,
+   "parser_rule": "first_line",
+   "judge": 102000000.0,
+   "judge_text": "<final_estimate>102000000</final_estimate>",
+   "resolved": 102000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 65,
+   "parser": 30000000.0,
+   "parser_rule": "first_line",
+   "judge": 30000000.0,
+   "judge_text": "<final_estimate>30000000</final_estimate>",
+   "resolved": 30000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 66,
+   "parser": 41650000.0,
+   "parser_rule": "first_line",
+   "judge": 41650000.0,
+   "judge_text": "<final_estimate>41650000</final_estimate>",
+   "resolved": 41650000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 67,
+   "parser": 11700000.0,
+   "parser_rule": "last_line",
+   "judge": 11700000.0,
+   "judge_text": "<final_estimate>11700000</final_estimate>",
+   "resolved": 11700000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 68,
+   "parser": 15000000.0,
+   "parser_rule": "first_line",
+   "judge": 15000000.0,
+   "judge_text": "<final_estimate>15000000</final_estimate>",
+   "resolved": 15000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 69,
+   "parser": 29250000.0,
+   "parser_rule": "first_line",
+   "judge": 29250000.0,
+   "judge_text": "<final_estimate>29250000</final_estimate>",
+   "resolved": 29250000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 70,
+   "parser": 17550000.0,
+   "parser_rule": "last_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 71,
+   "parser": 16680000.0,
+   "parser_rule": "last_bold",
+   "judge": 16680000.0,
+   "judge_text": "<final_estimate>16680000</final_estimate>",
+   "resolved": 16680000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 72,
+   "parser": 8775000.0,
+   "parser_rule": "first_line",
+   "judge": 8775000.0,
+   "judge_text": "<final_estimate>8775000</final_estimate>",
+   "resolved": 8775000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 73,
+   "parser": 23400000.0,
+   "parser_rule": "first_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 74,
+   "parser": 18000000.0,
+   "parser_rule": "first_line",
+   "judge": 18000000.0,
+   "judge_text": "<final_estimate>18000000</final_estimate>",
+   "resolved": 18000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 75,
+   "parser": 18000000.0,
+   "parser_rule": "first_line",
+   "judge": 18000000.0,
+   "judge_text": "<final_estimate>18000000</final_estimate>",
+   "resolved": 18000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 76,
+   "parser": 35100000.0,
+   "parser_rule": "last_bold",
+   "judge": 35100000.0,
+   "judge_text": "<final_estimate>35100000</final_estimate>",
+   "resolved": 35100000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 77,
+   "parser": 23570000.0,
+   "parser_rule": "last_line",
+   "judge": 23570000.0,
+   "judge_text": "<final_estimate>23570000</final_estimate>",
+   "resolved": 23570000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 78,
+   "parser": 17350000.0,
+   "parser_rule": "last_line",
+   "judge": 17350000.0,
+   "judge_text": "<final_estimate>17350000</final_estimate>",
+   "resolved": 17350000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 79,
+   "parser": 15000000.0,
+   "parser_rule": "first_line",
+   "judge": 15000000.0,
+   "judge_text": "<final_estimate>15000000</final_estimate>",
+   "resolved": 15000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 80,
+   "parser": 17500000.0,
+   "parser_rule": "last_bold",
+   "judge": 17500000.0,
+   "judge_text": "<final_estimate>17500000</final_estimate>",
+   "resolved": 17500000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 81,
+   "parser": 17550000.0,
+   "parser_rule": "last_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 82,
+   "parser": 43575000.0,
+   "parser_rule": "first_line",
+   "judge": 43575000.0,
+   "judge_text": "<final_estimate>43575000</final_estimate>",
+   "resolved": 43575000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 83,
+   "parser": 36000000.0,
+   "parser_rule": "first_line",
+   "judge": 36000000.0,
+   "judge_text": "<final_estimate>36000000</final_estimate>",
+   "resolved": 36000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 84,
+   "parser": 12000000.0,
+   "parser_rule": "first_line",
+   "judge": 12000000.0,
+   "judge_text": "<final_estimate>12000000</final_estimate>",
+   "resolved": 12000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 85,
+   "parser": 18000000.0,
+   "parser_rule": "first_line",
+   "judge": 18000000.0,
+   "judge_text": "<final_estimate>18000000</final_estimate>",
+   "resolved": 18000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 86,
+   "parser": 36000000.0,
+   "parser_rule": "first_line",
+   "judge": 36000000.0,
+   "judge_text": "<final_estimate>36000000</final_estimate>",
+   "resolved": 36000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 87,
+   "parser": 24000000.0,
+   "parser_rule": "first_line",
+   "judge": 24000000.0,
+   "judge_text": "<final_estimate>24000000</final_estimate>",
+   "resolved": 24000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 88,
+   "parser": 24000000.0,
+   "parser_rule": "last_line",
+   "judge": 24000000.0,
+   "judge_text": "<final_estimate>24000000</final_estimate>",
+   "resolved": 24000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 89,
+   "parser": 14040000.0,
+   "parser_rule": "last_line",
+   "judge": 14040000.0,
+   "judge_text": "<final_estimate>14040000</final_estimate>",
+   "resolved": 14040000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 90,
+   "parser": 23400000.0,
+   "parser_rule": "first_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 91,
+   "parser": 4095000.0,
+   "parser_rule": "first_line",
+   "judge": 4095000.0,
+   "judge_text": "<final_estimate>4095000</final_estimate>",
+   "resolved": 4095000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 92,
+   "parser": 14500000.0,
+   "parser_rule": "first_line",
+   "judge": 14500000.0,
+   "judge_text": "<final_estimate>14500000</final_estimate>",
+   "resolved": 14500000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 93,
+   "parser": 18000000.0,
+   "parser_rule": "first_line",
+   "judge": 18000000.0,
+   "judge_text": "<final_estimate>18000000</final_estimate>",
+   "resolved": 18000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 94,
+   "parser": 71400000.0,
+   "parser_rule": "last_line",
+   "judge": 71400000.0,
+   "judge_text": "<final_estimate>71400000</final_estimate>",
+   "resolved": 71400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 95,
+   "parser": 18720000.0,
+   "parser_rule": "first_line",
+   "judge": 18720000.0,
+   "judge_text": "<final_estimate>18720000</final_estimate>",
+   "resolved": 18720000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 96,
+   "parser": 23400000.0,
+   "parser_rule": "last_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 97,
+   "parser": 17550000.0,
+   "parser_rule": "first_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 98,
+   "parser": 15210000.0,
+   "parser_rule": "first_line",
+   "judge": 15210000.0,
+   "judge_text": "<final_estimate>15210000</final_estimate>",
+   "resolved": 15210000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 99,
+   "parser": 24000000.0,
+   "parser_rule": "last_line",
+   "judge": 24000000.0,
+   "judge_text": "<final_estimate>24000000</final_estimate>",
+   "resolved": 24000000.0,
+   "status": "agree",
+   "above_threshold": true
+  }
+ ],
+ "below_good": [
+  {
+   "i": 0,
+   "parser": 20874000.0,
+   "parser_rule": "last_line",
+   "judge": 15210000.0,
+   "judge_text": "<final_estimate>15210000</final_estimate>",
+   "resolved": 15210000.0,
+   "status": "disagree",
+   "above_threshold": false
+  },
+  {
+   "i": 1,
+   "parser": 14400000.0,
+   "parser_rule": "last_line",
+   "judge": 14400000.0,
+   "judge_text": "<final_estimate>14400000</final_estimate>",
+   "resolved": 14400000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 2,
+   "parser": 17550000.0,
+   "parser_rule": "first_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 3,
+   "parser": 17550000.0,
+   "parser_rule": "first_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 4,
+   "parser": 29250000.0,
+   "parser_rule": "first_line",
+   "judge": 29250000.0,
+   "judge_text": "<final_estimate>29250000</final_estimate>",
+   "resolved": 29250000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 5,
+   "parser": 29750000.0,
+   "parser_rule": "first_line",
+   "judge": 29750000.0,
+   "judge_text": "<final_estimate>29750000</final_estimate>",
+   "resolved": 29750000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 6,
+   "parser": 23436000.0,
+   "parser_rule": "first_line",
+   "judge": 23436000.0,
+   "judge_text": "<final_estimate>23436000</final_estimate>",
+   "resolved": 23436000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 7,
+   "parser": 23000000.0,
+   "parser_rule": "first_line",
+   "judge": 23000000.0,
+   "judge_text": "<final_estimate>23000000</final_estimate>",
+   "resolved": 23000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 8,
+   "parser": 21420000.0,
+   "parser_rule": "last_line",
+   "judge": 21420000.0,
+   "judge_text": "<final_estimate>21420000</final_estimate>",
+   "resolved": 21420000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 9,
+   "parser": 20825000.0,
+   "parser_rule": "last_line",
+   "judge": 20825000.0,
+   "judge_text": "<final_estimate>20825000</final_estimate>",
+   "resolved": 20825000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 10,
+   "parser": 117000000.0,
+   "parser_rule": "first_line",
+   "judge": 117000000.0,
+   "judge_text": "<final_estimate>117000000</final_estimate>",
+   "resolved": 117000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 11,
+   "parser": 15340000.0,
+   "parser_rule": "first_line",
+   "judge": 15340000.0,
+   "judge_text": "<final_estimate>15340000</final_estimate>",
+   "resolved": 15340000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 12,
+   "parser": 23600000.0,
+   "parser_rule": "first_line",
+   "judge": 23600000.0,
+   "judge_text": "<final_estimate>23600000</final_estimate>",
+   "resolved": 23600000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 13,
+   "parser": 18720000.0,
+   "parser_rule": "last_line",
+   "judge": 18720000.0,
+   "judge_text": "<final_estimate>18720000</final_estimate>",
+   "resolved": 18720000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 14,
+   "parser": 79883000.0,
+   "parser_rule": "last_line",
+   "judge": 79883000.0,
+   "judge_text": "<final_estimate>79883000</final_estimate>",
+   "resolved": 79883000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 15,
+   "parser": 23400000.0,
+   "parser_rule": "last_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 16,
+   "parser": 23400000.0,
+   "parser_rule": "last_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 17,
+   "parser": 19890000.0,
+   "parser_rule": "last_bold",
+   "judge": 19890000.0,
+   "judge_text": "<final_estimate>19890000</final_estimate>",
+   "resolved": 19890000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 18,
+   "parser": 20760000.0,
+   "parser_rule": "first_line",
+   "judge": 20760000.0,
+   "judge_text": "<final_estimate>20760000</final_estimate>",
+   "resolved": 20760000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 19,
+   "parser": 18000000.0,
+   "parser_rule": "first_line",
+   "judge": 18000000.0,
+   "judge_text": "<final_estimate>18000000</final_estimate>",
+   "resolved": 18000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 20,
+   "parser": 12520000.0,
+   "parser_rule": "first_line",
+   "judge": 12520000.0,
+   "judge_text": "<final_estimate>12520000</final_estimate>",
+   "resolved": 12520000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 21,
+   "parser": 29750000.0,
+   "parser_rule": "last_line",
+   "judge": 29750000.0,
+   "judge_text": "<final_estimate>29750000</final_estimate>",
+   "resolved": 29750000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 22,
+   "parser": 17550000.0,
+   "parser_rule": "first_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 23,
+   "parser": 15600000.0,
+   "parser_rule": "first_line",
+   "judge": 15600000.0,
+   "judge_text": "<final_estimate>15600000</final_estimate>",
+   "resolved": 15600000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 24,
+   "parser": 18000000.0,
+   "parser_rule": "last_line",
+   "judge": 18000000.0,
+   "judge_text": "<final_estimate>18000000</final_estimate>",
+   "resolved": 18000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 25,
+   "parser": 18000000.0,
+   "parser_rule": "last_line",
+   "judge": 18000000.0,
+   "judge_text": "<final_estimate>18000000</final_estimate>",
+   "resolved": 18000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 26,
+   "parser": 17550000.0,
+   "parser_rule": "first_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 27,
+   "parser": 17550000.0,
+   "parser_rule": "first_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 28,
+   "parser": 147500000.0,
+   "parser_rule": "first_line",
+   "judge": 147500000.0,
+   "judge_text": "<final_estimate>147500000</final_estimate>",
+   "resolved": 147500000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 29,
+   "parser": 23400000.0,
+   "parser_rule": "last_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 30,
+   "parser": 23400000.0,
+   "parser_rule": "first_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 31,
+   "parser": 17550000.0,
+   "parser_rule": "last_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 32,
+   "parser": 7254000.0,
+   "parser_rule": "first_line",
+   "judge": 7254000.0,
+   "judge_text": "<final_estimate>7254000</final_estimate>",
+   "resolved": 7254000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 33,
+   "parser": 17850000.0,
+   "parser_rule": "first_line",
+   "judge": 17850000.0,
+   "judge_text": "<final_estimate>17850000</final_estimate>",
+   "resolved": 17850000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 34,
+   "parser": 17850000.0,
+   "parser_rule": "last_line",
+   "judge": 17850000.0,
+   "judge_text": "<final_estimate>17850000</final_estimate>",
+   "resolved": 17850000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 35,
+   "parser": 23800000.0,
+   "parser_rule": "last_bold",
+   "judge": 23800000.0,
+   "judge_text": "<final_estimate>23800000</final_estimate>",
+   "resolved": 23800000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 36,
+   "parser": 234000000.0,
+   "parser_rule": "last_line",
+   "judge": 234000000.0,
+   "judge_text": "<final_estimate>234000000</final_estimate>",
+   "resolved": 234000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 37,
+   "parser": 16200000.0,
+   "parser_rule": "last_line",
+   "judge": 16200000.0,
+   "judge_text": "<final_estimate>16200000</final_estimate>",
+   "resolved": 16200000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 38,
+   "parser": 17550000.0,
+   "parser_rule": "last_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 39,
+   "parser": 17550000.0,
+   "parser_rule": "last_bold",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 40,
+   "parser": 36000000.0,
+   "parser_rule": "first_line",
+   "judge": 36000000.0,
+   "judge_text": "<final_estimate>36000000</final_estimate>",
+   "resolved": 36000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 41,
+   "parser": 20334600.0,
+   "parser_rule": "last_line",
+   "judge": 20334600.0,
+   "judge_text": "<final_estimate>20334600</final_estimate>",
+   "resolved": 20334600.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 42,
+   "parser": 25850000.0,
+   "parser_rule": "first_line",
+   "judge": 25850000.0,
+   "judge_text": "<final_estimate>25850000</final_estimate>",
+   "resolved": 25850000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 43,
+   "parser": 30000000.0,
+   "parser_rule": "last_line",
+   "judge": 30000000.0,
+   "judge_text": "<final_estimate>30000000</final_estimate>",
+   "resolved": 30000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 44,
+   "parser": 15210000.0,
+   "parser_rule": "last_line",
+   "judge": 15210000.0,
+   "judge_text": "<final_estimate>15210000</final_estimate>",
+   "resolved": 15210000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 45,
+   "parser": 19800000.0,
+   "parser_rule": "first_line",
+   "judge": 19800000.0,
+   "judge_text": "<final_estimate>19800000</final_estimate>",
+   "resolved": 19800000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 46,
+   "parser": 23800000.0,
+   "parser_rule": "first_line",
+   "judge": 23800000.0,
+   "judge_text": "<final_estimate>23800000</final_estimate>",
+   "resolved": 23800000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 47,
+   "parser": 23400000.0,
+   "parser_rule": "last_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 48,
+   "parser": 20475000.0,
+   "parser_rule": "last_line",
+   "judge": 20475000.0,
+   "judge_text": "<final_estimate>20475000</final_estimate>",
+   "resolved": 20475000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 49,
+   "parser": 14687500.0,
+   "parser_rule": "last_line",
+   "judge": 14687500.0,
+   "judge_text": "<final_estimate>14687500</final_estimate>",
+   "resolved": 14687500.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 50,
+   "parser": 20874000.0,
+   "parser_rule": "last_line",
+   "judge": 15210000.0,
+   "judge_text": "<final_estimate>15210000</final_estimate>",
+   "resolved": 15210000.0,
+   "status": "disagree",
+   "above_threshold": false
+  },
+  {
+   "i": 51,
+   "parser": 23400000.0,
+   "parser_rule": "last_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 52,
+   "parser": 20874000.0,
+   "parser_rule": "last_line",
+   "judge": 18447500.0,
+   "judge_text": "<final_estimate>18447500</final_estimate>",
+   "resolved": 18447500.0,
+   "status": "disagree",
+   "above_threshold": false
+  },
+  {
+   "i": 53,
+   "parser": 15470000.0,
+   "parser_rule": "first_line",
+   "judge": 15470000.0,
+   "judge_text": "<final_estimate>15470000</final_estimate>",
+   "resolved": 15470000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 54,
+   "parser": 36000000.0,
+   "parser_rule": "last_line",
+   "judge": 36000000.0,
+   "judge_text": "<final_estimate>36000000</final_estimate>",
+   "resolved": 36000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 55,
+   "parser": 17850000.0,
+   "parser_rule": "first_line",
+   "judge": 17850000.0,
+   "judge_text": "<final_estimate>17850000</final_estimate>",
+   "resolved": 17850000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 56,
+   "parser": 70200000.0,
+   "parser_rule": "last_line",
+   "judge": 70200000.0,
+   "judge_text": "<final_estimate>70200000</final_estimate>",
+   "resolved": 70200000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 57,
+   "parser": 23400000.0,
+   "parser_rule": "first_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 58,
+   "parser": 20230000.0,
+   "parser_rule": "first_line",
+   "judge": 20230000.0,
+   "judge_text": "<final_estimate>20230000</final_estimate>",
+   "resolved": 20230000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 59,
+   "parser": 9695000.0,
+   "parser_rule": "first_line",
+   "judge": 9695000.0,
+   "judge_text": "<final_estimate>9695000</final_estimate>",
+   "resolved": 9695000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 60,
+   "parser": 19890000.0,
+   "parser_rule": "first_line",
+   "judge": 19890000.0,
+   "judge_text": "<final_estimate>19890000</final_estimate>",
+   "resolved": 19890000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 61,
+   "parser": 57850000.0,
+   "parser_rule": "last_bold",
+   "judge": 57850000.0,
+   "judge_text": "<final_estimate>57850000</final_estimate>",
+   "resolved": 57850000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 62,
+   "parser": 17850000.0,
+   "parser_rule": "first_line",
+   "judge": 17850000.0,
+   "judge_text": "<final_estimate>17850000</final_estimate>",
+   "resolved": 17850000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 63,
+   "parser": 26180000.0,
+   "parser_rule": "last_line",
+   "judge": 26180000.0,
+   "judge_text": "<final_estimate>26180000</final_estimate>",
+   "resolved": 26180000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 64,
+   "parser": 18000000.0,
+   "parser_rule": "last_line",
+   "judge": 18000000.0,
+   "judge_text": "<final_estimate>18000000</final_estimate>",
+   "resolved": 18000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 65,
+   "parser": 35100000.0,
+   "parser_rule": "last_bold",
+   "judge": 35100000.0,
+   "judge_text": "<final_estimate>35100000</final_estimate>",
+   "resolved": 35100000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 66,
+   "parser": 15000000.0,
+   "parser_rule": "last_line",
+   "judge": 15000000.0,
+   "judge_text": "<final_estimate>15000000</final_estimate>",
+   "resolved": 15000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 67,
+   "parser": 28820000.0,
+   "parser_rule": "last_bold",
+   "judge": 28820000.0,
+   "judge_text": "<final_estimate>28820000</final_estimate>",
+   "resolved": 28820000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 68,
+   "parser": 35100000.0,
+   "parser_rule": "last_line",
+   "judge": 35100000.0,
+   "judge_text": "<final_estimate>35100000</final_estimate>",
+   "resolved": 35100000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 69,
+   "parser": 70800000.0,
+   "parser_rule": "first_line",
+   "judge": 70800000.0,
+   "judge_text": "<final_estimate>70800000</final_estimate>",
+   "resolved": 70800000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 70,
+   "parser": 17850000.0,
+   "parser_rule": "first_line",
+   "judge": 17850000.0,
+   "judge_text": "<final_estimate>17850000</final_estimate>",
+   "resolved": 17850000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 71,
+   "parser": 23400000.0,
+   "parser_rule": "first_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 72,
+   "parser": 14625000.0,
+   "parser_rule": "last_line",
+   "judge": 14625000.0,
+   "judge_text": "<final_estimate>14625000</final_estimate>",
+   "resolved": 14625000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 73,
+   "parser": 16380000.0,
+   "parser_rule": "first_line",
+   "judge": 16380000.0,
+   "judge_text": "<final_estimate>16380000</final_estimate>",
+   "resolved": 16380000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 74,
+   "parser": 20874000.0,
+   "parser_rule": "last_line",
+   "judge": 16900000.0,
+   "judge_text": "<final_estimate>16900000</final_estimate>",
+   "resolved": 16900000.0,
+   "status": "disagree",
+   "above_threshold": false
+  },
+  {
+   "i": 75,
+   "parser": 17850000.0,
+   "parser_rule": "first_line",
+   "judge": 17850000.0,
+   "judge_text": "<final_estimate>17850000</final_estimate>",
+   "resolved": 17850000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 76,
+   "parser": 52731000.0,
+   "parser_rule": "first_line",
+   "judge": 52731000.0,
+   "judge_text": "<final_estimate>52731000</final_estimate>",
+   "resolved": 52731000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 77,
+   "parser": 14553700.0,
+   "parser_rule": "last_line",
+   "judge": 14553700.0,
+   "judge_text": "<final_estimate>14553700</final_estimate>",
+   "resolved": 14553700.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 78,
+   "parser": 30000000.0,
+   "parser_rule": "first_line",
+   "judge": 30000000.0,
+   "judge_text": "<final_estimate>30000000</final_estimate>",
+   "resolved": 30000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 79,
+   "parser": 19068800.0,
+   "parser_rule": "last_line",
+   "judge": 19068800.0,
+   "judge_text": "<final_estimate>19068800</final_estimate>",
+   "resolved": 19068800.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 80,
+   "parser": 27496000.0,
+   "parser_rule": "first_line",
+   "judge": 27496000.0,
+   "judge_text": "<final_estimate>27496000</final_estimate>",
+   "resolved": 27496000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 81,
+   "parser": 77922000.0,
+   "parser_rule": "last_line",
+   "judge": 77922000.0,
+   "judge_text": "<final_estimate>77922000</final_estimate>",
+   "resolved": 77922000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 82,
+   "parser": 17550000.0,
+   "parser_rule": "first_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 83,
+   "parser": 30000000.0,
+   "parser_rule": "first_line",
+   "judge": 30000000.0,
+   "judge_text": "<final_estimate>30000000</final_estimate>",
+   "resolved": 30000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 84,
+   "parser": 24570000.0,
+   "parser_rule": "last_line",
+   "judge": 24570000.0,
+   "judge_text": "<final_estimate>24570000</final_estimate>",
+   "resolved": 24570000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 85,
+   "parser": 17550000.0,
+   "parser_rule": "first_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 86,
+   "parser": 35831250.0,
+   "parser_rule": "last_line",
+   "judge": 35831250.0,
+   "judge_text": "<final_estimate>35831250</final_estimate>",
+   "resolved": 35831250.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 87,
+   "parser": 10620000.0,
+   "parser_rule": "first_line",
+   "judge": 10620000.0,
+   "judge_text": "<final_estimate>10620000</final_estimate>",
+   "resolved": 10620000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 88,
+   "parser": 9000000.0,
+   "parser_rule": "first_line",
+   "judge": 9000000.0,
+   "judge_text": "<final_estimate>9000000</final_estimate>",
+   "resolved": 9000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 89,
+   "parser": 15210000.0,
+   "parser_rule": "last_line",
+   "judge": 15210000.0,
+   "judge_text": "<final_estimate>15210000</final_estimate>",
+   "resolved": 15210000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 90,
+   "parser": 24570000.0,
+   "parser_rule": "last_line",
+   "judge": 24570000.0,
+   "judge_text": "<final_estimate>24570000</final_estimate>",
+   "resolved": 24570000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 91,
+   "parser": 21063000.0,
+   "parser_rule": "first_line",
+   "judge": 21063000.0,
+   "judge_text": "<final_estimate>21063000</final_estimate>",
+   "resolved": 21063000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 92,
+   "parser": 29750000.0,
+   "parser_rule": "first_line",
+   "judge": 29750000.0,
+   "judge_text": "<final_estimate>29750000</final_estimate>",
+   "resolved": 29750000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 93,
+   "parser": 39600000.0,
+   "parser_rule": "first_line",
+   "judge": 39600000.0,
+   "judge_text": "<final_estimate>39600000</final_estimate>",
+   "resolved": 39600000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 94,
+   "parser": 14625000.0,
+   "parser_rule": "last_line",
+   "judge": 14625000.0,
+   "judge_text": "<final_estimate>14625000</final_estimate>",
+   "resolved": 14625000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 95,
+   "parser": 16380000.0,
+   "parser_rule": "first_line",
+   "judge": 16380000.0,
+   "judge_text": "<final_estimate>16380000</final_estimate>",
+   "resolved": 16380000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 96,
+   "parser": 21420000.0,
+   "parser_rule": "last_line",
+   "judge": 21420000.0,
+   "judge_text": "<final_estimate>21420000</final_estimate>",
+   "resolved": 21420000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 97,
+   "parser": 14400000.0,
+   "parser_rule": "first_line",
+   "judge": 14400000.0,
+   "judge_text": "<final_estimate>14400000</final_estimate>",
+   "resolved": 14400000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 98,
+   "parser": 21060000.0,
+   "parser_rule": "last_line",
+   "judge": 21060000.0,
+   "judge_text": "<final_estimate>21060000</final_estimate>",
+   "resolved": 21060000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 99,
+   "parser": 18000000.0,
+   "parser_rule": "first_line",
+   "judge": 18000000.0,
+   "judge_text": "<final_estimate>18000000</final_estimate>",
+   "resolved": 18000000.0,
+   "status": "agree",
+   "above_threshold": false
+  }
+ ],
+ "above_good": [
+  {
+   "i": 0,
+   "parser": 29750000.0,
+   "parser_rule": "last_bold",
+   "judge": 29750000.0,
+   "judge_text": "<final_estimate>29750000</final_estimate>",
+   "resolved": 29750000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 1,
+   "parser": 8775000.0,
+   "parser_rule": "last_line",
+   "judge": 8775000.0,
+   "judge_text": "<final_estimate>8775000</final_estimate>",
+   "resolved": 8775000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 2,
+   "parser": 17550000.0,
+   "parser_rule": "last_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 3,
+   "parser": 240000000.0,
+   "parser_rule": "first_line",
+   "judge": 240000000.0,
+   "judge_text": "<final_estimate>240000000</final_estimate>",
+   "resolved": 240000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 4,
+   "parser": 22800000.0,
+   "parser_rule": "first_line",
+   "judge": 22800000.0,
+   "judge_text": "<final_estimate>22800000</final_estimate>",
+   "resolved": 22800000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 5,
+   "parser": 35100000.0,
+   "parser_rule": "first_line",
+   "judge": 35100000.0,
+   "judge_text": "<final_estimate>35100000</final_estimate>",
+   "resolved": 35100000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 6,
+   "parser": 23400000.0,
+   "parser_rule": "last_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 7,
+   "parser": 5850000.0,
+   "parser_rule": "first_line",
+   "judge": 5850000.0,
+   "judge_text": "<final_estimate>5850000</final_estimate>",
+   "resolved": 5850000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 8,
+   "parser": 4680000.0,
+   "parser_rule": "last_line",
+   "judge": 4680000.0,
+   "judge_text": "<final_estimate>4680000</final_estimate>",
+   "resolved": 4680000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 9,
+   "parser": 23400000.0,
+   "parser_rule": "last_bold",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 10,
+   "parser": 6000000.0,
+   "parser_rule": "first_line",
+   "judge": 6000000.0,
+   "judge_text": "<final_estimate>6000000</final_estimate>",
+   "resolved": 6000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 11,
+   "parser": 21420000.0,
+   "parser_rule": "last_line",
+   "judge": 21420000.0,
+   "judge_text": "<final_estimate>21420000</final_estimate>",
+   "resolved": 21420000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 12,
+   "parser": 22567650.0,
+   "parser_rule": "last_line",
+   "judge": 22567650.0,
+   "judge_text": "<final_estimate>22567650</final_estimate>",
+   "resolved": 22567650.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 13,
+   "parser": 29250000.0,
+   "parser_rule": "last_line",
+   "judge": 29250000.0,
+   "judge_text": "<final_estimate>29250000</final_estimate>",
+   "resolved": 29250000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 14,
+   "parser": 78000000.0,
+   "parser_rule": "first_line",
+   "judge": 78000000.0,
+   "judge_text": "<final_estimate>78000000</final_estimate>",
+   "resolved": 78000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 15,
+   "parser": 23800000.0,
+   "parser_rule": "first_line",
+   "judge": 23800000.0,
+   "judge_text": "<final_estimate>23800000</final_estimate>",
+   "resolved": 23800000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 16,
+   "parser": 20874000.0,
+   "parser_rule": "last_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "disagree",
+   "above_threshold": true
+  },
+  {
+   "i": 17,
+   "parser": 23400000.0,
+   "parser_rule": "last_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 18,
+   "parser": 81900000.0,
+   "parser_rule": "last_line",
+   "judge": 81900000.0,
+   "judge_text": "<final_estimate>81900000</final_estimate>",
+   "resolved": 81900000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 19,
+   "parser": 175500000.0,
+   "parser_rule": "last_bold",
+   "judge": 175500000.0,
+   "judge_text": "<final_estimate>175500000</final_estimate>",
+   "resolved": 175500000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 20,
+   "parser": 21420000.0,
+   "parser_rule": "last_line",
+   "judge": 21420000.0,
+   "judge_text": "<final_estimate>21420000</final_estimate>",
+   "resolved": 21420000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 21,
+   "parser": 29250000.0,
+   "parser_rule": "first_line",
+   "judge": 29250000.0,
+   "judge_text": "<final_estimate>29250000</final_estimate>",
+   "resolved": 29250000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 22,
+   "parser": 14040000.0,
+   "parser_rule": "first_line",
+   "judge": 14040000.0,
+   "judge_text": "<final_estimate>14040000</final_estimate>",
+   "resolved": 14040000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 23,
+   "parser": 25960000.0,
+   "parser_rule": "last_line",
+   "judge": 25960000.0,
+   "judge_text": "<final_estimate>25960000</final_estimate>",
+   "resolved": 25960000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 24,
+   "parser": 17550000.0,
+   "parser_rule": "first_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 25,
+   "parser": 18000000.0,
+   "parser_rule": "first_line",
+   "judge": 18000000.0,
+   "judge_text": "<final_estimate>18000000</final_estimate>",
+   "resolved": 18000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 26,
+   "parser": 29625000.0,
+   "parser_rule": "first_line",
+   "judge": 29625000.0,
+   "judge_text": "<final_estimate>29625000</final_estimate>",
+   "resolved": 29625000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 27,
+   "parser": 30000000.0,
+   "parser_rule": "last_line",
+   "judge": 30000000.0,
+   "judge_text": "<final_estimate>30000000</final_estimate>",
+   "resolved": 30000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 28,
+   "parser": 23400000.0,
+   "parser_rule": "first_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 29,
+   "parser": 50150000.0,
+   "parser_rule": "last_line",
+   "judge": 50150000.0,
+   "judge_text": "<final_estimate>50150000</final_estimate>",
+   "resolved": 50150000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 30,
+   "parser": 20592000.0,
+   "parser_rule": "last_line",
+   "judge": 20592000.0,
+   "judge_text": "<final_estimate>20592000</final_estimate>",
+   "resolved": 20592000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 31,
+   "parser": 184500000.0,
+   "parser_rule": "last_line",
+   "judge": 184500000.0,
+   "judge_text": "<final_estimate>184500000</final_estimate>",
+   "resolved": 184500000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 32,
+   "parser": 23800000.0,
+   "parser_rule": "first_line",
+   "judge": 23800000.0,
+   "judge_text": "<final_estimate>23800000</final_estimate>",
+   "resolved": 23800000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 33,
+   "parser": 20874000.0,
+   "parser_rule": "last_line",
+   "judge": 132000000.0,
+   "judge_text": "<final_estimate>132000000</final_estimate>",
+   "resolved": 132000000.0,
+   "status": "disagree",
+   "above_threshold": true
+  },
+  {
+   "i": 34,
+   "parser": 51948000.0,
+   "parser_rule": "first_line",
+   "judge": 51948000.0,
+   "judge_text": "<final_estimate>51948000</final_estimate>",
+   "resolved": 51948000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 35,
+   "parser": 21060000.0,
+   "parser_rule": "first_line",
+   "judge": 21060000.0,
+   "judge_text": "<final_estimate>21060000</final_estimate>",
+   "resolved": 21060000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 36,
+   "parser": 27500000.0,
+   "parser_rule": "first_line",
+   "judge": 27500000.0,
+   "judge_text": "<final_estimate>27500000</final_estimate>",
+   "resolved": 27500000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 37,
+   "parser": 35100000.0,
+   "parser_rule": "last_line",
+   "judge": 35100000.0,
+   "judge_text": "<final_estimate>35100000</final_estimate>",
+   "resolved": 35100000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 38,
+   "parser": 22815000.0,
+   "parser_rule": "first_line",
+   "judge": 22815000.0,
+   "judge_text": "<final_estimate>22815000</final_estimate>",
+   "resolved": 22815000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 39,
+   "parser": 14040000.0,
+   "parser_rule": "first_line",
+   "judge": 14040000.0,
+   "judge_text": "<final_estimate>14040000</final_estimate>",
+   "resolved": 14040000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 40,
+   "parser": 119000000.0,
+   "parser_rule": "last_line",
+   "judge": 119000000.0,
+   "judge_text": "<final_estimate>119000000</final_estimate>",
+   "resolved": 119000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 41,
+   "parser": 17550000.0,
+   "parser_rule": "first_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 42,
+   "parser": 23400000.0,
+   "parser_rule": "first_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 43,
+   "parser": 21645000.0,
+   "parser_rule": "first_line",
+   "judge": 21645000.0,
+   "judge_text": "<final_estimate>21645000</final_estimate>",
+   "resolved": 21645000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 44,
+   "parser": 60833300.0,
+   "parser_rule": "last_line",
+   "judge": 60833300.0,
+   "judge_text": "<final_estimate>60833300</final_estimate>",
+   "resolved": 60833300.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 45,
+   "parser": 69200000.0,
+   "parser_rule": "last_line",
+   "judge": 69200000.0,
+   "judge_text": "<final_estimate>69200000</final_estimate>",
+   "resolved": 69200000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 46,
+   "parser": 23400000.0,
+   "parser_rule": "first_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 47,
+   "parser": 41010550.0,
+   "parser_rule": "last_bold",
+   "judge": 41010550.0,
+   "judge_text": "<final_estimate>41010550</final_estimate>",
+   "resolved": 41010550.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 48,
+   "parser": 23400000.0,
+   "parser_rule": "last_bold",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 49,
+   "parser": 17850000.0,
+   "parser_rule": "first_line",
+   "judge": 17850000.0,
+   "judge_text": "<final_estimate>17850000</final_estimate>",
+   "resolved": 17850000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 50,
+   "parser": 21420000.0,
+   "parser_rule": "last_line",
+   "judge": 21420000.0,
+   "judge_text": "<final_estimate>21420000</final_estimate>",
+   "resolved": 21420000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 51,
+   "parser": 29500000.0,
+   "parser_rule": "last_line",
+   "judge": 29500000.0,
+   "judge_text": "<final_estimate>29500000</final_estimate>",
+   "resolved": 29500000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 52,
+   "parser": 23400000.0,
+   "parser_rule": "first_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 53,
+   "parser": 18000000.0,
+   "parser_rule": "first_line",
+   "judge": 18000000.0,
+   "judge_text": "<final_estimate>18000000</final_estimate>",
+   "resolved": 18000000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 54,
+   "parser": 29750000.0,
+   "parser_rule": "last_line",
+   "judge": 29750000.0,
+   "judge_text": "<final_estimate>29750000</final_estimate>",
+   "resolved": 29750000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 55,
+   "parser": 35550000.0,
+   "parser_rule": "last_line",
+   "judge": 35550000.0,
+   "judge_text": "<final_estimate>35550000</final_estimate>",
+   "resolved": 35550000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 56,
+   "parser": 23400000.0,
+   "parser_rule": "first_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 57,
+   "parser": 23400000.0,
+   "parser_rule": "first_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 58,
+   "parser": 23400000.0,
+   "parser_rule": "first_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 59,
+   "parser": 35100000.0,
+   "parser_rule": "first_line",
+   "judge": 35100000.0,
+   "judge_text": "<final_estimate>35100000</final_estimate>",
+   "resolved": 35100000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 60,
+   "parser": 17850000.0,
+   "parser_rule": "last_line",
+   "judge": 17850000.0,
+   "judge_text": "<final_estimate>17850000</final_estimate>",
+   "resolved": 17850000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 61,
+   "parser": 15210000.0,
+   "parser_rule": "first_line",
+   "judge": 15210000.0,
+   "judge_text": "<final_estimate>15210000</final_estimate>",
+   "resolved": 15210000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 62,
+   "parser": 35252500.0,
+   "parser_rule": "last_line",
+   "judge": 35252500.0,
+   "judge_text": "<final_estimate>35252500</final_estimate>",
+   "resolved": 35252500.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 63,
+   "parser": 17550000.0,
+   "parser_rule": "last_bold",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 64,
+   "parser": 21060000.0,
+   "parser_rule": "last_bold",
+   "judge": 21060000.0,
+   "judge_text": "<final_estimate>21060000</final_estimate>",
+   "resolved": 21060000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 65,
+   "parser": 20400000.0,
+   "parser_rule": "first_line",
+   "judge": 20400000.0,
+   "judge_text": "<final_estimate>20400000</final_estimate>",
+   "resolved": 20400000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 66,
+   "parser": 17550000.0,
+   "parser_rule": "first_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 67,
+   "parser": 35100000.0,
+   "parser_rule": "first_line",
+   "judge": 35100000.0,
+   "judge_text": "<final_estimate>35100000</final_estimate>",
+   "resolved": 35100000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 68,
+   "parser": 21420000.0,
+   "parser_rule": "last_line",
+   "judge": 21420000.0,
+   "judge_text": "<final_estimate>21420000</final_estimate>",
+   "resolved": 21420000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 69,
+   "parser": 35100000.0,
+   "parser_rule": "first_line",
+   "judge": 35100000.0,
+   "judge_text": "<final_estimate>35100000</final_estimate>",
+   "resolved": 35100000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 70,
+   "parser": 23800000.0,
+   "parser_rule": "first_line",
+   "judge": 23800000.0,
+   "judge_text": "<final_estimate>23800000</final_estimate>",
+   "resolved": 23800000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 71,
+   "parser": 175500000.0,
+   "parser_rule": "first_line",
+   "judge": 175500000.0,
+   "judge_text": "<final_estimate>175500000</final_estimate>",
+   "resolved": 175500000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 72,
+   "parser": 29250000.0,
+   "parser_rule": "first_line",
+   "judge": 29250000.0,
+   "judge_text": "<final_estimate>29250000</final_estimate>",
+   "resolved": 29250000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 73,
+   "parser": 234000000.0,
+   "parser_rule": "first_line",
+   "judge": 234000000.0,
+   "judge_text": "<final_estimate>234000000</final_estimate>",
+   "resolved": 234000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 74,
+   "parser": 21600000.0,
+   "parser_rule": "last_line",
+   "judge": 21600000.0,
+   "judge_text": "<final_estimate>21600000</final_estimate>",
+   "resolved": 21600000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 75,
+   "parser": 24000000.0,
+   "parser_rule": "last_line",
+   "judge": 24000000.0,
+   "judge_text": "<final_estimate>24000000</final_estimate>",
+   "resolved": 24000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 76,
+   "parser": 24000000.0,
+   "parser_rule": "last_line",
+   "judge": 24000000.0,
+   "judge_text": "<final_estimate>24000000</final_estimate>",
+   "resolved": 24000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 77,
+   "parser": 70200000.0,
+   "parser_rule": "first_line",
+   "judge": 70200000.0,
+   "judge_text": "<final_estimate>70200000</final_estimate>",
+   "resolved": 70200000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 78,
+   "parser": 24000000.0,
+   "parser_rule": "first_line",
+   "judge": 24000000.0,
+   "judge_text": "<final_estimate>24000000</final_estimate>",
+   "resolved": 24000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 79,
+   "parser": 32760000.0,
+   "parser_rule": "last_line",
+   "judge": 32760000.0,
+   "judge_text": "<final_estimate>32760000</final_estimate>",
+   "resolved": 32760000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 80,
+   "parser": 25217340.0,
+   "parser_rule": "last_line",
+   "judge": 25217340.0,
+   "judge_text": "<final_estimate>25217340</final_estimate>",
+   "resolved": 25217340.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 81,
+   "parser": 17550000.0,
+   "parser_rule": "first_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 82,
+   "parser": 16510000.0,
+   "parser_rule": "first_line",
+   "judge": 16510000.0,
+   "judge_text": "<final_estimate>16510000</final_estimate>",
+   "resolved": 16510000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 83,
+   "parser": 23400000.0,
+   "parser_rule": "last_bold",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 84,
+   "parser": 23400000.0,
+   "parser_rule": "last_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 85,
+   "parser": 24000000.0,
+   "parser_rule": "last_line",
+   "judge": 24000000.0,
+   "judge_text": "<final_estimate>24000000</final_estimate>",
+   "resolved": 24000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 86,
+   "parser": 18720000.0,
+   "parser_rule": "first_line",
+   "judge": 18720000.0,
+   "judge_text": "<final_estimate>18720000</final_estimate>",
+   "resolved": 18720000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 87,
+   "parser": 23400000.0,
+   "parser_rule": "last_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 88,
+   "parser": 33000000.0,
+   "parser_rule": "first_line",
+   "judge": 33000000.0,
+   "judge_text": "<final_estimate>33000000</final_estimate>",
+   "resolved": 33000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 89,
+   "parser": 24470000.0,
+   "parser_rule": "last_line",
+   "judge": 24470000.0,
+   "judge_text": "<final_estimate>24470000</final_estimate>",
+   "resolved": 24470000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 90,
+   "parser": 24000000.0,
+   "parser_rule": "first_line",
+   "judge": 24000000.0,
+   "judge_text": "<final_estimate>24000000</final_estimate>",
+   "resolved": 24000000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 91,
+   "parser": 22230000.0,
+   "parser_rule": "last_line",
+   "judge": 22230000.0,
+   "judge_text": "<final_estimate>22230000</final_estimate>",
+   "resolved": 22230000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 92,
+   "parser": 17550000.0,
+   "parser_rule": "last_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  },
+  {
+   "i": 93,
+   "parser": 23800000.0,
+   "parser_rule": "last_line",
+   "judge": 23800000.0,
+   "judge_text": "<final_estimate>23800000</final_estimate>",
+   "resolved": 23800000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 94,
+   "parser": 29250000.0,
+   "parser_rule": "last_line",
+   "judge": 29250000.0,
+   "judge_text": "<final_estimate>29250000</final_estimate>",
+   "resolved": 29250000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 95,
+   "parser": 23800000.0,
+   "parser_rule": "last_line",
+   "judge": 23800000.0,
+   "judge_text": "<final_estimate>23800000</final_estimate>",
+   "resolved": 23800000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 96,
+   "parser": 21600000.0,
+   "parser_rule": "first_line",
+   "judge": 21600000.0,
+   "judge_text": "<final_estimate>21600000</final_estimate>",
+   "resolved": 21600000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 97,
+   "parser": 23400000.0,
+   "parser_rule": "first_line",
+   "judge": 23400000.0,
+   "judge_text": "<final_estimate>23400000</final_estimate>",
+   "resolved": 23400000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 98,
+   "parser": 21240000.0,
+   "parser_rule": "first_line",
+   "judge": 21240000.0,
+   "judge_text": "<final_estimate>21240000</final_estimate>",
+   "resolved": 21240000.0,
+   "status": "agree",
+   "above_threshold": true
+  },
+  {
+   "i": 99,
+   "parser": 17550000.0,
+   "parser_rule": "first_line",
+   "judge": 17550000.0,
+   "judge_text": "<final_estimate>17550000</final_estimate>",
+   "resolved": 17550000.0,
+   "status": "agree",
+   "above_threshold": false
+  }
+ ]
+}

@@ -1,0 +1,179 @@
+{
+ "model": "accounts/fireworks/models/glm-5p2",
+ "steps": {
+  "A": {
+   "http_status": 200,
+   "top_level_keys": [
+    "choices",
+    "created",
+    "id",
+    "model",
+    "object",
+    "prompt_token_ids",
+    "usage"
+   ],
+   "choice_keys": [
+    "finish_reason",
+    "index",
+    "message",
+    "raw_output",
+    "token_ids"
+   ],
+   "prompt_ids_found": true,
+   "n_prompt_ids": 29,
+   "completion_ids_found": true,
+   "n_completion_ids": 50,
+   "reasoning_head": "The user wants to calculate 17 multiplied by 19.\n17 * 19 = 17 * (20 - 1) = 340 - 17 = 323.\nThe final answer should be just one integer.",
+   "content": "323",
+   "raw_output_keys": [
+    "completion",
+    "completion_logprobs",
+    "completion_token_ids",
+    "grammar",
+    "images",
+    "prompt_fragments",
+    "prompt_token_ids",
+    "videos"
+   ]
+  },
+  "B": {
+   "http_status": 200,
+   "k_prefix_completion_tokens": 20,
+   "echoed_text_head": "[gMASK]<sop><|system|>Reasoning Effort: High<|user|>Calculate 17 multiplied by 19. End with one integer as your final estimate.<|assistant|><think>The user wants to calculate 17 multiplied by 19.\n17 * 19 = 17 * (20 - 1) = 340 - 17 = 323.\nThe final answer should be just one integer.</think>323",
+   "rendered_prefix_through_think": "[gMASK]<sop><|system|>Reasoning Effort: High<|user|>Calculate 17 multiplied by 19. End with one integer as your final estimate.<|assistant|><think>",
+   "generated_continuation": " (20 - 1) = 340 - 17 = 323.\nThe final answer should be just one integer.</think>323",
+   "continuation_opens_new_turn": false,
+   "logprobs_has_tokens_and_offsets": true,
+   "n_logprob_tokens": 79,
+   "finish_reason": "stop"
+  },
+  "C": {
+   "http_status": 200,
+   "prompt_tail": "et me compute this. 17 times 20 is 340, and 340 minus 17 giv",
+   "continuation": "ens 323.</think>323",
+   "completes_word": false
+  },
+  "D": [
+   {
+    "expected": 323,
+    "http_status": 200,
+    "continuation": " 323",
+    "pass": true
+   },
+   {
+    "expected": 731,
+    "http_status": 200,
+    "continuation": " 323",
+    "pass": false
+   }
+  ],
+  "E": {
+   "source": "02_B logprobs.tokens + text_offset (echo=True)",
+   "available": true,
+   "example_first_10": [
+    [
+     "[gMASK]",
+     0
+    ],
+    [
+     "<sop>",
+     7
+    ],
+    [
+     "<|system|>",
+     12
+    ],
+    [
+     "Reason",
+     22
+    ],
+    [
+     "ing",
+     28
+    ],
+    [
+     " Eff",
+     31
+    ],
+    [
+     "ort",
+     35
+    ],
+    [
+     ":",
+     38
+    ],
+    [
+     " High",
+     39
+    ],
+    [
+     "<|user|>",
+     44
+    ]
+   ],
+   "note": "cut offsets for fresh parents will be defined on completion_token_ids; legacy text traces are not claimed to match original tokens"
+  }
+ },
+ "checks": {
+  "A_token_ids": true,
+  "B_continues_inside_think": true,
+  "C_completes_partial_word": false,
+  "D_forced_323_731": false,
+  "E_token_text_mapping": true
+ },
+ "verdict": "FAIL: C_completes_partial_word, D_forced_323_731",
+ "usage": [
+  {
+   "step": "A_chat_raw_output",
+   "prompt_tokens": 29,
+   "total_tokens": 79,
+   "completion_tokens": 50,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  {
+   "step": "B_completions_tokenid_prefix_echo",
+   "prompt_tokens": 49,
+   "total_tokens": 79,
+   "completion_tokens": 30,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  {
+   "step": "C_completions_string_partial_word",
+   "prompt_tokens": 51,
+   "total_tokens": 60,
+   "completion_tokens": 9,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  {
+   "step": "D_forced_323",
+   "prompt_tokens": 51,
+   "total_tokens": 55,
+   "completion_tokens": 4,
+   "prompt_tokens_details": {
+    "cached_tokens": 29
+   }
+  },
+  {
+   "step": "D_forced_731",
+   "prompt_tokens": 51,
+   "total_tokens": 55,
+   "completion_tokens": 4,
+   "prompt_tokens_details": {
+    "cached_tokens": 33
+   }
+  }
+ ],
+ "cost": {
+  "prompt_tokens": 231,
+  "completion_tokens": 97,
+  "usd_at_list_price": 0.0008
+ },
+ "artifacts": "runs/fw_e0_20260830_125932"
+}

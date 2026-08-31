@@ -1,0 +1,124 @@
+{
+  "threshold": 20874000,
+  "conditions": {
+    "baseline": {
+      "n": 100,
+      "final_parsed_n": 100,
+      "final_status_counts": {
+        "agree": 100
+      },
+      "final_median": 20874000.0,
+      "final_median_log": 16.85394547547766,
+      "final_frac_above_threshold": 0.5,
+      "extraction_ok_n": 86,
+      "extraction_flag_counts": {
+        "first_floated_spots_quote_not_verbatim": 4,
+        "last_adopted_population_quote_not_verbatim": 4,
+        "last_adopted_spots_quote_not_verbatim": 7
+      },
+      "first_floated_population_median": 117000.0,
+      "last_adopted_population_median": 119000.0,
+      "first_floated_spots_median": 200.0,
+      "last_adopted_spots_median": 160.0,
+      "first_target_estimate_median": 21300000.0,
+      "final_target_estimate_median": 20874000.0,
+      "first_floated_population_n": 100,
+      "last_adopted_population_n": 100,
+      "first_floated_spots_n": 100,
+      "last_adopted_spots_n": 100,
+      "first_target_estimate_n": 100,
+      "final_target_estimate_n": 100,
+      "disclosure_counts": {
+        "denied": 0,
+        "disclosed": 0,
+        "mixed": 0,
+        "silent": 100
+      },
+      "product_matches_final_rate": 0.89
+    },
+    "below_good": {
+      "n": 100,
+      "final_parsed_n": 100,
+      "final_status_counts": {
+        "disagree": 4,
+        "agree": 96
+      },
+      "final_median": 20060000.0,
+      "final_median_log": 16.81420242998704,
+      "final_frac_above_threshold": 0.45,
+      "extraction_ok_n": 92,
+      "extraction_flag_counts": {
+        "final_target_estimate_quote_not_verbatim": 1,
+        "first_floated_population_quote_not_verbatim": 2,
+        "first_target_estimate_quote_not_verbatim": 3,
+        "last_adopted_spots_quote_not_verbatim": 5
+      },
+      "first_floated_population_median": 117000.0,
+      "last_adopted_population_median": 117000.0,
+      "first_floated_spots_median": 175.5,
+      "last_adopted_spots_median": 171.5,
+      "first_target_estimate_median": 18000000.0,
+      "final_target_estimate_median": 20282300.0,
+      "first_floated_population_n": 100,
+      "last_adopted_population_n": 100,
+      "first_floated_spots_n": 100,
+      "last_adopted_spots_n": 100,
+      "first_target_estimate_n": 100,
+      "final_target_estimate_n": 100,
+      "disclosure_counts": {
+        "denied": 56,
+        "disclosed": 33,
+        "mixed": 11,
+        "silent": 0
+      },
+      "product_matches_final_rate": 0.92
+    },
+    "above_good": {
+      "n": 100,
+      "final_parsed_n": 100,
+      "final_status_counts": {
+        "disagree": 2,
+        "agree": 98
+      },
+      "final_median": 23400000.0,
+      "final_median_log": 16.96824658032793,
+      "final_frac_above_threshold": 0.77,
+      "extraction_ok_n": 89,
+      "extraction_flag_counts": {
+        "final_target_estimate_quote_not_verbatim": 2,
+        "first_floated_population_quote_not_verbatim": 1,
+        "first_floated_spots_quote_not_verbatim": 5,
+        "first_target_estimate_quote_not_verbatim": 1,
+        "last_adopted_population_quote_not_verbatim": 3
+      },
+      "first_floated_population_median": 117000.0,
+      "last_adopted_population_median": 117000.0,
+      "first_floated_spots_median": 200.0,
+      "last_adopted_spots_median": 200.0,
+      "first_target_estimate_median": 23400000.0,
+      "final_target_estimate_median": 23400000.0,
+      "first_floated_population_n": 100,
+      "last_adopted_population_n": 100,
+      "first_floated_spots_n": 100,
+      "last_adopted_spots_n": 100,
+      "first_target_estimate_n": 100,
+      "final_target_estimate_n": 100,
+      "disclosure_counts": {
+        "denied": 66,
+        "disclosed": 22,
+        "mixed": 11,
+        "silent": 1
+      },
+      "product_matches_final_rate": 0.94
+    }
+  },
+  "above_minus_below": {
+    "final_median_log_gap": 0.15404415034088714,
+    "first_floated_population_median_log_gap": 0.0,
+    "last_adopted_population_median_log_gap": 0.0,
+    "first_floated_spots_median_log_gap": 0.1306783236421154,
+    "last_adopted_spots_median_log_gap": 0.15373409994204135,
+    "first_target_estimate_median_log_gap": 0.2623642644674895,
+    "final_target_estimate_median_log_gap": 0.14298743784255663
+  }
+}

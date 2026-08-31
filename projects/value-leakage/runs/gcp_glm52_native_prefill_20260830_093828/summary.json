@@ -1,0 +1,22 @@
+{
+  "calls_attempted": 4,
+  "http_statuses": [
+    200,
+    500,
+    500,
+    500
+  ],
+  "content_prefill_results": [
+    {
+      "expected": "323",
+      "status": 500,
+      "content": null
+    },
+    {
+      "expected": "731",
+      "status": 500,
+      "content": null
+    }
+  ],
+  "artifacts": "runs/gcp_glm52_native_prefill_20260830_093828"
+}

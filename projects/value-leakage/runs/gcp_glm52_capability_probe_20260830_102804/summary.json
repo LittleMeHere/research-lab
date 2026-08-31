@@ -1,0 +1,134 @@
+{
+ "01_n_param": {
+  "status": 200,
+  "brief": [
+   {
+    "content": "323",
+    "reasoning": null,
+    "finish": "stop",
+    "has_logprobs": false
+   },
+   {
+    "content": "323",
+    "reasoning": null,
+    "finish": "stop",
+    "has_logprobs": false
+   }
+  ]
+ },
+ "02_logprobs": {
+  "status": 200,
+  "brief": [
+   {
+    "content": "323",
+    "reasoning": null,
+    "finish": "stop",
+    "has_logprobs": true
+   }
+  ]
+ },
+ "03_echo": {
+  "status": 200,
+  "brief": [
+   {
+    "content": "323",
+    "reasoning": null,
+    "finish": "length",
+    "has_logprobs": true
+   }
+  ]
+ },
+ "04_raw_completions_glm_template": {
+  "status": 400,
+  "brief": [
+   {
+    "error": {
+     "code": 400,
+     "message": "OpenMaaS model: 'zai-org/glm-5.2-maas' not supported.",
+     "status": "FAILED_PRECONDITION"
+    }
+   }
+  ]
+ },
+ "05_raw_completions_plain": {
+  "status": 400,
+  "brief": [
+   {
+    "error": {
+     "code": 400,
+     "message": "OpenMaaS model: 'zai-org/glm-5.2-maas' not supported.",
+     "status": "FAILED_PRECONDITION"
+    }
+   }
+  ]
+ },
+ "06_continue_final_content_only_no_kwargs": {
+  "status": 500,
+  "brief": [
+   {
+    "error": {
+     "code": 500,
+     "message": "Failed to parse reasoning content",
+     "status": "INTERNAL"
+    }
+   }
+  ]
+ },
+ "07_continue_final_content_only_thinking_true": {
+  "status": 500,
+  "brief": [
+   {
+    "error": {
+     "code": 500,
+     "message": "Failed to parse reasoning content",
+     "status": "INTERNAL"
+    }
+   }
+  ]
+ },
+ "08_content_prefill_partial_word": {
+  "status": 200,
+  "brief": [
+   {
+    "content": "The capital of France is Paris.",
+    "reasoning": null,
+    "finish": "length",
+    "has_logprobs": false
+   }
+  ]
+ },
+ "09_reasoning_content_thinking_true": {
+  "status": 200,
+  "brief": [
+   {
+    "content": "",
+    "reasoning": "The user wants to know the result of",
+    "finish": "length",
+    "has_logprobs": false
+   }
+  ]
+ },
+ "10_literal_think_tag_in_content": {
+  "status": 200,
+  "brief": [
+   {
+    "content": "999",
+    "reasoning": null,
+    "finish": "stop",
+    "has_logprobs": false
+   }
+  ]
+ },
+ "11_reasoning_content_thinking_true_continue": {
+  "status": 500,
+  "brief": [
+   {
+    "error": {
+     "code": 500,
+     "message": "Failed to parse reasoning content",
+     "status": "INTERNAL"
+    }
+   }
+  ]
+ }
+}

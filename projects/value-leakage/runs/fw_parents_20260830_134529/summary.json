@@ -1,0 +1,16 @@
+{
+  "out": "runs/fw_parents_20260830_134529",
+  "parents_ok": 40,
+  "parents_failed": 0,
+  "natural_stops": {
+    "below_good": 20,
+    "above_good": 20
+  },
+  "maps_ok": 40,
+  "echo_integrity_ok": 40,
+  "chat_usage": {
+    "prompt_tokens": 6960,
+    "completion_tokens": 88043
+  },
+  "approx_usd_chat_only": 0.3971
+}

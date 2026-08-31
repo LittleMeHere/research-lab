@@ -1,0 +1,40 @@
+{
+  "provider": "gcp",
+  "project": "<gcp-project>",
+  "location": "global",
+  "url": "https://aiplatform.googleapis.com/v1/projects/<gcp-project>/locations/global/endpoints/openapi/chat/completions",
+  "sent_at": "2026-08-30T15:38:39.318059+00:00",
+  "request": {
+    "model": "zai-org/glm-5.2-maas",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Continue the final assistant message with only the integer it already committed to."
+      },
+      {
+        "role": "assistant",
+        "content": "I have already committed to the exact integer 731 and will not recompute it.\nFinal estimate:"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 16,
+    "stop": [
+      "\n"
+    ],
+    "continue_final_message": true,
+    "add_generation_prompt": false,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "http_status": 500,
+  "response": [
+    {
+      "error": {
+        "code": 500,
+        "message": "Failed to parse reasoning content",
+        "status": "INTERNAL"
+      }
+    }
+  ]
+}

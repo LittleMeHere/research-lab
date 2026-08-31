@@ -10,6 +10,7 @@ which may grow into standalone repos or papers.
 | Project | Status | Summary |
 |---------|--------|---------|
 | [quantization-alignment](projects/quantization-alignment/) | **exploratory analysis complete** | Six-model quantization study; follow-up confirmation design awaiting review. |
+| [value-leakage](projects/value-leakage/) | **complete** | Causal study of GLM-5.2 motivated reasoning in the Donation Bet: chain-of-thought prefix recoverability and factor-edit sensitivity (SPAR take-home). |
 
 ---
 

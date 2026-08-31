@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "expected": "323",
+      "status": 200,
+      "output": "323"
+    },
+    {
+      "expected": "731",
+      "status": 200,
+      "output": "731"
+    }
+  ],
+  "passed": true,
+  "artifacts": "runs/gcp_glm52_content_prefill_20260830_093938"
+}

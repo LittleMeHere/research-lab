@@ -1,0 +1,41 @@
+{
+  "purpose": "E1 empty-reasoning control + E2 chronological forced curve (protocol v3)",
+  "created_at": "2026-08-30T21:23:05.472594+00:00",
+  "model": "accounts/fireworks/models/glm-5p2",
+  "threshold": 20874000,
+  "manifest": "runs/fw_parents_20260830_134529/parent_annotations_v2.json",
+  "manifest_version": 2,
+  "suffix_token_ids": [
+    154842,
+    198,
+    19321,
+    16031,
+    25
+  ],
+  "suffix_text": "</think>\nFinal estimate:",
+  "sample_params": {
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "max_tokens": 32,
+    "stop": [
+      "\n"
+    ]
+  },
+  "e1": {
+    "per_condition": 100,
+    "requests": "100 independent n=1 requests per condition"
+  },
+  "e2": {
+    "continuations_per_cell": 5,
+    "cells": "40 parents x c1..c4",
+    "requests": "5 independent n=1 requests per cell"
+  },
+  "n_bug_note": "n>1 on /completions conditions only choice 0 on the prompt; see runs/fw_n_bug_probe_20260830 and the invalidated run fw_e1e2_20260830_151944",
+  "shuffle_seed": 260830,
+  "parser": "Exactly one number on the forced line (markdown/units tolerated).",
+  "c4_validity_rule": "parent median forced estimate within 10% of the parent's own visible final answer AND on the same side of the threshold; >20% failures blocks mechanistic interpretation (protocol v3)",
+  "preregistered_sensitivities": [
+    "E2 c2 contrast excluding c2_hedged parents",
+    "E2 c3 contrast excluding c3_contains_target_calc parents"
+  ]
+}

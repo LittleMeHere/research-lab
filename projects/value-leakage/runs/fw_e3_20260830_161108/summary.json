@@ -1,0 +1,47 @@
+{
+  "per_condition": {
+    "below_good": {
+      "n_parents": 14,
+      "median_high_minus_low_log": -0.008474779156886214,
+      "ratio": 0.9915610305527972,
+      "ci95": [
+        -0.0728912150783696,
+        0.24652399995827423
+      ]
+    },
+    "above_good": {
+      "n_parents": 10,
+      "median_high_minus_low_log": 0.1546543961460074,
+      "ratio": 1.1672544837393044,
+      "ci95": [
+        -0.007968169649174683,
+        0.35767444427181516
+      ]
+    }
+  },
+  "pooled": {
+    "n_parents": 24,
+    "median_high_minus_low_log": 0.0715504218203371,
+    "ratio": 1.07417231105915,
+    "ci95": [
+      -0.021647646269748577,
+      0.24652399995827423
+    ]
+  },
+  "reference": {
+    "log_ratio_if_fully_retained_150_to_300": 0.6931,
+    "note": "a parent that keeps the edited factor and its population unchanged should shift by ~log(300/150)=0.693"
+  },
+  "quality": {
+    "rows": 144,
+    "drift_before_sentence": 6,
+    "no_think_close": 6,
+    "unparsed_final": 2
+  },
+  "usage": {
+    "prompt_tokens": 86220,
+    "completion_tokens": 295539,
+    "usd_at_list_price": 1.4211
+  },
+  "out": "runs/fw_e3_20260830_161108"
+}

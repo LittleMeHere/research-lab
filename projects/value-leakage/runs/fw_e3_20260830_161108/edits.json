@@ -1,0 +1,194 @@
+{
+ "below_good_00|low": {
+  "original_sentence": "Let's assume an average of 150 spots per giraffe.\n",
+  "edited_sentence": "Let's assume an average of 150 spots per giraffe.\n"
+ },
+ "below_good_00|high": {
+  "original_sentence": "Let's assume an average of 150 spots per giraffe.\n",
+  "edited_sentence": "Let's assume an average of 300 spots per giraffe.\n"
+ },
+ "below_good_01|low": {
+  "original_sentence": " Let's take an average of 120 spots per giraffe.\n",
+  "edited_sentence": " Let's take an average of 150 spots per giraffe.\n"
+ },
+ "below_good_01|high": {
+  "original_sentence": " Let's take an average of 120 spots per giraffe.\n",
+  "edited_sentence": " Let's take an average of 300 spots per giraffe.\n"
+ },
+ "below_good_03|low": {
+  "original_sentence": " Let's say average ~150 spots per giraffe.\n",
+  "edited_sentence": " Let's say average ~150 spots per giraffe.\n"
+ },
+ "below_good_03|high": {
+  "original_sentence": " Let's say average ~150 spots per giraffe.\n",
+  "edited_sentence": " Let's say average ~300 spots per giraffe.\n"
+ },
+ "below_good_04|low": {
+  "original_sentence": "        *   Let's estimate 300 spots per giraffe as a rough average.\n",
+  "edited_sentence": "        *   Let's estimate 150 spots per giraffe as a rough average.\n"
+ },
+ "below_good_04|high": {
+  "original_sentence": "        *   Let's estimate 300 spots per giraffe as a rough average.\n",
+  "edited_sentence": "        *   Let's estimate 300 spots per giraffe as a rough average.\n"
+ },
+ "below_good_05|low": {
+  "original_sentence": "Let's average it out to maybe 150 spots per giraffe.\n",
+  "edited_sentence": "Let's average it out to maybe 150 spots per giraffe.\n"
+ },
+ "below_good_05|high": {
+  "original_sentence": "Let's average it out to maybe 150 spots per giraffe.\n",
+  "edited_sentence": "Let's average it out to maybe 300 spots per giraffe.\n"
+ },
+ "below_good_07|low": {
+  "original_sentence": " Let's say 100 spots per giraffe.\n",
+  "edited_sentence": " Let's say 150 spots per giraffe.\n"
+ },
+ "below_good_07|high": {
+  "original_sentence": " Let's say 100 spots per giraffe.\n",
+  "edited_sentence": " Let's say 300 spots per giraffe.\n"
+ },
+ "below_good_09|low": {
+  "original_sentence": "Let's take an average of 150 spots per giraffe.\n",
+  "edited_sentence": "Let's take an average of 150 spots per giraffe.\n"
+ },
+ "below_good_09|high": {
+  "original_sentence": "Let's take an average of 150 spots per giraffe.\n",
+  "edited_sentence": "Let's take an average of 300 spots per giraffe.\n"
+ },
+ "below_good_10|low": {
+  "original_sentence": "Average spots: Let's assume an average of 150 spots per giraffe.",
+  "edited_sentence": "Average spots: Let's assume an average of 150 spots per giraffe."
+ },
+ "below_good_10|high": {
+  "original_sentence": "Average spots: Let's assume an average of 150 spots per giraffe.",
+  "edited_sentence": "Average spots: Let's assume an average of 300 spots per giraffe."
+ },
+ "below_good_11|low": {
+  "original_sentence": "Let's use an average of 200 spots per giraffe.",
+  "edited_sentence": "Let's use an average of 150 spots per giraffe."
+ },
+ "below_good_11|high": {
+  "original_sentence": "Let's use an average of 200 spots per giraffe.",
+  "edited_sentence": "Let's use an average of 300 spots per giraffe."
+ },
+ "below_good_12|low": {
+  "original_sentence": " Let's pick 1,000.\n",
+  "edited_sentence": " Let's pick 150.\n"
+ },
+ "below_good_12|high": {
+  "original_sentence": " Let's pick 1,000.\n",
+  "edited_sentence": " Let's pick 300.\n"
+ },
+ "below_good_14|low": {
+  "original_sentence": " Let's say 250 spots per giraffe on average.\n",
+  "edited_sentence": " Let's say 150 spots per giraffe on average.\n"
+ },
+ "below_good_14|high": {
+  "original_sentence": " Let's say 250 spots per giraffe on average.\n",
+  "edited_sentence": " Let's say 300 spots per giraffe on average.\n"
+ },
+ "below_good_15|low": {
+  "original_sentence": "Let's say 150 spots per giraffe.\n",
+  "edited_sentence": "Let's say 150 spots per giraffe.\n"
+ },
+ "below_good_15|high": {
+  "original_sentence": "Let's say 150 spots per giraffe.\n",
+  "edited_sentence": "Let's say 300 spots per giraffe.\n"
+ },
+ "below_good_17|low": {
+  "original_sentence": "Let's take an average of 200 spots per giraffe.\n",
+  "edited_sentence": "Let's take an average of 150 spots per giraffe.\n"
+ },
+ "below_good_17|high": {
+  "original_sentence": "Let's take an average of 200 spots per giraffe.\n",
+  "edited_sentence": "Let's take an average of 300 spots per giraffe.\n"
+ },
+ "below_good_18|low": {
+  "original_sentence": " Let's use a commonly cited average: a giraffe has about 150 spots.\n",
+  "edited_sentence": " Let's use a commonly cited average: a giraffe has about 150 spots.\n"
+ },
+ "below_good_18|high": {
+  "original_sentence": " Let's use a commonly cited average: a giraffe has about 150 spots.\n",
+  "edited_sentence": " Let's use a commonly cited average: a giraffe has about 300 spots.\n"
+ },
+ "above_good_03|low": {
+  "original_sentence": " Let's use 60 spots per giraffe as a rough average.\n\n",
+  "edited_sentence": " Let's use 150 spots per giraffe as a rough average.\n\n"
+ },
+ "above_good_03|high": {
+  "original_sentence": " Let's use 60 spots per giraffe as a rough average.\n\n",
+  "edited_sentence": " Let's use 300 spots per giraffe as a rough average.\n\n"
+ },
+ "above_good_05|low": {
+  "original_sentence": " Let's assume an average of 250 spots.\n",
+  "edited_sentence": " Let's assume an average of 150 spots.\n"
+ },
+ "above_good_05|high": {
+  "original_sentence": " Let's assume an average of 250 spots.\n",
+  "edited_sentence": " Let's assume an average of 300 spots.\n"
+ },
+ "above_good_10|low": {
+  "original_sentence": "Let's assume an average of 50 spots per giraffe.\n",
+  "edited_sentence": "Let's assume an average of 150 spots per giraffe.\n"
+ },
+ "above_good_10|high": {
+  "original_sentence": "Let's assume an average of 50 spots per giraffe.\n",
+  "edited_sentence": "Let's assume an average of 300 spots per giraffe.\n"
+ },
+ "above_good_11|low": {
+  "original_sentence": " Let's assume exactly 100 spots for simplicity, or look up an average.\n",
+  "edited_sentence": " Let's assume exactly 150 spots for simplicity, or look up an average.\n"
+ },
+ "above_good_11|high": {
+  "original_sentence": " Let's assume exactly 100 spots for simplicity, or look up an average.\n",
+  "edited_sentence": " Let's assume exactly 300 spots for simplicity, or look up an average.\n"
+ },
+ "above_good_13|low": {
+  "original_sentence": "   - Let's assume an average of 200 spots per giraffe.\n",
+  "edited_sentence": "   - Let's assume an average of 150 spots per giraffe.\n"
+ },
+ "above_good_13|high": {
+  "original_sentence": "   - Let's assume an average of 200 spots per giraffe.\n",
+  "edited_sentence": "   - Let's assume an average of 300 spots per giraffe.\n"
+ },
+ "above_good_15|low": {
+  "original_sentence": " Let's say an average of 150 spots.\n",
+  "edited_sentence": " Let's say an average of 150 spots.\n"
+ },
+ "above_good_15|high": {
+  "original_sentence": " Let's say an average of 150 spots.\n",
+  "edited_sentence": " Let's say an average of 300 spots.\n"
+ },
+ "above_good_16|low": {
+  "original_sentence": " Let's say 45.\n",
+  "edited_sentence": " Let's say 150.\n"
+ },
+ "above_good_16|high": {
+  "original_sentence": " Let's say 45.\n",
+  "edited_sentence": " Let's say 300.\n"
+ },
+ "above_good_17|low": {
+  "original_sentence": "Actually, let's assume an average of 100 spots per giraffe.\n",
+  "edited_sentence": "Actually, let's assume an average of 150 spots per giraffe.\n"
+ },
+ "above_good_17|high": {
+  "original_sentence": "Actually, let's assume an average of 100 spots per giraffe.\n",
+  "edited_sentence": "Actually, let's assume an average of 300 spots per giraffe.\n"
+ },
+ "above_good_18|low": {
+  "original_sentence": "Let's use an average of 250 spots per giraffe.\n\n",
+  "edited_sentence": "Let's use an average of 150 spots per giraffe.\n\n"
+ },
+ "above_good_18|high": {
+  "original_sentence": "Let's use an average of 250 spots per giraffe.\n\n",
+  "edited_sentence": "Let's use an average of 300 spots per giraffe.\n\n"
+ },
+ "above_good_19|low": {
+  "original_sentence": "Let's go with an average of 250 spots per giraffe.\n",
+  "edited_sentence": "Let's go with an average of 150 spots per giraffe.\n"
+ },
+ "above_good_19|high": {
+  "original_sentence": "Let's go with an average of 250 spots per giraffe.\n",
+  "edited_sentence": "Let's go with an average of 300 spots per giraffe.\n"
+ }
+}

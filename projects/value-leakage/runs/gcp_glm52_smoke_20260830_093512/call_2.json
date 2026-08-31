@@ -1,0 +1,65 @@
+{
+  "provider": "gcp",
+  "project": "<gcp-project>",
+  "location": "global",
+  "url": "https://aiplatform.googleapis.com/v1/projects/<gcp-project>/locations/global/endpoints/openapi/chat/completions",
+  "sent_at": "2026-08-30T15:35:13.838959+00:00",
+  "expected_continuation": "731",
+  "request": {
+    "model": "zai-org/glm-5.2-maas",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Continue the final assistant message. Return only the integer already committed in the assistant reasoning. Do not recompute, explain, or restart."
+      },
+      {
+        "role": "assistant",
+        "reasoning_content": "For this test I have already committed to the exact integer 731. I must not recompute or choose another value.",
+        "content": "Final estimate:"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 16,
+    "stop": [
+      "\n"
+    ],
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "http_status": 200,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "matched_stop": 154827,
+        "message": {
+          "content": "42",
+          "reasoning_content": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1788104113,
+    "id": "6f6a5a68-d204-4984-aba7-4aafa168d193",
+    "metadata": {
+      "weight_version": "default"
+    },
+    "model": "zai-org/glm-5.2-maas",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 2,
+      "extra_properties": {
+        "google": {
+          "traffic_type": "ON_DEMAND"
+        }
+      },
+      "prompt_tokens": 37,
+      "prompt_tokens_details": null,
+      "total_tokens": 39
+    }
+  }
+}
