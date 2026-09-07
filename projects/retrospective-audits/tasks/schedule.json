@@ -1,0 +1,123 @@
+{
+  "decided": "2026-08-29, before any pilot trajectory",
+  "phase": "pilot",
+  "rule": "Run in this order; a trajectory that is ineligible is dropped, not replaced out of order; never reorder on outcomes. Branch samples per condition: 3; sample 1 is primary.",
+  "sequence": [
+    {
+      "index": 1,
+      "task": "t001-window-offbyone",
+      "run_dir": "runs/2026-08-29-pilot-01-t001"
+    },
+    {
+      "index": 2,
+      "task": "c001-control-pass",
+      "run_dir": "runs/2026-08-29-pilot-02-c001"
+    },
+    {
+      "index": 3,
+      "task": "t002-window-offbyone-daycount",
+      "run_dir": "runs/2026-08-29-pilot-03-t002"
+    },
+    {
+      "index": 4,
+      "task": "c002-control-fail",
+      "run_dir": "runs/2026-08-29-pilot-04-c002"
+    },
+    {
+      "index": 5,
+      "task": "t001-window-offbyone",
+      "run_dir": "runs/2026-08-29-pilot-05-t001"
+    },
+    {
+      "index": 6,
+      "task": "c001-control-pass",
+      "run_dir": "runs/2026-08-29-pilot-06-c001"
+    },
+    {
+      "index": 7,
+      "task": "t002-window-offbyone-daycount",
+      "run_dir": "runs/2026-08-29-pilot-07-t002"
+    },
+    {
+      "index": 8,
+      "task": "c002-control-fail",
+      "run_dir": "runs/2026-08-29-pilot-08-c002"
+    },
+    {
+      "index": 9,
+      "task": "t001-window-offbyone",
+      "run_dir": "runs/2026-08-29-pilot-09-t001"
+    },
+    {
+      "index": 10,
+      "task": "c001-control-pass",
+      "run_dir": "runs/2026-08-29-pilot-10-c001"
+    },
+    {
+      "index": 11,
+      "task": "t002-window-offbyone-daycount",
+      "run_dir": "runs/2026-08-29-pilot-11-t002"
+    },
+    {
+      "index": 12,
+      "task": "c002-control-fail",
+      "run_dir": "runs/2026-08-29-pilot-12-c002"
+    },
+    {
+      "index": 13,
+      "task": "t001-window-offbyone",
+      "run_dir": "runs/2026-08-29-pilot-13-t001"
+    },
+    {
+      "index": 14,
+      "task": "c001-control-pass",
+      "run_dir": "runs/2026-08-29-pilot-14-c001"
+    },
+    {
+      "index": 15,
+      "task": "t002-window-offbyone-daycount",
+      "run_dir": "runs/2026-08-29-pilot-15-t002"
+    },
+    {
+      "index": 16,
+      "task": "c002-control-fail",
+      "run_dir": "runs/2026-08-29-pilot-16-c002"
+    },
+    {
+      "index": 17,
+      "task": "t001-window-offbyone",
+      "run_dir": "runs/2026-08-29-pilot-17-t001"
+    },
+    {
+      "index": 18,
+      "task": "c001-control-pass",
+      "run_dir": "runs/2026-08-29-pilot-18-c001"
+    },
+    {
+      "index": 19,
+      "task": "t002-window-offbyone-daycount",
+      "run_dir": "runs/2026-08-29-pilot-19-t002"
+    },
+    {
+      "index": 20,
+      "task": "c002-control-fail",
+      "run_dir": "runs/2026-08-29-pilot-20-c002"
+    },
+    {
+      "index": 21,
+      "task": "c001-control-pass",
+      "run_dir": "runs/2026-08-29-pilot-21-c001"
+    },
+    {
+      "index": 22,
+      "task": "c002-control-fail",
+      "run_dir": "runs/2026-08-29-pilot-22-c002"
+    }
+  ],
+  "task_source_hashes": {
+    "c001-control-pass": "c335773c2f2db59152d9a118d7d87a29a8d26e8addaa2886fb9630728f2e91bf",
+    "c002-control-fail": "73d693fb5adc197f9324be9676fe298f3c3743a39a05bda1b109c68b4a237374",
+    "t001-window-offbyone": "dd95bc03b1b9381deb61f08d56940e75f7f3561e35d047f85ec8ddfe35ed894c",
+    "t002-window-offbyone-daycount": "98f66d319e0d84b2607a9db9176630a4623e677f660fe5a08bf3d2f5e543b051"
+  }
+}

@@ -11,6 +11,7 @@ which may grow into standalone repos or papers.
 |---------|--------|---------|
 | [quantization-alignment](projects/quantization-alignment/) | **exploratory analysis complete** | Six-model quantization study; follow-up confirmation design awaiting review. |
 | [value-leakage](projects/value-leakage/) | **complete** | Causal study of GLM-5.2 motivated reasoning in the Donation Bet: chain-of-thought prefix recoverability and factor-edit sensitivity (SPAR take-home). |
+| [retrospective-audits](projects/retrospective-audits/) | **complete** | Three experiments on coding-agent retrospective reports: a displayed FAIL label lowers probability estimates; an instruction reduces but does not remove the effect. |
 
 ---
 
@@ -36,6 +37,11 @@ Built with a mix of: Claude Code, Gemini CLI, Jules, Codex, Vertex AI.
 Stress-testing them against my ideas and each other.
 
 ## license
+
+Projects with local license files document their scope in their own README and third-party
+notices. In particular, [retrospective-audits](projects/retrospective-audits/README.md#licensing)
+includes its own MIT and CC BY 4.0 texts and artifact-specific exceptions.
+For projects using the repository-level licenses:
 
 - **Code** (`projects/*/code/`) — [MIT](LICENSE).
 - **Data, logs & written content** (`projects/*/data/`, `projects/*/logs/`, `notes/`)

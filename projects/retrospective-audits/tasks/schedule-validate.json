@@ -1,0 +1,29 @@
+{
+  "decided": "2026-08-29 post-refactor validation",
+  "phase": "validation",
+  "rule": "One PASS control and one FAIL control through the final harness and runner before main.",
+  "sequence": [
+    {
+      "index": 1,
+      "task": "c001-control-pass",
+      "order_shift": 3,
+      "run_dir": "runs/2026-08-29-validate-final-c001"
+    },
+    {
+      "index": 2,
+      "task": "c002-control-fail",
+      "order_shift": 4,
+      "run_dir": "runs/2026-08-29-validate-final-c002"
+    }
+  ],
+  "task_source_hashes": {
+    "c001-control-pass": "c335773c2f2db59152d9a118d7d87a29a8d26e8addaa2886fb9630728f2e91bf",
+    "c002-control-fail": "73d693fb5adc197f9324be9676fe298f3c3743a39a05bda1b109c68b4a237374"
+  },
+  "harness_sha256": "83ce3a8f7b72a30e03160139f7dccf5f2289db2abef1f8d6102b772b50540aec",
+  "later_verify_sha256": "2be80a63e4c8e479cfbb5224758e7c9f9523fee7db707aa7f5c8c5fcf0d50ec7",
+  "devtools_tree_sha256": "1bc7e0eb190b8f97e9644818922202c0e65207d08a293d765c9d0927d59c1a5d",
+  "analyze_sha256": "27dd5a1685e5157ce6f0ca6aa4a0cbae2898df33cd5b90540ecd6249df14c639",
+  "label_sha256": "d8f802233272a78d5eeb0d0b0beae7da1197352be2e83c8f54dcbed0c3057832",
+  "runner_sha256": "21240bad659d07af185cd0564e56c7d736a784527873ce89a0d8a1bd29cba62d"
+}

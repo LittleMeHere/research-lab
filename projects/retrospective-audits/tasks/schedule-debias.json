@@ -1,0 +1,21 @@
+{
+  "decided": "2026-08-30, after Experiment 2, before any Experiment 3 data",
+  "parents": "tasks/schedule-main.json (16 main parents, tag pre-main)",
+  "conditions": [
+    "withheld",
+    "reveal_fail",
+    "withheld_debias",
+    "reveal_fail_debias"
+  ],
+  "samples": 3,
+  "order_shift": "(index-1) mod 4",
+  "validation_parent": "runs/2026-08-29-pilot-01-t001",
+  "hashes": {
+    "fork_debias.py": "3181ccb79dc60209208aa5888e79e310480a169636e41902af40cd6d26977f0a",
+    "analyze_debias.py": "72acfb321b74c832968e5ee5b580ef4c69510d87ba2b0aa128eaae1afed706e0",
+    "run_debias.sh": "98385a09d9ee93fdab1f50eceaeb4b9975796764f13fdafc25570e47d1f911df",
+    "prereg-3.md": "87794e4c2032cbd074caf4feb92dbc00ac4d00f1f3face56e3d6ce23e009d5f7",
+    "fork_smoke.py": "83ce3a8f7b72a30e03160139f7dccf5f2289db2abef1f8d6102b772b50540aec",
+    "tasks/later_verify.py": "2be80a63e4c8e479cfbb5224758e7c9f9523fee7db707aa7f5c8c5fcf0d50ec7"
+  }
+}

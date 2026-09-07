@@ -1,0 +1,34 @@
+#!/bin/bash
+# Experiment 3 over the 16 main parents (prereg-3.md). Order shift = (index-1) mod 4.
+#   ./run_debias.sh tasks/schedule-main.json
+# Refuses to start unless the hashes frozen in tasks/schedule-debias.json match the tree.
+set -u -o pipefail
+cd "$(dirname "$0")"
+SCHED=${1:?schedule}; L=~/.codex-runs/logs; mkdir -p "$L"; STAMP=$(date +%Y%m%d-%H%M%S)
+
+python3 - <<'PY' || { echo "=== ABORT: frozen hashes do not match the working tree"; exit 1; }
+import hashlib, json, sys
+from pathlib import Path
+s = json.load(open("tasks/schedule-debias.json")); bad = []
+for name, path in s["hashes"].items():
+    if hashlib.sha256(Path(name).read_bytes()).hexdigest() != path: bad.append(name)
+if bad: print("hash mismatch:", bad); sys.exit(1)
+print("frozen hashes match")
+PY
+
+ok=0; failed=0; skipped=0
+while read -r idx rdir; do
+  if [ -d "$rdir/debias" ]; then
+    if [ -f "$rdir/debias/result.json" ]; then echo "=== SKIP $idx (complete)"; skipped=$((skipped+1)); continue
+    else echo "=== ABORT: incomplete debias dir exists: $rdir/debias"; exit 1; fi
+  fi
+  shift=$(( (idx - 1) % 4 ))
+  echo "=== START $idx $rdir shift=$shift $(date +%T)"
+  python3 fork_debias.py "$rdir" --order-shift "$shift" > "$L/$STAMP-debias-$idx.log" 2>&1 < /dev/null
+  rc=$?; echo "=== EXIT $rc $idx $(date +%T)"
+  if [ $rc -eq 0 ]; then ok=$((ok+1)); else failed=$((failed+1)); echo "=== ABORT: failure on $idx (see $L/$STAMP-debias-$idx.log)"; break; fi
+done < <(python3 -c "
+import json, sys
+for e in json.load(open(sys.argv[1]))['sequence']: print(e['index'], e['run_dir'])" "$SCHED")
+echo "=== DEBIAS DONE ok=$ok failed=$failed skipped=$skipped $(date +%T)"
+[ $failed -eq 0 ] || exit 1

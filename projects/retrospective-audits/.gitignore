@@ -1,0 +1,15 @@
+# Extracted artifacts and local runtime state
+/runs/
+/.venv/
+__pycache__/
+*.pyc
+.env
+.codex/
+.agents/
+/auth.json
+
+# Private development material is not part of the release
+/STATUS.md
+/research-proposal.md
+/writeup-draft-b.md
+/replication-review.md

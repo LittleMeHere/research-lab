@@ -1,0 +1,116 @@
+{
+  "decided": "2026-08-29, after the pilot, before any main trajectory",
+  "phase": "main",
+  "rule": "Run in this order; an ineligible trajectory is dropped, not replaced out of order; never reorder on outcomes. Five conditions per trajectory (audit_first, withheld, reveal_first primary; audit_first_nodef, reveal_first_nodef exploratory), three samples each; sample 1 is primary; the sample-1 condition order is rotated by order_shift (index-1 mod 5) to counterbalance across trajectories, and rotates again each round. Controls (12) were completed in the pilot schedule and are not repeated. Blind manual labels (label.py) precede analysis.",
+  "sequence": [
+    {
+      "index": 1,
+      "task": "t001-window-offbyone",
+      "order_shift": 0,
+      "run_dir": "runs/2026-08-29-main-01-t001"
+    },
+    {
+      "index": 2,
+      "task": "t002-window-offbyone-daycount",
+      "order_shift": 1,
+      "run_dir": "runs/2026-08-29-main-02-t002"
+    },
+    {
+      "index": 3,
+      "task": "t001-window-offbyone",
+      "order_shift": 2,
+      "run_dir": "runs/2026-08-29-main-03-t001"
+    },
+    {
+      "index": 4,
+      "task": "t002-window-offbyone-daycount",
+      "order_shift": 3,
+      "run_dir": "runs/2026-08-29-main-04-t002"
+    },
+    {
+      "index": 5,
+      "task": "t001-window-offbyone",
+      "order_shift": 4,
+      "run_dir": "runs/2026-08-29-main-05-t001"
+    },
+    {
+      "index": 6,
+      "task": "t002-window-offbyone-daycount",
+      "order_shift": 0,
+      "run_dir": "runs/2026-08-29-main-06-t002"
+    },
+    {
+      "index": 7,
+      "task": "t001-window-offbyone",
+      "order_shift": 1,
+      "run_dir": "runs/2026-08-29-main-07-t001"
+    },
+    {
+      "index": 8,
+      "task": "t002-window-offbyone-daycount",
+      "order_shift": 2,
+      "run_dir": "runs/2026-08-29-main-08-t002"
+    },
+    {
+      "index": 9,
+      "task": "t001-window-offbyone",
+      "order_shift": 3,
+      "run_dir": "runs/2026-08-29-main-09-t001"
+    },
+    {
+      "index": 10,
+      "task": "t002-window-offbyone-daycount",
+      "order_shift": 4,
+      "run_dir": "runs/2026-08-29-main-10-t002"
+    },
+    {
+      "index": 11,
+      "task": "t001-window-offbyone",
+      "order_shift": 0,
+      "run_dir": "runs/2026-08-29-main-11-t001"
+    },
+    {
+      "index": 12,
+      "task": "t002-window-offbyone-daycount",
+      "order_shift": 1,
+      "run_dir": "runs/2026-08-29-main-12-t002"
+    },
+    {
+      "index": 13,
+      "task": "t001-window-offbyone",
+      "order_shift": 2,
+      "run_dir": "runs/2026-08-29-main-13-t001"
+    },
+    {
+      "index": 14,
+      "task": "t002-window-offbyone-daycount",
+      "order_shift": 3,
+      "run_dir": "runs/2026-08-29-main-14-t002"
+    },
+    {
+      "index": 15,
+      "task": "t001-window-offbyone",
+      "order_shift": 4,
+      "run_dir": "runs/2026-08-29-main-15-t001"
+    },
+    {
+      "index": 16,
+      "task": "t002-window-offbyone-daycount",
+      "order_shift": 0,
+      "run_dir": "runs/2026-08-29-main-16-t002"
+    }
+  ],
+  "task_source_hashes": {
+    "t001-window-offbyone": "40e348b9ca52c4c0144dde6512de44ef0ce85afb6a4a0b9a30ac383d73b27327",
+    "t002-window-offbyone-daycount": "a55dc9ed88441bd4c8da4bd7398858772b06dbe437b6b72d9863a1af1a44703e"
+  },
+  "harness_sha256": "83ce3a8f7b72a30e03160139f7dccf5f2289db2abef1f8d6102b772b50540aec",
+  "later_verify_sha256": "2be80a63e4c8e479cfbb5224758e7c9f9523fee7db707aa7f5c8c5fcf0d50ec7",
+  "devtools_tree_sha256": "1bc7e0eb190b8f97e9644818922202c0e65207d08a293d765c9d0927d59c1a5d",
+  "analyze_sha256": "d83a9ebfd723cc6004b0edb404b96cd80cec47de7571637f84a06745cd39ce31",
+  "label_sha256": "d8f802233272a78d5eeb0d0b0beae7da1197352be2e83c8f54dcbed0c3057832",
+  "runner_sha256": "21240bad659d07af185cd0564e56c7d736a784527873ce89a0d8a1bd29cba62d",
+  "analyze_sha256_at_freeze": "27dd5a1685e5157ce6f0ca6aa4a0cbae2898df33cd5b90540ecd6249df14c639",
+  "analysis_revision": "2026-08-29 17:35, after 12 of 16 main trajectories: added a post-hoc block (FAIL-reading rate in the no-definition arm, paired, by revealed result). Harness, tasks, verifier, labeler unchanged; primary analysis code unchanged. Later edit: a sealed-file permission guard in check_frozen (no analysis change). Hash history: analyze_sha256_at_freeze -> analyze_sha256_post_hoc_block -> analyze_sha256 (current).",
+  "analyze_sha256_post_hoc_block": "4f21ac1772290737d7d32e4686a446ad022fa28cec00983a33278f937f9cf737"
+}

@@ -1,0 +1,22 @@
+{
+  "decided": "2026-08-30, before any Experiment 2 data",
+  "parents": "tasks/schedule-main.json (16 main parents, tag pre-main)",
+  "conditions": [
+    "baseline",
+    "withheld",
+    "reveal_pass",
+    "reveal_fail"
+  ],
+  "samples": 3,
+  "order_shift": "(index-1) mod 4",
+  "hashes": {
+    "fork_belief.py": "f63c2b0810007baed73332312b6b12e6043c770c7c0f5190b1b9f48d3f459a6a",
+    "analyze_belief.py": "e664c2bd90a22edbfc841b23b732b4da72fbccc321e14fe8b983ec23c7674288",
+    "run_belief.sh": "68d0e395f15893b3d5da8d3d5412e30640bc810bcf10ee4eef5f958470d15a38",
+    "prereg-2.md": "890fdec632d09fc8e67c9d92151d8a386ed3291fc6aa577071082acaae9f06c1",
+    "fork_smoke.py": "83ce3a8f7b72a30e03160139f7dccf5f2289db2abef1f8d6102b772b50540aec",
+    "tasks/later_verify.py": "2be80a63e4c8e479cfbb5224758e7c9f9523fee7db707aa7f5c8c5fcf0d50ec7"
+  },
+  "note": "fork_belief.py revised 2026-08-30 after validation attempt 1 failed on expired copied credentials (auth refresh added); no data produced.",
+  "analysis_note": "analyze_belief.py: one-sided p for rF - w now tests the predicted (negative) direction; edited 2026-08-30 12:58 during data collection, before any result was read beyond the validation parent. Explanation-framing coding added 2026-08-30 13:25 after reading the data (post-hoc)."
+}
