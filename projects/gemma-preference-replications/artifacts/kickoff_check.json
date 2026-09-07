@@ -1,0 +1,133 @@
+{
+  "model": "google/gemma-3-27b-it",
+  "precision": "nf4-bnb",
+  "torch": "2.14.0+cu130",
+  "gpu": "NVIDIA L4",
+  "bos_token_id": 2,
+  "chat_template_text": "<bos><start_of_turn>user\nWhich is larger, 7 or 12? Answer with just the number.<end_of_turn>\n<start_of_turn>model\n",
+  "n_bos": {
+    "apply_chat_template(tokenize=True)": 1,
+    "tok(text, add_special_tokens=False)": 1,
+    "tok(text) default": 2
+  },
+  "first_tokens": [
+    "<bos>",
+    "<start_of_turn>",
+    "user",
+    "\n",
+    "Which",
+    "\u2581is"
+  ],
+  "label_tokens": {
+    "A": {
+      "ids": [
+        236776
+      ],
+      "tokens": [
+        "A"
+      ]
+    },
+    "B": {
+      "ids": [
+        236799
+      ],
+      "tokens": [
+        "B"
+      ]
+    },
+    " A": {
+      "ids": [
+        562
+      ],
+      "tokens": [
+        "\u2581A"
+      ]
+    },
+    " B": {
+      "ids": [
+        603
+      ],
+      "tokens": [
+        "\u2581B"
+      ]
+    },
+    "(A": {
+      "ids": [
+        236769,
+        236776
+      ],
+      "tokens": [
+        "(",
+        "A"
+      ]
+    },
+    "(B": {
+      "ids": [
+        236769,
+        236799
+      ],
+      "tokens": [
+        "(",
+        "B"
+      ]
+    },
+    "**A": {
+      "ids": [
+        1018,
+        236776
+      ],
+      "tokens": [
+        "**",
+        "A"
+      ]
+    },
+    "**B": {
+      "ids": [
+        1018,
+        236799
+      ],
+      "tokens": [
+        "**",
+        "B"
+      ]
+    }
+  },
+  "load_seconds": 258.4,
+  "n_layers": 62,
+  "d_model": 5376,
+  "vram_after_load_GB": {
+    "allocated": 15.17,
+    "peak": 15.17
+  },
+  "next_token_top5": [
+    [
+      "1",
+      44.0
+    ],
+    [
+      "7",
+      22.62
+    ],
+    [
+      "\u2581",
+      22.38
+    ],
+    [
+      "**",
+      19.62
+    ],
+    [
+      "<end_of_turn>",
+      19.25
+    ]
+  ],
+  "p_A_p_B_at_decision_pos": [
+    0.0,
+    0.0
+  ],
+  "completion": "12<end_of_turn>",
+  "vram_after_generate_GB": {
+    "allocated": 15.18,
+    "peak": 15.2
+  }
+}

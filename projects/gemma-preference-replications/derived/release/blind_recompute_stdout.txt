@@ -1,0 +1,47 @@
+{
+  "pairwise": {
+    "n_rows": 23908,
+    "mean_mass": 0.9914613179688807,
+    "fraction_mass_lt_0_5": 0.008490881713234064,
+    "slot_A_bias_mean_renormalized_p_A": 0.6074441913010564,
+    "order_agreement_fraction": 0.7355696837878535,
+    "order_agreement_n_pairs": 11954,
+    "order_agreement_n": 8793
+  },
+  "bradley_terry": {
+    "n_rows_mass_ge_0_5": 23705,
+    "n_tasks": 2993,
+    "beta_slot_A": 1.009973025115952,
+    "mean_u_by_origin": {
+      "alpaca": 0.03713861223784085,
+      "bailbench": -3.510481871469164,
+      "math": 1.5423557355992712,
+      "stress_test": -1.816853972937481,
+      "wildchat": 0.8785599613194353
+    },
+    "pearson_r_with_utilities_csv": 0.9999999990586965,
+    "correlation_n_tasks": 2993,
+    "l2_penalty": "0.01 * mean(u^2)",
+    "fit_diagnostics": {
+      "converged": true,
+      "iterations": 132,
+      "objective": 0.2787230875130989,
+      "max_abs_gradient": 9.668841012555607e-09
+    }
+  },
+  "gate_0_baseline": {
+    "mean_renormalized_p_A": 0.6064187774340888,
+    "n_trials": 240,
+    "filter": "effective mode contrastive, dir probe, layer 23, c=0"
+  },
+  "probe": {
+    "layer_of_max_r_eval": 30,
+    "max_r_eval": 0.8886630996012197
+  },
+  "anomalies": [
+    "judged audit rows override regex: 3 decisive disagreements and 5 refusals among 300 audited parsed rows",
+    "pairwise rows with A/B mass below 0.5 (excluded from BT only): 203",
+    "exact A/B log-probability ties (likely affected by logged precision): pairwise=102, steering=506, patching=48",
+    "large control steering swings at L23/c=0.05; largest is top2, E=0.696184"
+  ]
+}

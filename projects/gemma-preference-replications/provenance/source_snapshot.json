@@ -1,0 +1,310 @@
+{
+  "description": "Files selected from the private workspace before release edits; original experiment code was uncommitted. This records the export, not the historical executing code.",
+  "files": [
+    {
+      "path": "REPLICATION.md",
+      "sha256": "741037cafdc495d212d3a6eda5ec5de31b030a5ea832d553bd728cc792947881",
+      "bytes": 15929
+    },
+    {
+      "path": "artifacts/kickoff_check.json",
+      "sha256": "657f4e50b22785b949ac7c63147979ab32d563b6ef042720ab05d4bbac93cbe9",
+      "bytes": 1961
+    },
+    {
+      "path": "artifacts/pod_env.txt",
+      "sha256": "232637bcdfc5034fae14e12f1e4dd35c18fced1bc2a7ebfe6cb0549c1100a902",
+      "bytes": 238
+    },
+    {
+      "path": "runs/bf16/extract_bf16_norms.json",
+      "sha256": "1d273cfac0e5517c3dc4b369724c7f31f0608e2f3ac694c4894fc6a9e87aca3e",
+      "bytes": 2837
+    },
+    {
+      "path": "runs/bf16/probe_bf16_directions.npy",
+      "sha256": "ea59101d46c05b12e4b92b09a01f2ff5851b39f5c65a879c9031538a16c37061",
+      "bytes": 1333376
+    },
+    {
+      "path": "runs/bf16/probe_bf16_probe_r.csv",
+      "sha256": "eb7cbf18cf9d40a18a703bb21280b74993bc5daf266755a105f1922ea75d3e1f",
+      "bytes": 607
+    },
+    {
+      "path": "runs/bf16/steer_bf16_fit_results.jsonl",
+      "sha256": "c6a2a42ee461e499c62d442371d34291db7bb4e6543d2845c06057f1810dbf28",
+      "bytes": 681109
+    },
+    {
+      "path": "runs/bf16/steer_bf16_pairs.json",
+      "sha256": "88a0883eee1a3da5cad47f397cafb600b8559788c6be6addad7d686784ac5a8c",
+      "bytes": 14966
+    },
+    {
+      "path": "runs/bf16/steer_bf16_results.jsonl",
+      "sha256": "b1fcedb4c48589823ef6304b274b46b529bd8dc493e6371d78a1d9c2e3aba8f3",
+      "bytes": 7497407
+    },
+    {
+      "path": "runs/extract/norms.json",
+      "sha256": "ce60382d2b11dbc3eb6d32cea31924c73f75592dcecc61afc3c7a6c32f6244e4",
+      "bytes": 2809
+    },
+    {
+      "path": "runs/null/dirs.npz",
+      "sha256": "b62ebbb7b2f04ac98ef8c805ef150805af524271373fa30cda1530cbc25a6184",
+      "bytes": 522082
+    },
+    {
+      "path": "runs/null/natsd_scale.json",
+      "sha256": "32bf36a449857f4c7095d0ea3d503cc3dc7f692c472189e3a8dff524bf2dfb2a",
+      "bytes": 1056
+    },
+    {
+      "path": "runs/pairwise/bt_fit.json",
+      "sha256": "ddd007d60de2b05385f14894d72e69f9b471080cbecb4a1a8f742eae04d25682",
+      "bytes": 627
+    },
+    {
+      "path": "runs/pairwise/pairs.json",
+      "sha256": "1d82c2016580aad10e5cef4d9f111806ba1212827a5a9a95700ef49ccc6655c6",
+      "bytes": 1005327
+    },
+    {
+      "path": "runs/pairwise/pool.json",
+      "sha256": "3a34905951d73504acb1bb0ac167654447349bf0c2342978614ac2a8416eec06",
+      "bytes": 867730
+    },
+    {
+      "path": "runs/pairwise/results.jsonl",
+      "sha256": "ca46ab995d10a18570c429dadcc0bde0a3bc79ca320bf7a93effde3db1d3e0ae",
+      "bytes": 6098892
+    },
+    {
+      "path": "runs/pairwise/run.json",
+      "sha256": "6e83bb9f9529cf94de4bc4006bef0afeb100009f812a769423fd3e24a73d46f4",
+      "bytes": 236
+    },
+    {
+      "path": "runs/pairwise/utilities.csv",
+      "sha256": "bfd79188772a959f6ec41dffe48f15a1c098e757f27ada6318b499bcbeae00a4",
+      "bytes": 160037
+    },
+    {
+      "path": "runs/patch/results.jsonl",
+      "sha256": "83704740bb8d2296906f4fe6bd521443f17f0e0346e4f18efed7d51b671a5cc1",
+      "bytes": 1702074
+    },
+    {
+      "path": "runs/patch/summary.csv",
+      "sha256": "81f87edce06c318f90404fe4ed1cddf519fbcf27ae83a9d95fc917fe6bdf32d1",
+      "bytes": 3528
+    },
+    {
+      "path": "runs/patch_completion/results.jsonl",
+      "sha256": "730e1f1287a1e815276a79caf893cc69ebd030b71750cfb27e4cf3916fc76332",
+      "bytes": 876662
+    },
+    {
+      "path": "runs/patch_letter/results.jsonl",
+      "sha256": "eb4fb84923b81378e0594aee2637100c5aba357d81faa6fa6703f38d7bade490",
+      "bytes": 550443
+    },
+    {
+      "path": "runs/probe/directions.npy",
+      "sha256": "0675b278da44ad78922d5696b77043d3761a2ed8df569cd619012075a7a953d7",
+      "bytes": 1333376
+    },
+    {
+      "path": "runs/probe/probe_r.csv",
+      "sha256": "06bcdf1bb04596a0cb118033fbc8efab8bb1d23fca67a072ca4f3561ce1b5b38",
+      "bytes": 6697
+    },
+    {
+      "path": "runs/second_path/BRIEF.md",
+      "sha256": "ee0b0a146fc58450eb8b27b77f04ffa3137459df328ad61fab08377605e1b6e5",
+      "bytes": 4173
+    },
+    {
+      "path": "runs/second_path/recompute.json",
+      "sha256": "3f95a275d319ce43a0e75105974b74065569c2b596632df56effa11d344e3575",
+      "bytes": 26215
+    },
+    {
+      "path": "runs/second_path/recompute.md",
+      "sha256": "ad5cb4a2066f1244bec8f765022b27a000ceaf9f55fc5917ec0f3c030d57ec48",
+      "bytes": 4116
+    },
+    {
+      "path": "runs/second_path/recompute.py",
+      "sha256": "c892d7dae67cc97b0af6d4d3dfab5a284d2d228ceb0b2c23ca17578d3894f40b",
+      "bytes": 26094
+    },
+    {
+      "path": "runs/steer/jitter.json",
+      "sha256": "2c076c49f7735f17924e5793b33edb2c933c219886c6be525f7e637adb29c12e",
+      "bytes": 658
+    },
+    {
+      "path": "runs/steer/pairs.json",
+      "sha256": "88a0883eee1a3da5cad47f397cafb600b8559788c6be6addad7d686784ac5a8c",
+      "bytes": 14966
+    },
+    {
+      "path": "runs/steer/results.jsonl",
+      "sha256": "ce4944aa2614b5a8b343b70e393688299c7336e2403f8ab2230412ddf35a2101",
+      "bytes": 24704371
+    },
+    {
+      "path": "runs/steer/summary.csv",
+      "sha256": "e5288be33feff2933b759cc5850e6bffdcf534c4d0c76ecc016e6aecc16652bf",
+      "bytes": 23116
+    },
+    {
+      "path": "runs/steer_gen/results_completion.jsonl",
+      "sha256": "984e5ad76e1562bf9ab055a5d8f9e38ecdf7697ad2da3b7cbeb07a2ea5c0664b",
+      "bytes": 106817
+    },
+    {
+      "path": "runs/vl_activities/activity_summary.csv",
+      "sha256": "715b8270b4ec4ee7c8a7fb2a0c5ffe438c87326ca1bd951c1b26a7b0a26e8ecb",
+      "bytes": 7252
+    },
+    {
+      "path": "runs/vl_activities/codex/judge_run.json",
+      "sha256": "7d0f2fccd1ee3dfe1a3ad5f902c259cb1fe1c414d2eea781a254d097e3ef106f",
+      "bytes": 118
+    },
+    {
+      "path": "runs/vl_activities/codex/judged_codex.jsonl",
+      "sha256": "96b7e342b11ad642c6ed2ed6a5579390d7ed49d66247560fc874465aa880e783",
+      "bytes": 98015
+    },
+    {
+      "path": "runs/vl_activities/judged.jsonl",
+      "sha256": "df1d96de4278c2c479e9ad8022e67b0a95d10c2f8e733f11d0ad577cf5dfeafd",
+      "bytes": 213548
+    },
+    {
+      "path": "runs/vl_activities/liking.jsonl",
+      "sha256": "b280d0eed1a354a3b01dbf25aaf410012754570b7b7f2633236fba6e041fb116",
+      "bytes": 1147011
+    },
+    {
+      "path": "runs/vl_activities/liking_run.json",
+      "sha256": "4e5fdf138ed253c1776f52d6eb9067d28db6dec077d8829064711678dd2fa6b7",
+      "bytes": 266
+    },
+    {
+      "path": "runs/vl_activities/pick.jsonl",
+      "sha256": "e499e8fc35c2f9413f501c64b62a2c655f65071fb16f2c9b451f0cc151a2ee32",
+      "bytes": 10092683
+    },
+    {
+      "path": "runs/vl_activities/pick_run.json",
+      "sha256": "e141cb708ce2796db91da77fba9c942e2618697fafef23d864421a9a314331b9",
+      "bytes": 266
+    },
+    {
+      "path": "runs/vl_activities/summary.json",
+      "sha256": "a115690e7b4b0e18f4b69f5188aadc8e9c47ea0ae86cba2daa1a26e9a809bcb1",
+      "bytes": 657
+    },
+    {
+      "path": "scripts/analyze_steer.py",
+      "sha256": "3ffcbae8ccba8d810b5cb3f38f4c3267608d55cb0895c079628adbbc2801acbc",
+      "bytes": 3467
+    },
+    {
+      "path": "scripts/check_gemma_nf4.py",
+      "sha256": "6cfae3504b66ce1686963f7c7bcc3fec44194f68002bb09664880f6a8a20fb9f",
+      "bytes": 4383
+    },
+    {
+      "path": "scripts/common.py",
+      "sha256": "8d7adfad133043b6d531c017945d11434dc86309aca0b1c68545c701d1cc0a6b",
+      "bytes": 9414
+    },
+    {
+      "path": "scripts/content_baseline.py",
+      "sha256": "3b5264d834dc02e6eb7ef79244254eb6266b1a91f725f7dd47b895c9979f22c1",
+      "bytes": 2364
+    },
+    {
+      "path": "scripts/extract_eot.py",
+      "sha256": "979f233e57b4c3d331760bd2c7ddeb99e6857d547dab1fc968906711180184fe",
+      "bytes": 4102
+    },
+    {
+      "path": "scripts/fit_bt.py",
+      "sha256": "25cf14a7ca3b54f67b1bb49451ae8e3dcb2e429ff621a00b4641f7a2911f5e1a",
+      "bytes": 3509
+    },
+    {
+      "path": "scripts/jitter_check.py",
+      "sha256": "a1fe2b749c4c81ef5ebd0b2f39dd8ab8baf2600dbeade936867ece8b1cf26ea0",
+      "bytes": 2354
+    },
+    {
+      "path": "scripts/null_dirs.py",
+      "sha256": "dc08c956c25d988485cf61df3b7d39d1fb9fa895e3705c59aa6a9fd325f418a4",
+      "bytes": 5896
+    },
+    {
+      "path": "scripts/null_dirs2.py",
+      "sha256": "9b47966456330c2db52fc4f140d5fb9fddffb3964232b39506c1da02075fcba3",
+      "bytes": 2405
+    },
+    {
+      "path": "scripts/pairwise.py",
+      "sha256": "ac04eab745a0715c5287a5e6c4a94f4dd397d17793850df95a75001faa95c4a2",
+      "bytes": 5601
+    },
+    {
+      "path": "scripts/patch.py",
+      "sha256": "b23f12d4b9dac6b2912d8df606d6af1a5f119ad03c092973cf360ec48ad0cc35",
+      "bytes": 5126
+    },
+    {
+      "path": "scripts/patch2.py",
+      "sha256": "1a1235606cf743c0b40476ee43b3f02fa91963bf256f18ca80697b0bfc7b9949",
+      "bytes": 5709
+    },
+    {
+      "path": "scripts/probe.py",
+      "sha256": "67cb341b7ca29d456dc417311315e5a1a0112494786b7b7f5a118fe715eb3beb",
+      "bytes": 2603
+    },
+    {
+      "path": "scripts/steer.py",
+      "sha256": "7c4511d8bb005495ce3d5c0e55d2c457cd3b97e63d4ea21198a36408ff057989",
+      "bytes": 10298
+    },
+    {
+      "path": "scripts/steer_generate.py",
+      "sha256": "362cb06aa4180f7f5ebcc40a9936fcb5e8e04ed6133a67c86a72c895cb9b4316",
+      "bytes": 4334
+    },
+    {
+      "path": "scripts/vl_activities.py",
+      "sha256": "7962cb608344a9499fed5c25fad0f6d5689071db552308c7bcf112d80553e470",
+      "bytes": 6989
+    },
+    {
+      "path": "scripts/vl_analyze.py",
+      "sha256": "8fbf1f3ee730dbe4e88a5151ffd9858ce751647cbceda32ceb29bf817ee7755c",
+      "bytes": 3770
+    },
+    {
+      "path": "scripts/vl_judge.py",
+      "sha256": "8ba78eba8a6705cc42464e4b675ce0cec9d719b8a669d19b17f504238359fe2b",
+      "bytes": 2794
+    },
+    {
+      "path": "scripts/vl_judge_codex.py",
+      "sha256": "e971cadbd73f0a9c4800392158611cbc1bfcbac231f91666fb3daf568deaa572",
+      "bytes": 4445
+    }
+  ]
+}

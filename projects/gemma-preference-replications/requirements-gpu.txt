@@ -1,0 +1,11 @@
+-r requirements-analysis.txt
+# Historical L4 package versions; select the matching CUDA build of torch on your host.
+torch==2.14.0
+transformers==5.16.1
+bitsandbytes==0.50.2
+accelerate==1.14.0
+huggingface-hub==1.29.0
+scikit-learn==1.9.0
+PyYAML==6.0.3
+# Used only by the optional text-content baseline.
+sentence-transformers==6.0.1

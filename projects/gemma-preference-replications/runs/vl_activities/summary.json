@@ -1,0 +1,26 @@
+{
+ "n_pick": 10000,
+ "n_decisive": 9938,
+ "refusal_rate": 0.006199999999999983,
+ "n_unparsed_regex": 2505,
+ "n_judged": 2805,
+ "judge_regex_agreement_on_audit": 0.9733333333333334,
+ "position_1_rate": 0.2823505735560475,
+ "n_liking_rows": 2000,
+ "liking_parse_rate": 1.0,
+ "score_mean": 53.763000000000005,
+ "score_sd": 26.17246569595728,
+ "bias_r": 0.7021540579691162,
+ "bias_r_ci95": [
+  0.5866409105395859,
+  0.7896662996421238
+ ],
+ "n_activities": 100,
+ "p_pick_higher_liked": 0.658928030685374,
+ "p_pick_higher_liked_wilson95": [
+  0.6495327613679603,
+  0.668200093932643
+ ],
+ "n_pairs_scored": 9907,
+ "p_pick_higher_liked_gap_ge20": 0.71545804722827
+}

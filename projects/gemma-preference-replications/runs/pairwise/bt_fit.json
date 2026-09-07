@@ -1,0 +1,37 @@
+{
+ "n_rows_used": 23705,
+ "n_dropped_mass": 203,
+ "loss": 0.6931471805599452,
+ "beta_position_bias": 1.0099743938215735,
+ "train_acc_hard": 0.9213246150601139,
+ "order_sign_agreement": 0.7401674701852322,
+ "l2": 0.01,
+ "u_by_origin": {
+  "alpaca": {
+   "mean": 0.037,
+   "std": 1.224,
+   "count": 757
+  },
+  "bailbench": {
+   "mean": -3.51,
+   "std": 1.216,
+   "count": 294
+  },
+  "math": {
+   "mean": 1.542,
+   "std": 1.087,
+   "count": 741
+  },
+  "stress_test": {
+   "mean": -1.817,
+   "std": 2.002,
+   "count": 443
+  },
+  "wildchat": {
+   "mean": 0.879,
+   "std": 1.865,
+   "count": 758
+  }
+ },
+ "u_std": 2.184525403114716
+}

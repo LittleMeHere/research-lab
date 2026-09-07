@@ -1,0 +1,10 @@
+{
+ "model": "google/gemma-3-27b-it",
+ "precision": "nf4-bnb-doublequant-bf16compute",
+ "git": "uncommitted",
+ "rounds": 8,
+ "pool": 2993,
+ "pairs": 11954,
+ "readout": "logP(A) vs logP(B) at last prompt token",
+ "torch": "2.14.0+cu130"
+}

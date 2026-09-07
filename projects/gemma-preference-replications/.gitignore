@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+/external/
+/derived/recomputed/
+*.f16.npy
+*.f32.npy
+*.safetensors

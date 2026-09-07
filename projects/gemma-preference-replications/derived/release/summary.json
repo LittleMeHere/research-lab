@@ -1,0 +1,73 @@
+{
+  "probe": {
+    "layer_of_max_r_eval": 30,
+    "max_r_eval": 0.8886630996012197
+  },
+  "activities": {
+    "gemma": {
+      "n_picks": 10000,
+      "n_refusals": 62,
+      "all": {
+        "r": 0.702154057969116,
+        "ci95": [
+          0.5866433078365881,
+          0.7896649237042986
+        ],
+        "n_activities": 100,
+        "n_decisive": 9938,
+        "p_higher": 0.658928030685374,
+        "n_unequal": 9907
+      },
+      "position_logistic": {
+        "intercept": -1.1856797866387339,
+        "slope_per_100": 3.0247573935793084,
+        "slope_se": 0.07918829288056124,
+        "option1_rate": 0.2823505735560475
+      },
+      "rating_ge40": {
+        "r": 0.4263581344303068,
+        "ci95": [
+          0.19336800386093703,
+          0.6138280558963678
+        ],
+        "n_activities": 60,
+        "n_decisive": 3544,
+        "p_higher": 0.5707801418439716,
+        "n_unequal": 3525
+      }
+    },
+    "gpt": {
+      "n_picks": 10000,
+      "n_refusals": 17,
+      "all": {
+        "r": 0.7039953154880234,
+        "ci95": [
+          0.5890262334730823,
+          0.7910316117759435
+        ],
+        "n_activities": 100,
+        "n_decisive": 9983,
+        "p_higher": 0.6600683279742765,
+        "n_unequal": 9952
+      },
+      "rating_ge40": {
+        "r": 0.4280306017382196,
+        "ci95": [
+          0.19533654695511488,
+          0.6151014411221685
+        ],
+        "n_activities": 60,
+        "n_decisive": 3545,
+        "p_higher": 0.5711854792966534,
+        "n_unequal": 3526
+      }
+    },
+    "judge_agreement": 0.9771836007130125,
+    "judge_n": 2805
+  },
+  "bf16_max_individual_difference_L23": 0.11404757786308312,
+  "artifact_checks": "passed",
+  "historical_recompute_comparison": "passed",
+  "patch_point_estimator": "trial weighted; percentile CI resamples whole pairs, 2000 draws, seed 0",
+  "probe_scope": "Peak read from saved probe_r.csv; activation extraction and probe fitting not rerun"
+}
