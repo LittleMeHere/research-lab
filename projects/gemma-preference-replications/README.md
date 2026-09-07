@@ -1,4 +1,4 @@
-# Gemma preference replications
+# Task preferences in Gemma-3-27B-it: adapted replications of probing, steering, and value leakage
 
 Three adapted replications on **Gemma-3-27B-it**: preference probing and steering,
 turn-boundary activation patching, and preference-associated bias in “random” activity choices.

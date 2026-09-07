@@ -1,4 +1,4 @@
-# Three adapted replications on Gemma-3-27B-it
+# Task preferences in Gemma-3-27B-it: adapted replications of probing, steering, and value leakage
 
 Experiments: September 2–5, 2026. Release recomputation: September 6, 2026.
 These runs reproduce central behaviors from [Gilg et al.](https://arxiv.org/abs/2605.13339)
