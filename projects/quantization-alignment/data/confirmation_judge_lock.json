@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "protocol_version": "confirmation-v2",
+  "protocol_manifest_sha256": "c2e25d5d3d024dcca8dddd04401a10fec00013916d4d99748a7d71d4b53ec770",
+  "environment_lock_sha256": "facd4d44ee4b85c697ba91f20a560d1fbe9249f63aba599a5057f27b90503070",
+  "primary_judges": {
+    "claude": "claude-sonnet-5",
+    "codex": "gpt-5.6-sol"
+  },
+  "report": {
+    "capability": {
+      "responses": 350,
+      "judge_a_label_coverage": 1.0,
+      "judge_b_label_coverage": 1.0,
+      "judge_a_refusals": 0,
+      "judge_b_refusals": 0,
+      "refused_by_both": 0,
+      "agreement_fraction_among_both_labeled": 0.8257142857142857,
+      "blind_resolutions": 61,
+      "human_resolutions": 0,
+      "resolved_coverage": 1.0
+    },
+    "refusal": {
+      "responses": 200,
+      "judge_a_label_coverage": 0.995,
+      "judge_b_label_coverage": 1.0,
+      "judge_a_refusals": 1,
+      "judge_b_refusals": 0,
+      "refused_by_both": 0,
+      "agreement_fraction_among_both_labeled": 0.949748743718593,
+      "blind_resolutions": 11,
+      "human_resolutions": 1,
+      "resolved_coverage": 1.0
+    }
+  },
+  "artifact_sha256": {
+    "judge_capability_results.json": "c5bd6cc2bc9f888c3c90abcf8815cf7b65e012395265953211ce21ef4fc41e8e",
+    "judge_capability_results_codex.json": "045df3cd5262de7ee1b1312ba2d7ca42d3129b103155c1f74f6b01d2842d5ee8",
+    "judge_capability_adjudicated.json": "a7659b18a1bf885d7d08a67edc35026f539e847b874514d493e05229c08a3a61",
+    "judge_refusal_results.json": "1ff58fc0a552f1ffcf7f2ad282425d701e44b7c4ec6ec5af1410df5b228f712e",
+    "judge_refusal_results_codex.json": "e6ce5ca2a4d6b716c5c972e61cc546bb3e721e4579de555a24ab486da5777038",
+    "judge_refusal_adjudicated.json": "99e02c83ac888ab125380d92839fd51d5ba3ccf781a7f31ae57f2684e062ce31"
+  }
+}

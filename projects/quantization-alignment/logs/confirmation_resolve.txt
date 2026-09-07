@@ -1,0 +1,307 @@
+Resolving 924 items with claude-opus-5 via claude CLI 2.1.241 (Claude Code)
+  8 resolved, 0 refused by the model resolver
+  16 resolved, 0 refused by the model resolver
+  24 resolved, 0 refused by the model resolver
+  32 resolved, 0 refused by the model resolver
+  40 resolved, 0 refused by the model resolver
+  48 resolved, 0 refused by the model resolver
+  56 resolved, 0 refused by the model resolver
+  64 resolved, 0 refused by the model resolver
+  72 resolved, 0 refused by the model resolver
+  80 resolved, 0 refused by the model resolver
+  88 resolved, 0 refused by the model resolver
+  96 resolved, 0 refused by the model resolver
+  104 resolved, 0 refused by the model resolver
+  112 resolved, 0 refused by the model resolver
+  120 resolved, 0 refused by the model resolver
+  chunk error: PermissionError: [Errno 13] Permission denied: '/home/cadcad/.local/bin/claude'
+Traceback (most recent call last):
+  File "/home/cadcad/research-lab-linux/projects/quantization-alignment/code/resolve_blind_packet.py", line 237, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/cadcad/research-lab-linux/projects/quantization-alignment/code/resolve_blind_packet.py", line 183, in main
+    single_labels, single_refusals = resolve_chunk(
+                                     ^^^^^^^^^^^^^^
+  File "/home/cadcad/research-lab-linux/projects/quantization-alignment/code/resolve_blind_packet.py", line 108, in resolve_chunk
+    stdout, refusal = call_resolver(build_prompt(instructions, value_key, items))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cadcad/research-lab-linux/projects/quantization-alignment/code/resolve_blind_packet.py", line 88, in call_resolver
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: '/home/cadcad/.local/bin/claude'
+CAP_RESOLVE_EXIT=1
+Resolving 924 items with claude-opus-5 via claude CLI 2.1.243 (Claude Code)
+  8 resolved, 0 refused by the model resolver
+  16 resolved, 0 refused by the model resolver
+  24 resolved, 0 refused by the model resolver
+  32 resolved, 0 refused by the model resolver
+  40 resolved, 0 refused by the model resolver
+  48 resolved, 0 refused by the model resolver
+  56 resolved, 0 refused by the model resolver
+  64 resolved, 0 refused by the model resolver
+  72 resolved, 0 refused by the model resolver
+  80 resolved, 0 refused by the model resolver
+  88 resolved, 0 refused by the model resolver
+  96 resolved, 0 refused by the model resolver
+  104 resolved, 0 refused by the model resolver
+  112 resolved, 0 refused by the model resolver
+  120 resolved, 0 refused by the model resolver
+  128 resolved, 0 refused by the model resolver
+  136 resolved, 0 refused by the model resolver
+  144 resolved, 0 refused by the model resolver
+  152 resolved, 0 refused by the model resolver
+  160 resolved, 0 refused by the model resolver
+  168 resolved, 0 refused by the model resolver
+  176 resolved, 0 refused by the model resolver
+  184 resolved, 0 refused by the model resolver
+  192 resolved, 0 refused by the model resolver
+  200 resolved, 0 refused by the model resolver
+  208 resolved, 0 refused by the model resolver
+  216 resolved, 0 refused by the model resolver
+  224 resolved, 0 refused by the model resolver
+  232 resolved, 0 refused by the model resolver
+  240 resolved, 0 refused by the model resolver
+  248 resolved, 0 refused by the model resolver
+  256 resolved, 0 refused by the model resolver
+  264 resolved, 0 refused by the model resolver
+  272 resolved, 0 refused by the model resolver
+  280 resolved, 0 refused by the model resolver
+  288 resolved, 0 refused by the model resolver
+  296 resolved, 0 refused by the model resolver
+  304 resolved, 0 refused by the model resolver
+  312 resolved, 0 refused by the model resolver
+  320 resolved, 0 refused by the model resolver
+  328 resolved, 0 refused by the model resolver
+  336 resolved, 0 refused by the model resolver
+  344 resolved, 0 refused by the model resolver
+  352 resolved, 0 refused by the model resolver
+  360 resolved, 0 refused by the model resolver
+  368 resolved, 0 refused by the model resolver
+  376 resolved, 0 refused by the model resolver
+  384 resolved, 0 refused by the model resolver
+  392 resolved, 0 refused by the model resolver
+  400 resolved, 0 refused by the model resolver
+  408 resolved, 0 refused by the model resolver
+  408 resolved, 0 refused by the model resolver
+  408 resolved, 0 refused by the model resolver
+  408 resolved, 0 refused by the model resolver
+  408 resolved, 0 refused by the model resolver
+  408 resolved, 0 refused by the model resolver
+  408 resolved, 0 refused by the model resolver
+  408 resolved, 0 refused by the model resolver
+  416 resolved, 0 refused by the model resolver
+  416 resolved, 0 refused by the model resolver
+  416 resolved, 0 refused by the model resolver
+  416 resolved, 0 refused by the model resolver
+  416 resolved, 0 refused by the model resolver
+  416 resolved, 0 refused by the model resolver
+  416 resolved, 0 refused by the model resolver
+  416 resolved, 0 refused by the model resolver
+  416 resolved, 0 refused by the model resolver
+  424 resolved, 0 refused by the model resolver
+  424 resolved, 0 refused by the model resolver
+  424 resolved, 0 refused by the model resolver
+  424 resolved, 0 refused by the model resolver
+  424 resolved, 0 refused by the model resolver
+  424 resolved, 0 refused by the model resolver
+  424 resolved, 0 refused by the model resolver
+  424 resolved, 0 refused by the model resolver
+  424 resolved, 0 refused by the model resolver
+  424 resolved, 0 refused by the model resolver
+  424 resolved, 0 refused by the model resolver
+Traceback (most recent call last):
+  File "/home/cadcad/research-lab-linux/projects/quantization-alignment/code/resolve_blind_packet.py", line 237, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/cadcad/research-lab-linux/projects/quantization-alignment/code/resolve_blind_packet.py", line 183, in main
+    single_labels, single_refusals = resolve_chunk(
+                                     ^^^^^^^^^^^^^^
+  File "/home/cadcad/research-lab-linux/projects/quantization-alignment/code/resolve_blind_packet.py", line 108, in resolve_chunk
+    stdout, refusal = call_resolver(build_prompt(instructions, value_key, items))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cadcad/research-lab-linux/projects/quantization-alignment/code/resolve_blind_packet.py", line 88, in call_resolver
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+PermissionError: [Errno 13] Permission denied: '/home/cadcad/.local/bin/claude'
+CAP_RESOLVE_EXIT=1
+ERROR: claude CLI not found on PATH
+REF_RESOLVE_EXIT=1
+=== resolver start 2026-08-25T02:00:33Z using /home/cadcad/.claude-judge-bin/claude ===
+Resolving 924 items with claude-opus-5 via claude CLI 2.1.243 (Claude Code)
+  8 resolved, 0 refused by the model resolver
+  16 resolved, 0 refused by the model resolver
+  24 resolved, 0 refused by the model resolver
+  32 resolved, 0 refused by the model resolver
+  40 resolved, 0 refused by the model resolver
+  48 resolved, 0 refused by the model resolver
+  56 resolved, 0 refused by the model resolver
+  64 resolved, 0 refused by the model resolver
+  72 resolved, 0 refused by the model resolver
+  80 resolved, 0 refused by the model resolver
+  88 resolved, 0 refused by the model resolver
+  96 resolved, 0 refused by the model resolver
+  104 resolved, 0 refused by the model resolver
+  112 resolved, 0 refused by the model resolver
+  120 resolved, 0 refused by the model resolver
+  128 resolved, 0 refused by the model resolver
+  136 resolved, 0 refused by the model resolver
+  144 resolved, 0 refused by the model resolver
+  152 resolved, 0 refused by the model resolver
+  160 resolved, 0 refused by the model resolver
+  168 resolved, 0 refused by the model resolver
+  176 resolved, 0 refused by the model resolver
+  184 resolved, 0 refused by the model resolver
+  192 resolved, 0 refused by the model resolver
+  200 resolved, 0 refused by the model resolver
+  208 resolved, 0 refused by the model resolver
+  216 resolved, 0 refused by the model resolver
+  224 resolved, 0 refused by the model resolver
+  232 resolved, 0 refused by the model resolver
+  240 resolved, 0 refused by the model resolver
+  248 resolved, 0 refused by the model resolver
+  256 resolved, 0 refused by the model resolver
+  264 resolved, 0 refused by the model resolver
+  272 resolved, 0 refused by the model resolver
+  280 resolved, 0 refused by the model resolver
+  288 resolved, 0 refused by the model resolver
+  296 resolved, 0 refused by the model resolver
+  304 resolved, 0 refused by the model resolver
+  312 resolved, 0 refused by the model resolver
+  320 resolved, 0 refused by the model resolver
+  328 resolved, 0 refused by the model resolver
+  336 resolved, 0 refused by the model resolver
+  344 resolved, 0 refused by the model resolver
+  352 resolved, 0 refused by the model resolver
+  360 resolved, 0 refused by the model resolver
+  368 resolved, 0 refused by the model resolver
+  376 resolved, 0 refused by the model resolver
+  384 resolved, 0 refused by the model resolver
+  392 resolved, 0 refused by the model resolver
+  400 resolved, 0 refused by the model resolver
+  408 resolved, 0 refused by the model resolver
+  416 resolved, 0 refused by the model resolver
+  424 resolved, 0 refused by the model resolver
+  432 resolved, 0 refused by the model resolver
+  440 resolved, 0 refused by the model resolver
+  448 resolved, 0 refused by the model resolver
+  456 resolved, 0 refused by the model resolver
+  464 resolved, 0 refused by the model resolver
+  472 resolved, 0 refused by the model resolver
+  480 resolved, 0 refused by the model resolver
+  488 resolved, 0 refused by the model resolver
+  496 resolved, 0 refused by the model resolver
+  504 resolved, 0 refused by the model resolver
+  512 resolved, 0 refused by the model resolver
+  520 resolved, 0 refused by the model resolver
+  528 resolved, 0 refused by the model resolver
+  536 resolved, 0 refused by the model resolver
+  544 resolved, 0 refused by the model resolver
+  552 resolved, 0 refused by the model resolver
+  560 resolved, 0 refused by the model resolver
+  568 resolved, 0 refused by the model resolver
+  576 resolved, 0 refused by the model resolver
+  584 resolved, 0 refused by the model resolver
+  592 resolved, 0 refused by the model resolver
+  600 resolved, 0 refused by the model resolver
+  608 resolved, 0 refused by the model resolver
+  616 resolved, 0 refused by the model resolver
+  624 resolved, 0 refused by the model resolver
+  632 resolved, 0 refused by the model resolver
+  640 resolved, 0 refused by the model resolver
+  648 resolved, 0 refused by the model resolver
+  656 resolved, 0 refused by the model resolver
+  664 resolved, 0 refused by the model resolver
+  672 resolved, 0 refused by the model resolver
+  680 resolved, 0 refused by the model resolver
+  688 resolved, 0 refused by the model resolver
+  696 resolved, 0 refused by the model resolver
+  704 resolved, 0 refused by the model resolver
+  712 resolved, 0 refused by the model resolver
+  720 resolved, 0 refused by the model resolver
+  728 resolved, 0 refused by the model resolver
+  736 resolved, 0 refused by the model resolver
+  744 resolved, 0 refused by the model resolver
+  752 resolved, 0 refused by the model resolver
+  760 resolved, 0 refused by the model resolver
+  768 resolved, 0 refused by the model resolver
+  776 resolved, 0 refused by the model resolver
+  784 resolved, 0 refused by the model resolver
+  792 resolved, 0 refused by the model resolver
+  800 resolved, 0 refused by the model resolver
+  808 resolved, 0 refused by the model resolver
+  816 resolved, 0 refused by the model resolver
+  824 resolved, 0 refused by the model resolver
+  832 resolved, 0 refused by the model resolver
+  840 resolved, 0 refused by the model resolver
+  848 resolved, 0 refused by the model resolver
+  856 resolved, 0 refused by the model resolver
+  864 resolved, 0 refused by the model resolver
+  872 resolved, 0 refused by the model resolver
+  880 resolved, 0 refused by the model resolver
+  888 resolved, 0 refused by the model resolver
+  896 resolved, 0 refused by the model resolver
+  904 resolved, 0 refused by the model resolver
+  908 resolved, 0 refused by the model resolver
+  916 resolved, 0 refused by the model resolver
+  924 resolved, 0 refused by the model resolver
+Wrote 924 entries to data/confirmation/judge_capability_resolutions.json
+CAP_RESOLVE_EXIT=0
+Resolving 88 items with claude-opus-5 via claude CLI 2.1.243 (Claude Code)
+  7 resolved, 1 refused by the model resolver
+  14 resolved, 2 refused by the model resolver
+  20 resolved, 4 refused by the model resolver
+  28 resolved, 4 refused by the model resolver
+  36 resolved, 4 refused by the model resolver
+  42 resolved, 6 refused by the model resolver
+  47 resolved, 9 refused by the model resolver
+  55 resolved, 9 refused by the model resolver
+  62 resolved, 9 refused by the model resolver
+  68 resolved, 11 refused by the model resolver
+  75 resolved, 12 refused by the model resolver
+ERROR: 1 items unresolved after retries; no file written
+REF_RESOLVE_EXIT=1
+=== refusal resolve attempt 1 2026-08-25T02:33:13Z ===
+Resolving 88 items with claude-opus-5 via claude CLI 2.1.243 (Claude Code)
+  7 resolved, 1 refused by the model resolver
+  13 resolved, 3 refused by the model resolver
+  20 resolved, 4 refused by the model resolver
+  28 resolved, 4 refused by the model resolver
+  34 resolved, 6 refused by the model resolver
+  39 resolved, 9 refused by the model resolver
+  47 resolved, 9 refused by the model resolver
+  55 resolved, 9 refused by the model resolver
+  61 resolved, 11 refused by the model resolver
+  68 resolved, 11 refused by the model resolver
+  75 resolved, 12 refused by the model resolver
+ERROR: 1 items unresolved after retries; no file written
+REF_RESOLVE_EXIT=1
+=== refusal resolve attempt 2 2026-08-25T02:38:37Z ===
+Resolving 88 items with claude-opus-5 via claude CLI 2.1.243 (Claude Code)
+  7 resolved, 1 refused by the model resolver
+  14 resolved, 2 refused by the model resolver
+  20 resolved, 4 refused by the model resolver
+  28 resolved, 4 refused by the model resolver
+  36 resolved, 4 refused by the model resolver
+  42 resolved, 6 refused by the model resolver
+  47 resolved, 9 refused by the model resolver
+  55 resolved, 9 refused by the model resolver
+  63 resolved, 9 refused by the model resolver
+  70 resolved, 10 refused by the model resolver
+  76 resolved, 12 refused by the model resolver
+Wrote 88 entries to data/confirmation/judge_refusal_resolutions.json
+12 item(s) were refused by claude-opus-5; a named human must set their 'resolution' and 'resolver': 'human', and complete 'resolvers.human', before rerunning the adjudicator.
+REF_RESOLVE_EXIT=2

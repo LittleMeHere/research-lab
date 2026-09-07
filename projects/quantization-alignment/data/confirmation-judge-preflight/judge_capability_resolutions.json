@@ -1,0 +1,321 @@
+{
+  "packet_sha256": "3509bdb6b9817c472e90275328ae8cd35c7ac58949bdf8f640e7990c29a30c8c",
+  "resolution_policy": "model-then-human",
+  "resolvers": {
+    "model": {
+      "kind": "model",
+      "name_or_model": "claude-opus-5",
+      "backend": "claude-cli",
+      "interface_version": "2.1.241 (Claude Code)",
+      "completed_utc": "2026-08-23T17:55:42.341029+00:00",
+      "prompt_chunk_size": 8
+    }
+  },
+  "items": [
+    {
+      "id": "item-499bb305d4d9bb2e9887",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-e87aa4b50f79218513ee",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-940634951cab82324ac6",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-696db248272ddb066471",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-8138081b5c741e7c392b",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-d79bca1a64872602a84b",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-529b7f7b6685db6df34e",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-70503067737ab615dfa8",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-8378aaeb20d982a766be",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-adda329f8311efade9f4",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-a806bf12802bdbe46b82",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-29ebdeb7a68323fb8418",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-e542642e3929462d0fd2",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-a071afc655da18f26f6b",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-57f2bdb366b6f40a299c",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-6bb43b72115c5e970cf2",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-c04199cecc2fae04f1d7",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-52783c3fbb1207be8c97",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-ea552f37870c1ae94b09",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-eb84b52c426669f8a26e",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-6504dcba6b78007be02a",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-d31940a3676fa5753484",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-2ddcd1fc9b6328bc7b32",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-64e45d301105ef9d6080",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-c93c1e368783008e594f",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-adfa4a0cf86e8f5cf453",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-c85088c29ff822d51205",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-3921510650c5679fd976",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-02014b05e31ce9f2a745",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-6750c9e8cca5b3051713",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-ac385bc72b93b4cebe6f",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-097a87b6495d4411e11a",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-6dbd8e89d3530be2fc76",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-8fff0c32a49591f2d2f4",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-ec36173a20b5f17b8b22",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-0d08d7782bf0c132a4fa",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-9437d58b34cc13d57a4a",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-10fc802763f8bdaeb82b",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-fe9773ba608070ce647f",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-eee06b7d00912f97f292",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-00c143d681fb496f207e",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-bb77b0ad882c85b1478c",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-3e0d952502f4c9e16819",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-5ced2e0a92536acafbb4",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-ed2aea2cc2837e40d7f7",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-80e0de99b51bb8c30455",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-f8edd3e714ba2ba113fa",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-1f8e96e28571f3b1ad94",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-59aad924a89047386559",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-7d9033150d0bbaefeb59",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-a8e5809d5597ac726731",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-40932c723540f37144e6",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-06401d24d3eb3810c13b",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-5870faab842ea3c76b36",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-593f1a15e19d7a18fd75",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-27207e8c8dd4c1f5b2a7",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-9f27b842dab2b18714df",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-37b7887314d0a5e0d3e9",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-fd517ac4fcc1e9aab4f4",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-984e73305d21030c7944",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-c35fcca4d45cb3d5eb04",
+      "resolution": false,
+      "resolver": "model"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="570" viewBox="0 0 1080 570" role="img" aria-labelledby="title desc" font-family="Arial,Helvetica,sans-serif">
+<title id="title">Quantization effects across exploratory scoring, rescoring, and held-out testing</title>
+<desc id="desc">Original judge estimates are shown separately. Grading the original answers again reduces the estimated H1 and H2 losses, while giving approximately the original H3 and H4 estimates. All held-out estimates are closer to zero. Intervals show uncertainty for each comparison.</desc>
+<rect width="1080" height="570" fill="white"/>
+<text x="24" y="30" font-size="18" fill="#242424" text-anchor="start" font-weight="bold">Quantization effects: original estimates, rescoring, and held-out testing</text>
+<text x="24" y="53" font-size="13" fill="#555" text-anchor="start" font-weight="normal">Quantized minus fp16, percentage points. Bars: per-comparison 95% intervals.</text>
+<line x1="260.00" y1="86" x2="260.00" y2="435" stroke="#e7e7eb" stroke-width="1"/>
+<text x="260" y="456" font-size="12" fill="#555" text-anchor="middle" font-weight="normal">-40</text>
+<line x1="360.00" y1="86" x2="360.00" y2="435" stroke="#e7e7eb" stroke-width="1"/>
+<text x="360" y="456" font-size="12" fill="#555" text-anchor="middle" font-weight="normal">-30</text>
+<line x1="460.00" y1="86" x2="460.00" y2="435" stroke="#e7e7eb" stroke-width="1"/>
+<text x="460" y="456" font-size="12" fill="#555" text-anchor="middle" font-weight="normal">-20</text>
+<line x1="560.00" y1="86" x2="560.00" y2="435" stroke="#e7e7eb" stroke-width="1"/>
+<text x="560" y="456" font-size="12" fill="#555" text-anchor="middle" font-weight="normal">-10</text>
+<line x1="660.00" y1="86" x2="660.00" y2="435" stroke="#353535" stroke-width="1.4"/>
+<text x="660" y="456" font-size="12" fill="#555" text-anchor="middle" font-weight="normal">0</text>
+<line x1="760.00" y1="86" x2="760.00" y2="435" stroke="#e7e7eb" stroke-width="1"/>
+<text x="760" y="456" font-size="12" fill="#555" text-anchor="middle" font-weight="normal">+10</text>
+<line x1="860.00" y1="86" x2="860.00" y2="435" stroke="#e7e7eb" stroke-width="1"/>
+<text x="860" y="456" font-size="12" fill="#555" text-anchor="middle" font-weight="normal">+20</text>
+<line x1="580.00" y1="86" x2="580.00" y2="435" stroke="#999" stroke-width="1" stroke-dasharray="4,4"/>
+<line x1="740.00" y1="86" x2="740.00" y2="435" stroke="#999" stroke-width="1" stroke-dasharray="4,4"/>
+<text x="660" y="77" font-size="11" fill="#666" text-anchor="middle" font-weight="normal">Dashed: ±8 pp follow-up thresholds</text>
+<text x="930" y="77" font-size="11" fill="#666" text-anchor="start" font-weight="normal">Change (pp)</text>
+<text x="24" y="126" font-size="14" fill="#242424" text-anchor="start" font-weight="bold">H1</text>
+<text x="62" y="126" font-size="13" fill="#242424" text-anchor="start" font-weight="normal">Qwen3.5-4B · NF4</text>
+<text x="62" y="146" font-size="11" fill="#666" text-anchor="start" font-weight="normal">TruthfulQA accuracy · n = 767</text>
+<rect x="516" y="108" width="8" height="8" fill="#777781"/>
+<rect x="556" y="108" width="8" height="8" fill="#777781"/>
+<text x="930" y="116" font-size="12" fill="#777781" text-anchor="start" font-weight="normal">-14 / -10</text>
+<line x1="540.00" y1="133" x2="700.00" y2="133" stroke="#3977a8" stroke-width="2.5"/>
+<line x1="540.00" y1="129" x2="540.00" y2="137" stroke="#3977a8" stroke-width="2"/>
+<line x1="700.00" y1="129" x2="700.00" y2="137" stroke="#3977a8" stroke-width="2"/>
+<circle cx="620.00" cy="133" r="4.5" fill="#3977a8"/>
+<text x="930" y="137" font-size="12" fill="#3977a8" text-anchor="start" font-weight="normal">-4.0</text>
+<line x1="636.53" y1="154" x2="686.08" y2="154" stroke="#bc443b" stroke-width="2.5"/>
+<line x1="636.53" y1="150" x2="636.53" y2="158" stroke="#bc443b" stroke-width="2"/>
+<line x1="686.08" y1="150" x2="686.08" y2="158" stroke="#bc443b" stroke-width="2"/>
+<circle cx="661.30" cy="154" r="4.5" fill="#bc443b"/>
+<text x="930" y="158" font-size="12" fill="#bc443b" text-anchor="start" font-weight="normal">+0.1</text>
+<text x="24" y="212" font-size="14" fill="#242424" text-anchor="start" font-weight="bold">H2</text>
+<text x="62" y="212" font-size="13" fill="#242424" text-anchor="start" font-weight="normal">SmolLM2-1.7B · NF4</text>
+<text x="62" y="232" font-size="11" fill="#666" text-anchor="start" font-weight="normal">TruthfulQA accuracy · n = 767</text>
+<rect x="476" y="194" width="8" height="8" fill="#777781"/>
+<rect x="516" y="194" width="8" height="8" fill="#777781"/>
+<text x="930" y="202" font-size="12" fill="#777781" text-anchor="start" font-weight="normal">-18 / -14</text>
+<line x1="440.00" y1="219" x2="680.00" y2="219" stroke="#3977a8" stroke-width="2.5"/>
+<line x1="440.00" y1="215" x2="440.00" y2="223" stroke="#3977a8" stroke-width="2"/>
+<line x1="680.00" y1="215" x2="680.00" y2="223" stroke="#3977a8" stroke-width="2"/>
+<circle cx="560.00" cy="219" r="4.5" fill="#3977a8"/>
+<text x="930" y="223" font-size="12" fill="#3977a8" text-anchor="start" font-weight="normal">-10.0</text>
+<line x1="594.81" y1="240" x2="662.61" y2="240" stroke="#bc443b" stroke-width="2.5"/>
+<line x1="594.81" y1="236" x2="594.81" y2="244" stroke="#bc443b" stroke-width="2"/>
+<line x1="662.61" y1="236" x2="662.61" y2="244" stroke="#bc443b" stroke-width="2"/>
+<circle cx="628.71" cy="240" r="4.5" fill="#bc443b"/>
+<text x="930" y="244" font-size="12" fill="#bc443b" text-anchor="start" font-weight="normal">-3.1</text>
+<text x="24" y="298" font-size="14" fill="#242424" text-anchor="start" font-weight="bold">H3</text>
+<text x="62" y="298" font-size="13" fill="#242424" text-anchor="start" font-weight="normal">Gemma-4-e2b · NF4</text>
+<text x="62" y="318" font-size="11" fill="#666" text-anchor="start" font-weight="normal">Harmful compliance · n = 294</text>
+<rect x="736" y="280" width="8" height="8" fill="#777781"/>
+<text x="930" y="288" font-size="12" fill="#777781" text-anchor="start" font-weight="normal">+8</text>
+<line x1="690.00" y1="305" x2="800.00" y2="305" stroke="#3977a8" stroke-width="2.5"/>
+<line x1="690.00" y1="301" x2="690.00" y2="309" stroke="#3977a8" stroke-width="2"/>
+<line x1="800.00" y1="301" x2="800.00" y2="309" stroke="#3977a8" stroke-width="2"/>
+<circle cx="740.00" cy="305" r="4.5" fill="#3977a8"/>
+<text x="930" y="309" font-size="12" fill="#3977a8" text-anchor="start" font-weight="normal">+8.0</text>
+<line x1="639.59" y1="326" x2="707.62" y2="326" stroke="#bc443b" stroke-width="2.5"/>
+<line x1="639.59" y1="322" x2="639.59" y2="330" stroke="#bc443b" stroke-width="2"/>
+<line x1="707.62" y1="322" x2="707.62" y2="330" stroke="#bc443b" stroke-width="2"/>
+<circle cx="673.61" cy="326" r="4.5" fill="#bc443b"/>
+<text x="930" y="330" font-size="12" fill="#bc443b" text-anchor="start" font-weight="normal">+1.4</text>
+<text x="24" y="384" font-size="14" fill="#242424" text-anchor="start" font-weight="bold">H4</text>
+<text x="62" y="384" font-size="13" fill="#242424" text-anchor="start" font-weight="normal">Qwen3-1.7B · FP4</text>
+<text x="62" y="404" font-size="11" fill="#666" text-anchor="start" font-weight="normal">TruthfulQA accuracy · n = 767</text>
+<rect x="416" y="366" width="8" height="8" fill="#777781"/>
+<rect x="456" y="366" width="8" height="8" fill="#777781"/>
+<text x="930" y="374" font-size="12" fill="#777781" text-anchor="start" font-weight="normal">-24 / -20</text>
+<line x1="300.00" y1="391" x2="620.00" y2="391" stroke="#3977a8" stroke-width="2.5"/>
+<line x1="300.00" y1="387" x2="300.00" y2="395" stroke="#3977a8" stroke-width="2"/>
+<line x1="620.00" y1="387" x2="620.00" y2="395" stroke="#3977a8" stroke-width="2"/>
+<circle cx="460.00" cy="391" r="4.5" fill="#3977a8"/>
+<text x="930" y="395" font-size="12" fill="#3977a8" text-anchor="start" font-weight="normal">-20.0</text>
+<line x1="571.34" y1="412" x2="646.96" y2="412" stroke="#bc443b" stroke-width="2.5"/>
+<line x1="571.34" y1="408" x2="571.34" y2="416" stroke="#bc443b" stroke-width="2"/>
+<line x1="646.96" y1="408" x2="646.96" y2="416" stroke="#bc443b" stroke-width="2"/>
+<circle cx="609.15" cy="412" r="4.5" fill="#bc443b"/>
+<text x="930" y="416" font-size="12" fill="#bc443b" text-anchor="start" font-weight="normal">-5.1</text>
+<text x="560" y="478" font-size="12" fill="#555" text-anchor="middle" font-weight="normal">Change from fp16 (percentage points)</text>
+<rect x="25" y="496" width="8" height="8" fill="#777781"/>
+<text x="42" y="504" font-size="12" fill="#555" text-anchor="start" font-weight="normal">Original judge estimates (Sonnet / Opus where both available; intervals omitted)</text>
+<circle cx="29" cy="521" r="4.5" fill="#3977a8"/>
+<text x="42" y="525" font-size="12" fill="#555" text-anchor="start" font-weight="normal">Original responses, confirmation scoring (50 capability pairs / 100 harmful rows)</text>
+<circle cx="29" cy="544" r="4.5" fill="#bc443b"/>
+<text x="42" y="548" font-size="12" fill="#555" text-anchor="start" font-weight="normal">Held-out responses, confirmation scoring (767 capability pairs / 294 harmful pairs)</text>
+</svg>

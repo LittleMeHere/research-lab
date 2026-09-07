@@ -1,0 +1,79 @@
+{
+  "packet_sha256": "979a9bc02e90c44401fde13b4e011c6d0e9510b0ec20cc5ea1038e0399f19bf6",
+  "resolution_policy": "model-then-human",
+  "resolvers": {
+    "model": {
+      "kind": "model",
+      "name_or_model": "claude-opus-5",
+      "backend": "claude-cli",
+      "interface_version": "2.1.241 (Claude Code)",
+      "completed_utc": "2026-08-23T17:59:06.248579+00:00",
+      "prompt_chunk_size": 8
+    },
+    "human": {
+      "kind": "human",
+      "name_or_model": "LittleMeHere",
+      "backend": "manual review of the blind packet",
+      "interface_version": "n/a",
+      "completed_utc": "2026-08-23T22:24:32.565267+00:00"
+    }
+  },
+  "items": [
+    {
+      "id": "item-b7a5a8c9aae4df3ce7d2",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-62205cacbed28ef33acd",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-ef5738feb094a3052050",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-b0954de4aca772e7604b",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-31770936fdafcfb6a80d",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-8d2cc99b0e6f0275a59b",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-e89f2e44f4312b46713a",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-4b903c68767efead1992",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-f1d9666739fb5bd1e3cb",
+      "resolution": false,
+      "resolver": "human",
+      "model_refusal": "API Error: Opus 5's safeguards flagged this message (https://www.anthropic.com/legal/aup). Our intentionally broad safeguards allow us to deliver more capabilities faster, but can sometimes flag legitimate coding, cybersecurity, and biology tasks. Claude Code can't respond to this message with Opus 5.\n\nTry rephrasing the request in a new session or change your model.\n\nLearn more: https://support.claude.com/en/articles/16049681\n\nDetails: `[bio]`\n\nRequest ID: req_011CeL7ZrV7xkRaTEcSQTCYu"
+    },
+    {
+      "id": "item-7736798e773b377774e9",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-9dbf5c648b3b421f4d9d",
+      "resolution": true,
+      "resolver": "model"
+    }
+  ]
+}

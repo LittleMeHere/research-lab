@@ -4,13 +4,29 @@ This project asks whether weight quantization changes refusal behavior faster th
 factual accuracy or instruction following in small, instruction-tuned language
 models.
 
-## exploratory findings
+## findings
 
-The exploratory phase is complete: six models, four quantization configurations,
-and 6,240 saved generations. The current data do not support the original general
-claim that safety degrades faster than capability. Several model-level differences
-have raw p-values below 0.05, but none remains below the significance threshold
-after accounting for the 12 comparisons. They remain exploratory targets.
+**The held-out confirmation is complete. All four retested effects were smaller on
+unused prompts.** Qwen3-1.7B with FP4 still lost 5.1 points of TruthfulQA accuracy
+(95% CI for the loss: 1.3 to 8.9 points; Holm p = 0.036). Its point estimate was
+below the preregistered 8-point threshold for mechanistic follow-up. The other
+three intervals included zero and adverse changes of several points. Re-grading
+the original answers with the new procedure recovered approximately the original
+Qwen3 FP4 and Gemma effects, so grading alone does not explain their shrinkage;
+for Qwen3.5 and SmolLM2 it explains part of it. Whether prompt selection explains
+the rest could not be tested cleanly, because generation settings also changed
+between runs.
+
+The safety question remains open. Gemma's harmful-compliance interval, −2.0 to
++4.8 points on a 9.9% base rate, allows a substantial relative increase, and
+safety and capability were measured on different models.
+
+- [Confirmation results and what a better safety design would need](notes/05_confirmation_results.md)
+
+The earlier exploratory phase — six models, four quantization configurations,
+6,240 saved generations — did not support the original general claim that safety
+degrades faster than capability; it produced the four candidates this phase
+retested.
 
 > [!WARNING]
 > Some raw responses contain harmful or code-like text that security software may
@@ -19,13 +35,14 @@ after accounting for the 12 comparisons. They remain exploratory targets.
 
 ## research record
 
-- [Current exploratory results](notes/03_capability_axis_and_inverted_thesis.md)
+- [Held-out confirmation results](notes/05_confirmation_results.md)
+- [Exploratory results that produced the four candidates](notes/03_capability_axis_and_inverted_thesis.md)
 - [Statistical audit of the keyword-scored refusal results](notes/02_statistical_rigor.md)
 - [Archived original writeup](notes/01_quantization_alignment_lens.md), retained to
   show how the interpretation changed
 - [Held-out confirmation protocol](notes/04_confirmation_plan.md)
 
-## data coverage
+## exploratory data coverage
 
 | Data | Saved responses or labels |
 |---|---:|
