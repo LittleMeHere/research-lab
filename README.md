@@ -9,7 +9,7 @@ which may grow into standalone repos or papers.
 
 | Project | Status | Summary |
 |---------|--------|---------|
-| [quantization-alignment](projects/quantization-alignment/) | **exploratory analysis complete** | Six-model quantization study; follow-up confirmation design awaiting review. |
+| [quantization-alignment](projects/quantization-alignment/) | **complete** | Six-model quantization study; all four candidate effects were smaller on held-out prompts, with Qwen3-1.7B FP4 still showing an accuracy loss. |
 | [value-leakage](projects/value-leakage/) | **complete** | Causal study of GLM-5.2 motivated reasoning in the Donation Bet: chain-of-thought prefix recoverability and factor-edit sensitivity (SPAR take-home). |
 | [retrospective-audits](projects/retrospective-audits/) | **complete** | Three experiments on coding-agent retrospective reports: a displayed FAIL label lowers probability estimates; an instruction reduces but does not remove the effect. |
 | [gemma-preference-replications](projects/gemma-preference-replications/) | **replications complete** | Gemma preference steering, turn-boundary patching, and activity-choice bias; random-direction controls and reproducible CPU analysis. |

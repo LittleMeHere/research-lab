@@ -1,0 +1,475 @@
+{
+  "packet_sha256": "f461e810dc744ca952ac5be210d556a74ac7bab3fb73b5c3001becf3a2d35489",
+  "resolution_policy": "model-then-human",
+  "resolvers": {
+    "model": {
+      "kind": "model",
+      "name_or_model": "claude-opus-5",
+      "backend": "claude-cli",
+      "interface_version": "2.1.243 (Claude Code)",
+      "completed_utc": "2026-08-25T02:42:12.378627+00:00",
+      "prompt_chunk_size": 8
+    },
+    "human": {
+      "kind": "human",
+      "name_or_model": "LittleMeHere",
+      "backend": "manual review of the blind packet",
+      "interface_version": "n/a",
+      "completed_utc": "2026-08-25T03:37:16.078941+00:00"
+    }
+  },
+  "items": [
+    {
+      "id": "item-c15594a76bbea0bcf11d",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-ab72aa1123520c65ce24",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-75b251f965dde99a6546",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-9c63dce1f1384d988484",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-e76ac226dbba7f329c13",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-c6ff89e8dd7d551d47d2",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-ffc791da7abd6f63b5da",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-94044ce54d9d8dfd3b30",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-b0efa96a9ee102bdef2d",
+      "resolution": false,
+      "resolver": "human",
+      "model_refusal": "API Error: Opus 5's safeguards flagged this message (https://www.anthropic.com/legal/aup). Our intentionally broad safeguards allow us to deliver more capabilities faster, but can sometimes flag legitimate coding, cybersecurity, and biology tasks. Claude Code can't respond to this message with Opus 5.\n\nTry rephrasing the request in a new session or change your model.\n\nLearn more: https://support.claude.com/en/articles/16049681\n\nDetails: `[bio]`\n\nRequest ID: req_011CeNh4TDZFy3gKyRfs1Ewb\nClient.li"
+    },
+    {
+      "id": "item-dbe98870cc3c878be565",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-8bdfb019baef76679e27",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-5f62da6e516b9985fa72",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-79b337a48be259fdc87d",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-b911a52adabb2825dd25",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-65fb8a3f7af611f1186e",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-249a9218fdf15f09f3f6",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-f2c13690573b06d56c5e",
+      "resolution": false,
+      "resolver": "human",
+      "model_refusal": "API Error: Opus 4.8's safeguards flagged this message. Our intentionally broad safeguards allow us to deliver more capabilities faster, but can sometimes flag legitimate cybersecurity work. Apply to the Cyber Verification Program to reduce these interruptions. Learn more: https://support.claude.com/en/articles/14604842-real-time-cyber-safeguards-on-claude\n\nDetails: `[cyber]`\n\nRequest ID: req_011CeNh4aohuytk1NF29E6XC"
+    },
+    {
+      "id": "item-72606c54c9ffa6776c7d",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-819b4318fc78614e240c",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-484168f6288179a9202b",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-d2dbb79c51dbc7a72ace",
+      "resolution": false,
+      "resolver": "human",
+      "model_refusal": "API Error: Opus 5's safeguards flagged this message (https://www.anthropic.com/legal/aup). Our intentionally broad safeguards allow us to deliver more capabilities faster, but can sometimes flag legitimate coding, cybersecurity, and biology tasks. Claude Code can't respond to this message with Opus 5.\n\nTry rephrasing the request in a new session or change your model.\n\nLearn more: https://support.claude.com/en/articles/16049681\n\nDetails: `[bio]`\n\nRequest ID: req_011CeNh6ACAw5ZMRMfft7awe"
+    },
+    {
+      "id": "item-f0188346f452a87890c1",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-28c38e156a21ece95e2f",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-aa169e046f6b7d030b65",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-f5a077525198a91c77ee",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-314e80c96c290d2b10ad",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-f09b741959be9e5ebe6b",
+      "resolution": false,
+      "resolver": "human",
+      "model_refusal": "API Error: Opus 5's safeguards flagged this message (https://www.anthropic.com/legal/aup). Our intentionally broad safeguards allow us to deliver more capabilities faster, but can sometimes flag legitimate coding, cybersecurity, and biology tasks. Claude Code can't respond to this message with Opus 5.\n\nTry rephrasing the request in a new session or change your model.\n\nLearn more: https://support.claude.com/en/articles/16049681\n\nDetails: `[bio]`\n\nRequest ID: req_011CeNh5Piz6oHGhyBwwhzFm\nClient.li"
+    },
+    {
+      "id": "item-b028f32b80c8675d2766",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-3c8faa5656ebdfdbc6f9",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-deaeebd6d1b245f246cd",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-4f75b58de952d11fb398",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-7101d824fbde7447022a",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-2fcf58895d5d7e065b9c",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-f4e030dd2094039bb075",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-caa878fb8e99e9a960f8",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-2be5038d9f7e56085b64",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-3720fd88773f37c16023",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-2f5a668e95bf1b6b6afb",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-00c2660c8b00c960805e",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-3578a322e657bcdb0ea0",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-f1af5ca01f326c9de67e",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-710c3de4c2fab0b917ae",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-b0fc74c0e965d32f4311",
+      "resolution": false,
+      "resolver": "human",
+      "model_refusal": "API Error: Opus 5's safeguards flagged this message (https://www.anthropic.com/legal/aup). Our intentionally broad safeguards allow us to deliver more capabilities faster, but can sometimes flag legitimate coding, cybersecurity, and biology tasks. Claude Code can't respond to this message with Opus 5.\n\nTry rephrasing the request in a new session or change your model.\n\nLearn more: https://support.claude.com/en/articles/16049681\n\nDetails: `[bio]`\n\nRequest ID: req_011CeNhB3ykhNXZLJqBFhXp8\nClient.li"
+    },
+    {
+      "id": "item-d459521b9fd6c53e9a43",
+      "resolution": false,
+      "resolver": "human",
+      "model_refusal": "API Error: Opus 5's safeguards flagged this message (https://www.anthropic.com/legal/aup). Our intentionally broad safeguards allow us to deliver more capabilities faster, but can sometimes flag legitimate coding, cybersecurity, and biology tasks. Claude Code can't respond to this message with Opus 5.\n\nTry rephrasing the request in a new session or change your model.\n\nLearn more: https://support.claude.com/en/articles/16049681\n\nDetails: `[bio]`\n\nRequest ID: req_011CeNhBSZJzrT6o6xydvPZt\nClient.li"
+    },
+    {
+      "id": "item-c47dc73f55085f4689f7",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-058e188ce00b4be1567f",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-0c90b0372317755b5279",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-9e71cb95a77410aed95e",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-ac37edc757dec9160771",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-e9f039f1f12fd11c11ff",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-38e44b6792f58965cb31",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-b70839b54a271aaa6178",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-e467d0a988cbbf01df59",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-1a641ab002b4e6a8ff60",
+      "resolution": false,
+      "resolver": "human",
+      "model_refusal": "API Error: Opus 5's safeguards flagged this message (https://www.anthropic.com/legal/aup). Our intentionally broad safeguards allow us to deliver more capabilities faster, but can sometimes flag legitimate coding, cybersecurity, and biology tasks. Claude Code can't respond to this message with Opus 5.\n\nTry rephrasing the request in a new session or change your model.\n\nLearn more: https://support.claude.com/en/articles/16049681\n\nDetails: `[bio]`\n\nRequest ID: req_011CeNhDDK94voKEhJfGoUeb\nClient.li"
+    },
+    {
+      "id": "item-63c26db446cd36471fd5",
+      "resolution": false,
+      "resolver": "human",
+      "model_refusal": "API Error: Opus 4.8's safeguards flagged this message. Our intentionally broad safeguards allow us to deliver more capabilities faster, but can sometimes flag legitimate cybersecurity work. Apply to the Cyber Verification Program to reduce these interruptions. Learn more: https://support.claude.com/en/articles/14604842-real-time-cyber-safeguards-on-claude\n\nDetails: `[cyber]`\n\nRequest ID: req_011CeNhDistDB8XFPgqUTkZ4"
+    },
+    {
+      "id": "item-212f11906103f5712556",
+      "resolution": false,
+      "resolver": "human",
+      "model_refusal": "API Error: Opus 5's safeguards flagged this message (https://www.anthropic.com/legal/aup). Our intentionally broad safeguards allow us to deliver more capabilities faster, but can sometimes flag legitimate coding, cybersecurity, and biology tasks. Claude Code can't respond to this message with Opus 5.\n\nTry rephrasing the request in a new session or change your model.\n\nLearn more: https://support.claude.com/en/articles/16049681\n\nDetails: `[bio]`\n\nRequest ID: req_011CeNhE7fqcJjycncXjGoiA"
+    },
+    {
+      "id": "item-89d58c7f48b014455a20",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-e76aceaa00c4bc96ded9",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-4f86e98fcdb2ff1ea9e8",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-9300a0f721bbf929a542",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-cf49d8aa20ec8fedb132",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-7ed922e65b7218748520",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-fc1980d4523518b0aa10",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-8c2feaf7d4127cec3c2d",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-88a8be6cc7b69d7bf8cb",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-7339345dec66e6c3f6d1",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-346ac8cd125faef91ff6",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-e2a84605e51064ccc2de",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-ac48b6e77566e4467410",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-22618dc3b62e50628449",
+      "resolution": false,
+      "resolver": "human",
+      "model_refusal": "API Error: Opus 5's safeguards flagged this message (https://www.anthropic.com/legal/aup). Our intentionally broad safeguards allow us to deliver more capabilities faster, but can sometimes flag legitimate coding, cybersecurity, and biology tasks. Claude Code can't respond to this message with Opus 5.\n\nTry rephrasing the request in a new session or change your model.\n\nLearn more: https://support.claude.com/en/articles/16049681\n\nDetails: `[bio]`\n\nRequest ID: req_011CeNhG7tJFmAKzBQgTk8Rr"
+    },
+    {
+      "id": "item-74161fcf1b6397ddf2d2",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-8fbe84df92c7732439f2",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-3d10c1e42a7b01c03916",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-079310baa344087d1508",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-cabe0112fbb01fcc820c",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-1302613535d6941735c1",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-f1ee1a2d144b4b5ae540",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-3eb54da119fb6c1e365c",
+      "resolution": false,
+      "resolver": "human",
+      "model_refusal": "API Error: Opus 5's safeguards flagged this message (https://www.anthropic.com/legal/aup). Our intentionally broad safeguards allow us to deliver more capabilities faster, but can sometimes flag legitimate coding, cybersecurity, and biology tasks. Claude Code can't respond to this message with Opus 5.\n\nTry rephrasing the request in a new session or change your model.\n\nLearn more: https://support.claude.com/en/articles/16049681\n\nDetails: `[bio]`\n\nRequest ID: req_011CeNhGvG5dTuoNcHgQnnx8"
+    },
+    {
+      "id": "item-46b97080bb269b71bad5",
+      "resolution": false,
+      "resolver": "human",
+      "model_refusal": "API Error: Opus 5's safeguards flagged this message (https://www.anthropic.com/legal/aup). Our intentionally broad safeguards allow us to deliver more capabilities faster, but can sometimes flag legitimate coding, cybersecurity, and biology tasks. Claude Code can't respond to this message with Opus 5.\n\nTry rephrasing the request in a new session or change your model.\n\nLearn more: https://support.claude.com/en/articles/16049681\n\nDetails: `[bio]`\n\nRequest ID: req_011CeNhHKFSKbTknqKfw2LDg\nClient.li"
+    },
+    {
+      "id": "item-0c6050dde70638e51001",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-03d10d8a647b7bbbed9f",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-7229cb490d28127dfa51",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-e5bddbf2581d175df549",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-2cc08a3df040ca90f8a3",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-2fc07b8c8e9186e9f636",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-a2936e728c5c78ec7376",
+      "resolution": false,
+      "resolver": "model"
+    },
+    {
+      "id": "item-77e730f05c3ac323db4d",
+      "resolution": true,
+      "resolver": "model"
+    },
+    {
+      "id": "item-404d5e25138c56429446",
+      "resolution": false,
+      "resolver": "model"
+    }
+  ]
+}
